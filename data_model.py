@@ -34,6 +34,12 @@ class Operation:
     def __repr__(self) -> str:
         return f"(index: {self.index}, letters: {self.letters})"
 
+    def __eq__(self, o: object) -> bool:
+        return self.index == o.index and self.letters == o.letters
+
+    def __hash__(self) -> int:
+        return hash((self.index, self.letters))
+
 
 class Operations:
     transformation: Transformation
