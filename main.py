@@ -87,6 +87,14 @@ operations = get_operations(trans_data)
 # print(grouped_inserts)
 # print(grouped_deletes)
 
+generate_txt = True
+
+if generate_txt:
+    with open('data/processed/third_step.txt', mode='w') as file:
+        for op in operations:
+            file.writelines([f"{ins.letters}\n" for ins in op.inserts])
+            file.writelines([f"{delete.letters}\n" for delete in op.deletes])
+
 generate_csv = False
 
 if generate_csv:
