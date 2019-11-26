@@ -1,3 +1,4 @@
+import csv
 from typing import List
 
 from data_model import Transformation, Operation, Operations
@@ -38,8 +39,8 @@ def find_gap_positions_and_matching_characters(gap_string: str, character_string
 
 
 def transform_index_to_directional_index(index: int, string: str):
-    if index > len(string) / 2:
-        return index - len(string)
+    # if index > len(string) / 2:
+    #     return index - len(string)
     return index
 
 
@@ -81,7 +82,23 @@ def group_operations(operations: List[Operation]):
 trans_data = read_file_data("data/latin_alphabet/danish-dev")
 
 operations = get_operations(trans_data)
-grouped_inserts = group_inserts(operations)
-grouped_deletes = group_deletes(operations)
-print(grouped_inserts)
-print(grouped_deletes)
+# grouped_inserts = group_inserts(operations)
+# grouped_deletes = group_deletes(operations)
+# print(grouped_inserts)
+# print(grouped_deletes)
+
+generate_csv = False
+
+if generate_csv:
+    with open('data/processed/first_step.csv', mode='w') as file:
+        writer = csv.writer(file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        for op in operations:
+            lemma = op.transformation.lemma
+            inflection = op.transformation.inflection
+            combined = op.combined()
+            ins_steps = ",".join([f"INS({ins.letters})" for ins in op.inserts])
+            del_steps = ",".join([f"DEL({delete.letters})" for delete in op.deletes])
+
+            writer.writerow([lemma, inflection, combined, ins_steps, del_steps,"danish"])
+
+print("Done")

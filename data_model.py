@@ -59,10 +59,22 @@ class Operations:
     def __repr__(self) -> str:
         return f"(transformation: {self.transformation}, inserts: {self.inserts}, deletes: {self.deletes})"
 
-    # def combined(self) -> str:
-    #     total = self.transformation.lemma
-    #     for ins in self.inserts:
-    #         total = total[:ins.index] +
+    def combined(self) -> str:
+        total = self.transformation.lemma
+        ops = [(True, ins) for ins in self.inserts] + [(False, delete) for delete in self.deletes]
+        ops.sort(key=lambda x: x[1].index)
+        char_added = 0
+        for op in ops:
+            if op[0]:
+                ins = op[1]
+                insert_index = ins.index + char_added
+                total = total[:insert_index] + f"INS({ins.letters})" + total[insert_index:]
+                char_added += 5
+            else:
+                delete = op[1]
+                delete_index = delete.index + char_added
+                total = total[:delete_index] + f"DEL({delete.letters})" + total[delete_index + len(
+                    delete.letters):]
+                char_added += 5
 
-
-
+        return total
