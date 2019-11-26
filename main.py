@@ -68,6 +68,13 @@ def group_inserts(operations: List[Operations]):
     inserts = [insert for operation in operations for insert in operation.inserts]
     return group_operations(inserts)
 
+def group_inserts_by_characters_only(operations: List[Operations]):
+    inserts = [insert for operation in operations for insert in operation.inserts]
+    return group_operation_characters(inserts)
+
+def group_deletes_by_characters_only(operations: List[Operations]):
+    deletes = [delete for operation in operations for delete in operation.deletes]
+    return group_operation_characters(deletes)
 
 def group_deletes(operations: List[Operations]):
     deletes = [delete for operation in operations for delete in operation.deletes]
@@ -76,6 +83,11 @@ def group_deletes(operations: List[Operations]):
 
 def group_operations(operations: List[Operation]):
     counter = collections.Counter(operations)
+    return counter
+
+
+def group_operation_characters(operations: List[Operation]):
+    counter = collections.Counter([op.letters for op in operations])
     return counter
 
 
@@ -99,6 +111,18 @@ if generate_csv:
             ins_steps = ",".join([f"INS({ins.letters})" for ins in op.inserts])
             del_steps = ",".join([f"DEL({delete.letters})" for delete in op.deletes])
 
-            writer.writerow([lemma, inflection, combined, ins_steps, del_steps,"danish"])
+            writer.writerow([lemma, inflection, combined, ins_steps, del_steps, "danish"])
+
+generate_step_2 = False
+if generate_step_2:
+    counted_inserts = group_inserts_by_characters_only(operations)
+    counted_deletes = group_deletes_by_characters_only(operations)
+    with open('data/processed/second_step.csv', mode='w') as file:
+        writer = csv.writer(file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        for characters in counted_inserts:
+            writer.writerow([characters, "INS", "danish", counted_inserts[characters]])
+        for characters in counted_deletes:
+            writer.writerow([characters, "DEL", "danish", counted_deletes[characters]])
+
 
 print("Done")
