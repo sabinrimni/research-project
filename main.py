@@ -10,26 +10,20 @@ import collections
 
 
 def read_file_data(file_name: str) -> List[Transformation]:
-    lines = open(file_name, mode="r")
+    lines = open(file_name, mode="r", encoding="utf-8")
     data = []
     for l in lines:
         lemma, form, rule_str = l.split(u'\t')
         rules = rule_str.strip().split(';')
-        data.append(Transformation(strip_unicode(lemma), strip_unicode(form), rules))
+        data.append(Transformation(lemma, form, rules))
 
     return data
-
-
-def strip_unicode(unicode_str: str) -> str:
-    return unicodedata.normalize('NFKD', unicode_str) \
-        .encode('ascii', 'ignore') \
-        .decode('utf-8')
 
 
 def find_gap_positions_and_matching_characters(gap_string: str, character_string: str) -> List[
     Operation]:
     assert len(gap_string) == len(character_string)
-    positions = [m.start() for m in re.finditer('-', gap_string)]
+    positions = [m.start() for m in re.finditer('<', gap_string)]
     grouped_positions = group_consecutive_indexes(positions)
     operations = []
     for group in grouped_positions:
@@ -61,15 +55,18 @@ def find_operations(transformation: Transformation) -> Operations:
     # Large penalty to make sure no mismatching characters appear
     penalty = -1000000
     alignements = pair.align.globalms(transformation.lemma, transformation.inflection, 1, penalty,
-                                      -1, -0.1)
+                                      -1, -0.1, force_generic=True, one_alignment_only=True,
+                                      gap_char="<")
     first_alig = alignements[0]
     inserts = find_gap_positions_and_matching_characters(first_alig[0], first_alig[1])
     deletes = find_gap_positions_and_matching_characters(first_alig[1], first_alig[0])
     return Operations(transformation, inserts, deletes)
 
+
 def group_inserts(operations: List[Operations]):
     inserts = [insert for operation in operations for insert in operation.inserts]
     return group_operations(inserts)
+
 
 def group_deletes(operations: List[Operations]):
     deletes = [delete for operation in operations for delete in operation.deletes]
@@ -81,9 +78,8 @@ def group_operations(operations: List[Operation]):
     return counter
 
 
-
-
 trans_data = read_file_data("data/latin_alphabet/danish-dev")
+
 operations = get_operations(trans_data)
 grouped_inserts = group_inserts(operations)
 grouped_deletes = group_deletes(operations)

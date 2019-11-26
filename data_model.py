@@ -59,4 +59,10 @@ class Operations:
     def __repr__(self) -> str:
         return f"(transformation: {self.transformation}, inserts: {self.inserts}, deletes: {self.deletes})"
 
+    # def combined(self) -> str:
+    #     total = self.transformation.lemma
+    #     for ins in self.inserts:
+    #         total = total[:ins.index] +
+
+
 
