@@ -1,13 +1,13 @@
+import collections
 import csv
+import os
 from typing import List
 
-from data_model import Transformation, Operation, Operations
 import Bio.pairwise2 as pair
-from Bio.pairwise2 import format_alignment
-import regex as re
 import more_itertools as mit
-import unicodedata
-import collections
+import regex as re
+
+from data_model import Transformation, Operation, Operations
 
 
 def read_file_data(file_name: str) -> List[Transformation]:
@@ -33,14 +33,13 @@ def find_gap_positions_and_matching_characters(gap_string: str, character_string
         characters = ""
         for index in group:
             characters += character_string[index]
-        directional_index = transform_index_to_directional_index(group[0], gap_string)
-        operations.append(Operation(directional_index, characters))
+        operations.append(Operation(group[0], characters))
     return operations
 
 
 def transform_index_to_directional_index(index: int, string: str):
-    # if index > len(string) / 2:
-    #     return index - len(string)
+    if index > len(string) / 2:
+        return index - len(string)
     return index
 
 
@@ -69,6 +68,16 @@ def group_inserts(operations: List[Operations]):
     return group_operations(inserts)
 
 
+def group_inserts_by_characters_only(operations: List[Operations]):
+    inserts = [insert for operation in operations for insert in operation.inserts]
+    return group_operation_characters(inserts)
+
+
+def group_deletes_by_characters_only(operations: List[Operations]):
+    deletes = [delete for operation in operations for delete in operation.deletes]
+    return group_operation_characters(deletes)
+
+
 def group_deletes(operations: List[Operations]):
     deletes = [delete for operation in operations for delete in operation.deletes]
     return group_operations(deletes)
@@ -79,34 +88,61 @@ def group_operations(operations: List[Operation]):
     return counter
 
 
-trans_data = read_file_data("data/latin_alphabet/danish-dev")
+def group_operation_characters(operations: List[Operation]):
+    counter = collections.Counter([op.letters for op in operations])
+    return counter
 
-operations = get_operations(trans_data)
+
+def write_first_step(file, operations: List[Operations]):
+    writer = csv.writer(file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+    writer.writerow(["Source", "Target", "Combined", "Inserts", "Deletes"])
+    for op in operations:
+        lemma = op.transformation.lemma
+        inflection = op.transformation.inflection
+        combined = op.combined()
+        ins_steps = ",".join([f"INS({ins.letters})" for ins in op.inserts])
+        del_steps = ",".join([f"DEL({delete.letters})" for delete in op.deletes])
+
+        writer.writerow([lemma, inflection, combined, ins_steps, del_steps])
+
+
+def write_second_step(file, operations: List[Operations]):
+    counted_inserts = group_inserts_by_characters_only(operations)
+    counted_deletes = group_deletes_by_characters_only(operations)
+    writer = csv.writer(file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+    writer.writerow(["String", "Operation type", "Occurences"])
+    for characters in counted_inserts:
+        writer.writerow([characters, "INS", counted_inserts[characters]])
+    for characters in counted_deletes:
+        writer.writerow([characters, "DEL", counted_deletes[characters]])
+
+
+def process_data_file(file_name, perform_step_one=False, perform_step_two=False):
+    trans_data = read_file_data(file_name)
+    operations = get_operations(trans_data)
+    if perform_step_one:
+        with open(f'data/processed/first_step/{language}.csv', mode='w+') as file:
+            write_first_step(file, operations)
+    if perform_step_two:
+        with open(f'data/processed/second_step/{language}.csv', mode='w+') as file:
+            write_second_step(file, operations)
+
+
 # grouped_inserts = group_inserts(operations)
 # grouped_deletes = group_deletes(operations)
 # print(grouped_inserts)
 # print(grouped_deletes)
 
-generate_txt = True
+directory_name = "data/latin_alphabet"
+generate_step_1 = True
+generate_step_2 = True
 
-if generate_txt:
-    with open('data/processed/third_step.txt', mode='w') as file:
-        for op in operations:
-            file.writelines([f"{ins.letters}\n" for ins in op.inserts])
-            file.writelines([f"{delete.letters}\n" for delete in op.deletes])
-
-generate_csv = False
-
-if generate_csv:
-    with open('data/processed/first_step.csv', mode='w') as file:
-        writer = csv.writer(file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-        for op in operations:
-            lemma = op.transformation.lemma
-            inflection = op.transformation.inflection
-            combined = op.combined()
-            ins_steps = ",".join([f"INS({ins.letters})" for ins in op.inserts])
-            del_steps = ",".join([f"DEL({delete.letters})" for delete in op.deletes])
-
-            writer.writerow([lemma, inflection, combined, ins_steps, del_steps,"danish"])
-
+for filename in os.listdir(directory_name):
+    file_data = filename.split("-")
+    language = file_data[0]
+    operation = file_data[1]
+    print(f"Starting work on {language}")
+    if operation == "dev":
+        process_data_file(f"{directory_name}/{filename}", generate_step_1, generate_step_2)
+    print(f"Finished work on {language}")
 print("Done")

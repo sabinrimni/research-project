@@ -1,0 +1,1001 @@
+Source;Target;Combined;Inserts;Deletes
+külastama;külastasin;külastDEL(am)aINS(sin);INS(sin);DEL(am)
+papagoi;papagoidele;papagoiINS(dele);INS(dele);
+järjehoidja;järjehoidjateks;järjehoidjaINS(teks);INS(teks);
+türklane;türklased;türklaDEL(n)INS(s)eINS(d);INS(s),INS(d);DEL(n)
+mustikas;mustikatelt;mustikaDEL(s)INS(telt);INS(telt);DEL(s)
+panema;panen;paneDEL(ma)INS(n);INS(n);DEL(ma)
+tuba;tubadena;tubINS(aden)a;INS(aden);
+trofee;trofeedeks;trofeeINS(deks);INS(deks);
+harjutus;harjutusel;harjutusINS(el);INS(el);
+fallos;falloses;falloINS(se)s;INS(se);
+välde;vältes;välDEL(d)INS(t)eINS(s);INS(t),INS(s);DEL(d)
+türklane;türklaseni;türklaINS(se)nDEL(e)INS(i);INS(se),INS(i);DEL(e)
+langema;langetav;langeDEL(m)INS(t)aINS(v);INS(t),INS(v);DEL(m)
+poro;porodeks;poroINS(deks);INS(deks);
+rääkima;olid rääkinud;INS(olid )rääkiDEL(ma)INS(nud);INS(olid ),INS(nud);DEL(ma)
+nülgima;ei nülitaks;INS(ei )nülDEL(g)iDEL(m)INS(t)aINS(ks);INS(ei ),INS(t),INS(ks);DEL(g),DEL(m)
+harjutama;ei olnud harjutatudp;INS(ei olnud )harjutDEL(am)aINS(tudp);INS(ei olnud ),INS(tudp);DEL(am)
+töö;tööna;tööINS(na);INS(na);
+kange;kangeteks;kangeINS(teks);INS(teks);
+harjama;ärgu harjaku;INS(ärgu )harjDEL(am)aINS(ku);INS(ärgu ),INS(ku);DEL(am)
+hukkama;hukkasid;hukkDEL(am)aINS(sid);INS(sid);DEL(am)
+ühendama;olin ühendanud;INS(olin )ühendDEL(am)aINS(nud);INS(olin ),INS(nud);DEL(am)
+hirmuma;oleksin hirmunud;INS(oleksin )hirmuDEL(ma)INS(nud);INS(oleksin ),INS(nud);DEL(ma)
+kippuma;kipuksid;kiDEL(p)puDEL(ma)INS(ksid);INS(ksid);DEL(p),DEL(ma)
+polüester;polüestriteni;polüestDEL(e)rINS(iteni);INS(iteni);DEL(e)
+kirjutama;ärgu kirjutagu;INS(ärgu )kirjutDEL(am)aINS(gu);INS(ärgu ),INS(gu);DEL(am)
+idee;ideedest;ideeINS(dest);INS(dest);
+laulma;lauldud;laulDEL(ma)INS(dud);INS(dud);DEL(ma)
+sõitma;ei ole sõitnudp;INS(ei ole )sõitDEL(ma)INS(nudp);INS(ei ole ),INS(nudp);DEL(ma)
+kaotama;olen kaotanud;INS(olen )kaotDEL(am)aINS(nud);INS(olen ),INS(nud);DEL(am)
+süli;süled;sülDEL(i)INS(ed);INS(ed);DEL(i)
+vaidlema;vaidlesid;vaidleDEL(ma)INS(sid);INS(sid);DEL(ma)
+nimetav;nimetavatele;nimetavINS(atele);INS(atele);
+jaatav;jaatav;jaatav;;
+kõndima;on kõnnitud;INS(on )kõnINS(nitu)dDEL(ima);INS(on ),INS(nitu);DEL(ima)
+bussipeatus;bussipeatusteta;bussipeatusINS(teta);INS(teta);
+masturbeerima;masturbeerisin;masturbeeriDEL(ma)INS(sin);INS(sin);DEL(ma)
+avama;oleksime avanud;INS(oleksime )avDEL(am)aINS(nud);INS(oleksime ),INS(nud);DEL(am)
+maantee;maanteeks;maanteeINS(ks);INS(ks);
+jalanõu;jalanõudelt;jalanõuINS(delt);INS(delt);
+leidma;ärgem leidkem;INS(ärgem )leidINS(ke)mDEL(a);INS(ärgem ),INS(ke);DEL(a)
+kaksik;kaksikute;kaksikINS(ute);INS(ute);
+statistika;statistikal;statistikaINS(l);INS(l);
+lahkuma;ei oleks lahkunudp;INS(ei oleks )lahkuDEL(ma)INS(nudp);INS(ei oleks ),INS(nudp);DEL(ma)
+töö;töö;töö;;
+kaaries;kaariestele;kaariesINS(tele);INS(tele);
+sõltuvus;sõltuvusteks;sõltuvuINS(stek)s;INS(stek);
+pubi;pubi;pubi;;
+gallium;galliumdel;galliumINS(del);INS(del);
+helistama;ärgu olgu helistanud;INS(ärgu olgu )helistDEL(am)aINS(nud);INS(ärgu olgu ),INS(nud);DEL(am)
+kuulma;kuuldi;kuulDEL(ma)INS(di);INS(di);DEL(ma)
+skorpion;skorpiondeni;skorpionINS(deni);INS(deni);
+hoiduma;hoidun;hoiduDEL(ma)INS(n);INS(n);DEL(ma)
+ostma;ostsite;ostDEL(ma)INS(site);INS(site);DEL(ma)
+armuma;olin armunud;INS(olin )armuDEL(ma)INS(nud);INS(olin ),INS(nud);DEL(ma)
+loendama;loendavad;loendaDEL(m)INS(v)aINS(d);INS(v),INS(d);DEL(m)
+karihiir;karihiirtel;karihiirINS(tel);INS(tel);
+antimon;antimoni;antimonINS(i);INS(i);
+nutma;ei nuteta;INS(ei )nuINS(te)tDEL(m)a;INS(ei ),INS(te);DEL(m)
+aabe;aabe;aabe;;
+vahvel;vahvliteks;vahvDEL(e)lINS(iteks);INS(iteks);DEL(e)
+maantee;maanteedeks;maanteeINS(deks);INS(deks);
+kolonel;koloneliks;kolonelINS(iks);INS(iks);
+muutus;muutuste;muutusINS(te);INS(te);
+magneesium;magneesiumi;magneesiumINS(i);INS(i);
+mõrsja;mõrsjana;mõrsjINS(an)a;INS(an);
+vaba;vabadeta;vabINS(adet)a;INS(adet);
+mõistma;ei mõistetud;INS(ei )mõistDEL(ma)INS(etud);INS(ei ),INS(etud);DEL(ma)
+õppima;õppisite;õppiDEL(ma)INS(site);INS(site);DEL(ma)
+korjama;olete korjanud;INS(olete )korjDEL(am)aINS(nud);INS(olete ),INS(nud);DEL(am)
+langema;langesid;langeDEL(ma)INS(sid);INS(sid);DEL(ma)
+kaelakee;kaelakee;kaelakee;;
+kobisema;kobised;kobiseDEL(ma)INS(d);INS(d);DEL(ma)
+nutma;nutetav;nuINS(te)tDEL(m)aINS(v);INS(te),INS(v);DEL(m)
+vaidlema;ei oleks vaielnudp;INS(ei oleks )vaiINS(elnu)dDEL(lema)INS(p);INS(ei oleks ),INS(elnu),INS(p);DEL(lema)
+lavastaja;lavastajatena;lavastajINS(aten)a;INS(aten);
+hakkama;ei olevat hakatudp;INS(ei olevat )hakDEL(kam)aINS(tudp);INS(ei olevat ),INS(tudp);DEL(kam)
+berkeelium;berkeeliumita;berkeeliumINS(ita);INS(ita);
+õhufilter;õhufiltrilt;õhufiltDEL(e)rINS(ilt);INS(ilt);DEL(e)
+rahvastikuteadus;rahvastikuteadustes;rahvastikuteaduINS(ste)s;INS(ste);
+plii;pliilt;pliiINS(lt);INS(lt);
+öökima;öökisime;öökINS(is)imDEL(a)INS(e);INS(is),INS(e);DEL(a)
+punker;punkrilt;punkDEL(e)rINS(ilt);INS(ilt);DEL(e)
+katma;oleks katetud;INS(oleks )katDEL(ma)INS(etud);INS(oleks ),INS(etud);DEL(ma)
+selgitama;ei ole selgitatudp;INS(ei ole )selgitDEL(am)aINS(tudp);INS(ei ole ),INS(tudp);DEL(am)
+sadama;olite sadanud;INS(olite )sadDEL(am)aINS(nud);INS(olite ),INS(nud);DEL(am)
+masturbeerima;olgu masturbeerinud;INS(olgu )masturbeeriDEL(ma)INS(nud);INS(olgu ),INS(nud);DEL(ma)
+sügis;sügises;sügiINS(se)s;INS(se);
+jääma;olite jäänud;INS(olite )jääDEL(ma)INS(nud);INS(olite ),INS(nud);DEL(ma)
+olev;olevatest;olevINS(atest);INS(atest);
+venelane;venelaste;venelaDEL(n)INS(st)e;INS(st);DEL(n)
+holmium;holmiumdesse;holmiumINS(desse);INS(desse);
+kustutama;kustutage;kustutDEL(am)aINS(ge);INS(ge);DEL(am)
+kiiruluu;kiiruluuga;kiiruluuINS(ga);INS(ga);
+avama;on avanud;INS(on )avDEL(am)aINS(nud);INS(on ),INS(nud);DEL(am)
+majandus;majandustele;majandusINS(tele);INS(tele);
+kaalikas;kaalikatel;kaalikaDEL(s)INS(tel);INS(tel);DEL(s)
+vaikima;vaikiks;vaikiDEL(ma)INS(ks);INS(ks);DEL(ma)
+rahvas;rahval;rahvaDEL(s)INS(l);INS(l);DEL(s)
+niisutama;niisutasid;niisutDEL(am)aINS(sid);INS(sid);DEL(am)
+hallitama;hallitatud;hallitDEL(am)aINS(tud);INS(tud);DEL(am)
+nülgima;nülid;nülDEL(g)iDEL(ma)INS(d);INS(d);DEL(g),DEL(ma)
+rebane;rebastelt;rebaDEL(n)INS(st)eINS(lt);INS(st),INS(lt);DEL(n)
+nobeelium;nobeeliumid;nobeeliumINS(id);INS(id);
+veenma;ei veendavat;INS(ei )veenDEL(m)INS(dav)aINS(t);INS(ei ),INS(dav),INS(t);DEL(m)
+ajama;ajasid;ajDEL(am)aINS(sid);INS(sid);DEL(am)
+voolik;voolikut;voolikINS(ut);INS(ut);
+dubnium;dubniumil;dubniumINS(il);INS(il);
+kaltsium;kaltsiumdes;kaltsiumINS(des);INS(des);
+ajama;olin ajanud;INS(olin )ajDEL(am)aINS(nud);INS(olin ),INS(nud);DEL(am)
+mõla;mõladena;mõlINS(aden)a;INS(aden);
+lendama;olgu lennanud;INS(olgu )lenINS(nanu)dDEL(ama);INS(olgu ),INS(nanu);DEL(ama)
+teadus;teadustel;teadusINS(tel);INS(tel);
+käsi;käe;käDEL(si)INS(e);INS(e);DEL(si)
+heitma;oleksime heitnud;INS(oleksime )heitDEL(ma)INS(nud);INS(oleksime ),INS(nud);DEL(ma)
+mendeleevium;mendeleeviumi;mendeleeviumINS(i);INS(i);
+sihitav;sihitavate;sihitavINS(ate);INS(ate);
+keel;keele;keelINS(e);INS(e);
+sööma;olen söönud;INS(olen )sööDEL(ma)INS(nud);INS(olen ),INS(nud);DEL(ma)
+rääkima;ärgem rääkigem;INS(ärgem )rääkiINS(ge)mDEL(a);INS(ärgem ),INS(ge);DEL(a)
+poloonium;polooniumdesse;polooniumINS(desse);INS(desse);
+minema;olevat läinud;DEL(m)INS(olevat lä)inDEL(ema)INS(ud);INS(olevat lä),INS(ud);DEL(m),DEL(ema)
+pisar;pisarate;pisarINS(ate);INS(ate);
+sõudma;sõuab;sõuDEL(dm)aINS(b);INS(b);DEL(dm)
+nõges;nõgeseks;nõgeINS(sek)s;INS(sek);
+hobune;hobused;hobuDEL(n)INS(s)eINS(d);INS(s),INS(d);DEL(n)
+sittuma;situtagu;sitINS(u)tINS(ag)uDEL(ma);INS(u),INS(ag);DEL(ma)
+sünoptik;sünoptikut;sünoptikINS(ut);INS(ut);
+lebama;ei olnud lebanudp;INS(ei olnud )lebDEL(am)aINS(nudp);INS(ei olnud ),INS(nudp);DEL(am)
+kihutama;kihutasid;kihutDEL(am)aINS(sid);INS(sid);DEL(am)
+neptuunium;neptuuniumis;neptuuniumINS(is);INS(is);
+moslem;moslem;moslem;;
+pisar;pisaras;pisarINS(as);INS(as);
+kasvaja;kasvajad;kasvajaINS(d);INS(d);
+viitsima;viitsiks;viitsiDEL(ma)INS(ks);INS(ks);DEL(ma)
+armuma;ei olevat armunudp;INS(ei olevat )armuDEL(ma)INS(nudp);INS(ei olevat ),INS(nudp);DEL(ma)
+veski;veskiga;veskiINS(ga);INS(ga);
+malev;malevatega;malevINS(atega);INS(atega);
+mõte;mõtete;mõINS(te)te;INS(te);
+ämber;ämbrini;ämbDEL(e)rINS(ini);INS(ini);DEL(e)
+sõnaraamat;sõnaraamatuteta;sõnaraamatINS(uteta);INS(uteta);
+hispaanlane;hispaanlasteta;hispaanlaDEL(n)INS(st)eINS(ta);INS(st),INS(ta);DEL(n)
+langema;langesin;langeDEL(ma)INS(sin);INS(sin);DEL(ma)
+tõlkima;oleksite tõlkinud;INS(oleksite )tõlkiDEL(ma)INS(nud);INS(oleksite ),INS(nud);DEL(ma)
+roimar;roimariteks;roimarINS(iteks);INS(iteks);
+mõistma;mõistnud;mõistDEL(ma)INS(nud);INS(nud);DEL(ma)
+võitma;võitku;võitDEL(ma)INS(ku);INS(ku);DEL(ma)
+täitma;oled täitnud;INS(oled )täitDEL(ma)INS(nud);INS(oled ),INS(nud);DEL(ma)
+küsimus;küsimuses;küsimuINS(se)s;INS(se);
+lükkama;lükkama;lükkama;;
+õigus;õigusena;õigusINS(ena);INS(ena);
+põletama;on põletanud;INS(on )põletDEL(am)aINS(nud);INS(on ),INS(nud);DEL(am)
+õpetama;olgu õpetatud;INS(olgu )õpetDEL(am)aINS(tud);INS(olgu ),INS(tud);DEL(am)
+katma;olevat katetud;INS(olevat )katDEL(ma)INS(etud);INS(olevat ),INS(etud);DEL(ma)
+täitma;ei täidetavat;INS(ei )täiINS(de)tDEL(m)aINS(vat);INS(ei ),INS(de),INS(vat);DEL(m)
+kütma;küttev;kütDEL(ma)INS(tev);INS(tev);DEL(ma)
+eesel;eesel;eesel;;
+traktor;traktorina;traktorINS(ina);INS(ina);
+käsklus;käsklusi;käsklusINS(i);INS(i);
+tahtma;oleksime tahtnud;INS(oleksime )tahtDEL(ma)INS(nud);INS(oleksime ),INS(nud);DEL(ma)
+jäätama;jäätasite;jäätDEL(am)aINS(site);INS(site);DEL(am)
+küülik;küülikule;küülikINS(ule);INS(ule);
+jaatama;olin jaatanud;INS(olin )jaatDEL(am)aINS(nud);INS(olin ),INS(nud);DEL(am)
+traktor;traktoritele;traktorINS(itele);INS(itele);
+jätma;oli jätetud;INS(oli )jätDEL(ma)INS(etud);INS(oli ),INS(etud);DEL(ma)
+andma;ei olnud andnudp;INS(ei olnud )andDEL(ma)INS(nudp);INS(ei olnud ),INS(nudp);DEL(ma)
+kabe;kabeta;kabeINS(ta);INS(ta);
+arvama;arvan;arvDEL(am)aINS(n);INS(n);DEL(am)
+nägema;näeksite;näDEL(g)INS(eksit)eDEL(ma);INS(eksit);DEL(g),DEL(ma)
+metsis;metsisesse;metsisINS(esse);INS(esse);
+murjan;murjanis;murjanINS(is);INS(is);
+kiiruspiirik;kiiruspiirikuid;kiiruspiirikINS(uid);INS(uid);
+panema;olgu pandud;INS(olgu )panDEL(ema)INS(dud);INS(olgu ),INS(dud);DEL(ema)
+murdma;murretaks;murDEL(dm)INS(ret)aINS(ks);INS(ret),INS(ks);DEL(dm)
+muutus;muutusega;muutusINS(ega);INS(ega);
+arutlema;arutleksid;arutleDEL(ma)INS(ksid);INS(ksid);DEL(ma)
+kee;keedega;keeINS(dega);INS(dega);
+ehitama;on ehitanud;INS(on )ehitDEL(am)aINS(nud);INS(on ),INS(nud);DEL(am)
+välde;väldetesse;väldINS(etess)e;INS(etess);
+arutelu;aruteludelt;aruteluINS(delt);INS(delt);
+õiglus;õiglused;õiglusINS(ed);INS(ed);
+õpetama;õpetataks;õpetaDEL(m)INS(t)aINS(ks);INS(t),INS(ks);DEL(m)
+asuma;ei asutud;INS(ei )asuDEL(ma)INS(tud);INS(ei ),INS(tud);DEL(ma)
+nokkima;ei nokitud;INS(ei )noDEL(k)kiDEL(ma)INS(tud);INS(ei ),INS(tud);DEL(k),DEL(ma)
+kaugus;kaugust;kaugusINS(t);INS(t);
+õpetama;õpetasid;õpetDEL(am)aINS(sid);INS(sid);DEL(am)
+raudtee;raudteelt;raudteeINS(lt);INS(lt);
+õppima;õpitakse;õDEL(p)piDEL(m)INS(t)aINS(kse);INS(t),INS(kse);DEL(p),DEL(m)
+paluma;ärgu olgu palunud;INS(ärgu olgu )paluDEL(ma)INS(nud);INS(ärgu olgu ),INS(nud);DEL(ma)
+käsitlema;käsitlesime;käsitleINS(si)mDEL(a)INS(e);INS(si),INS(e);DEL(a)
+nahkhiir;nahkhiirteni;nahkhiirINS(teni);INS(teni);
+varastama;oli varastatud;INS(oli )varastDEL(am)aINS(tud);INS(oli ),INS(tud);DEL(am)
+langev;langevale;langevINS(ale);INS(ale);
+indium;indiumil;indiumINS(il);INS(il);
+kannel;kandle;kanDEL(ne)INS(d)lINS(e);INS(d),INS(e);DEL(ne)
+küülik;küülikuteks;küülikINS(uteks);INS(uteks);
+käsitlema;käsitlema;käsitlema;;
+sõda;sõjaks;sõDEL(d)INS(j)aINS(ks);INS(j),INS(ks);DEL(d)
+lugema;loeksid;lDEL(ugema)INS(oeksid);INS(oeksid);DEL(ugema)
+ründama;olgu rünnanud;INS(olgu )rünINS(nanu)dDEL(ama);INS(olgu ),INS(nanu);DEL(ama)
+jalus;jaluseid;jalusINS(eid);INS(eid);
+heinakuu;heinakuudega;heinakuuINS(dega);INS(dega);
+leidma;leiavad;leiINS(ava)dDEL(ma);INS(ava);DEL(ma)
+rahaühik;rahaühikud;rahaühikINS(ud);INS(ud);
+kobisema;kobiseksid;kobiseDEL(ma)INS(ksid);INS(ksid);DEL(ma)
+jooma;olen joonud;INS(olen )jooDEL(ma)INS(nud);INS(olen ),INS(nud);DEL(ma)
+harjama;oled harjanud;INS(oled )harjDEL(am)aINS(nud);INS(oled ),INS(nud);DEL(am)
+nussima;ei nussitavat;INS(ei )nussiDEL(m)INS(tav)aINS(t);INS(ei ),INS(tav),INS(t);DEL(m)
+panema;oled pannud;INS(oled )panDEL(ema)INS(nud);INS(oled ),INS(nud);DEL(ema)
+õiglus;õigluste;õiglusINS(te);INS(te);
+ehitama;ehitatav;ehitaDEL(m)INS(t)aINS(v);INS(t),INS(v);DEL(m)
+külastama;ärgu külastatagu;INS(ärgu )külastaDEL(m)INS(t)aINS(gu);INS(ärgu ),INS(t),INS(gu);DEL(m)
+näiline;näilisest;näiliDEL(n)INS(s)eINS(st);INS(s),INS(st);DEL(n)
+maja;maja;maja;;
+vibutama;olgu vibutanud;INS(olgu )vibutDEL(am)aINS(nud);INS(olgu ),INS(nud);DEL(am)
+kahvel;kahvlini;kahvDEL(e)lINS(ini);INS(ini);DEL(e)
+istuma;istuks;istuDEL(ma)INS(ks);INS(ks);DEL(ma)
+hispaanlane;hispaanlaste;hispaanlaDEL(n)INS(st)e;INS(st);DEL(n)
+maantee;maanteedena;maanteeINS(dena);INS(dena);
+tulekahju;tulekahjudel;tulekahjuINS(del);INS(del);
+elama;ärge elage;INS(ärge )elDEL(am)aINS(ge);INS(ärge ),INS(ge);DEL(am)
+terbium;terbiumil;terbiumINS(il);INS(il);
+võima;ärgu olgu võidud;INS(ärgu olgu )võiDEL(ma)INS(dud);INS(ärgu olgu ),INS(dud);DEL(ma)
+tegema;oleme teinud;INS(oleme )teDEL(gema)INS(inud);INS(oleme ),INS(inud);DEL(gema)
+idee;ideele;ideINS(el)e;INS(el);
+paluma;palusite;paluDEL(ma)INS(site);INS(site);DEL(ma)
+peenendama;peenendasite;peenendDEL(am)aINS(site);INS(site);DEL(am)
+sõltuvus;sõltuvustelt;sõltuvusINS(telt);INS(telt);
+nokkima;ei olevat nokitudp;INS(ei olevat )noDEL(k)kiDEL(ma)INS(tudp);INS(ei olevat ),INS(tudp);DEL(k),DEL(ma)
+voolik;voolikutesse;voolikINS(utesse);INS(utesse);
+küünal;küünlaid;küünDEL(a)lINS(aid);INS(aid);DEL(a)
+pankur;pankuris;pankurINS(is);INS(is);
+päike;päikesed;päikeINS(sed);INS(sed);
+ehtima;ehtivat;ehtiDEL(m)INS(v)aINS(t);INS(v),INS(t);DEL(m)
+katma;ei kateta;INS(ei )kaINS(te)tDEL(m)a;INS(ei ),INS(te);DEL(m)
+major;majorite;majorINS(ite);INS(ite);
+ukrainlane;ukrainlase;ukrainlaDEL(n)INS(s)e;INS(s);DEL(n)
+heinakuu;heinakuule;heinakuuINS(le);INS(le);
+suulaeluu;suulaeluust;suulaeluuINS(st);INS(st);
+kai;kaidel;kaiINS(del);INS(del);
+elavhõbe;elavhõbedal;elavhõbeINS(dal);INS(dal);
+leidma;olid leidnud;INS(olid )leiINS(dnu)dDEL(ma);INS(olid ),INS(dnu);DEL(ma)
+liibuma;olgu liibunud;INS(olgu )liibuDEL(ma)INS(nud);INS(olgu ),INS(nud);DEL(ma)
+mesi;meteltmesilt;INS(metelt)mesiINS(lt);INS(metelt),INS(lt);
+ootama;ootavad;ootaDEL(m)INS(v)aINS(d);INS(v),INS(d);DEL(m)
+väeti;väetina;väetiINS(na);INS(na);
+magama;ei ole magatudp;INS(ei ole )magDEL(am)aINS(tudp);INS(ei ole ),INS(tudp);DEL(am)
+riietumine;riietumine;riietumine;;
+kobistama;kobistatav;kobistaDEL(m)INS(t)aINS(v);INS(t),INS(v);DEL(m)
+tsirkus;tsirkuseks;tsirkuINS(sek)s;INS(sek);
+nahkhiir;nahkhiir;nahkhiir;;
+vahvel;vahvlit;vahvDEL(e)lINS(it);INS(it);DEL(e)
+põlema;olevat põlenud;INS(olevat )põleDEL(ma)INS(nud);INS(olevat ),INS(nud);DEL(ma)
+saatma;ei olevat saatnudp;INS(ei olevat )saatDEL(ma)INS(nudp);INS(ei olevat ),INS(nudp);DEL(ma)
+lükkama;olgu lükanud;INS(olgu )lükDEL(kam)aINS(nud);INS(olgu ),INS(nud);DEL(kam)
+töö;töödeltöil;tööINS(deltöil);INS(deltöil);
+mustikas;mustikaid;mustikaDEL(s)INS(id);INS(id);DEL(s)
+leheneeger;leheneegritega;leheneegDEL(e)rINS(itega);INS(itega);DEL(e)
+õpetaja;õpetajate;õpetajaINS(te);INS(te);
+siirup;siirupilt;siirupINS(ilt);INS(ilt);
+tapma;ei ole tapnudp;INS(ei ole )taINS(pnud)pDEL(ma);INS(ei ole ),INS(pnud);DEL(ma)
+ujuma;oli ujunud;INS(oli )ujuDEL(ma)INS(nud);INS(oli ),INS(nud);DEL(ma)
+vaatama;oleksite vaadanud;INS(oleksite )vaaDEL(tam)INS(d)aINS(nud);INS(oleksite ),INS(d),INS(nud);DEL(tam)
+hüüdma;olgu hüüdnud;INS(olgu )hüüINS(dnu)dDEL(ma);INS(olgu ),INS(dnu);DEL(ma)
+lükkama;lükkate;lükkDEL(am)aINS(te);INS(te);DEL(am)
+oktoober;oktoobrini;oktoobDEL(e)rINS(ini);INS(ini);DEL(e)
+ostma;osta;ostDEL(m)a;;DEL(m)
+eitama;eitav;eitDEL(am)aINS(v);INS(v);DEL(am)
+fallos;falloseta;fallosINS(eta);INS(eta);
+loendama;ei loendavat;INS(ei )loendaDEL(m)INS(v)aINS(t);INS(ei ),INS(v),INS(t);DEL(m)
+alam;alamatesse;alamINS(atesse);INS(atesse);
+kaelakee;kaelakeedes;kaelakeeINS(des);INS(des);
+riietumine;riietumises;riietumiDEL(n)INS(s)eINS(s);INS(s),INS(s);DEL(n)
+õpetamine;õpetamise;õpetamiDEL(n)INS(s)e;INS(s);DEL(n)
+algama;ärgem alakem;INS(ärgem )alDEL(g)aINS(ke)mDEL(a);INS(ärgem ),INS(ke);DEL(g),DEL(a)
+kaltsium;kaltsiumid;kaltsiumINS(id);INS(id);
+hõlmkuu;hõlmkuuks;hõlmkuuINS(ks);INS(ks);
+põlema;põlen;põleDEL(ma)INS(n);INS(n);DEL(ma)
+sõitma;oleksime sõitnud;INS(oleksime )sõitDEL(ma)INS(nud);INS(oleksime ),INS(nud);DEL(ma)
+nussima;ei olnud nussitudp;INS(ei olnud )nussiDEL(ma)INS(tudp);INS(ei olnud ),INS(tudp);DEL(ma)
+optik;optiku;optikINS(u);INS(u);
+hõbe;hõbedasse;hõbINS(edass)e;INS(edass);
+sõda;sõdadega;sõdINS(adeg)a;INS(adeg);
+ründama;olevat rünnatud;INS(olevat )rünINS(natu)dDEL(ama);INS(olevat ),INS(natu);DEL(ama)
+näitlejatar;näitlejatarilt;näitlejatarINS(ilt);INS(ilt);
+reisima;ei reisi;INS(ei )reisiDEL(ma);INS(ei );DEL(ma)
+nädal;nädalal;nädINS(al)al;INS(al);
+höövel;höövlitelt;höövINS(lit)elINS(t);INS(lit),INS(t);
+lavastama;lavastavad;lavastaDEL(m)INS(v)aINS(d);INS(v),INS(d);DEL(m)
+mõla;mõla;mõla;;
+muutus;muutustesse;muutusINS(tesse);INS(tesse);
+paber;paberil;paberINS(il);INS(il);
+häirima;ei ole häirinudp;INS(ei ole )häiriDEL(ma)INS(nudp);INS(ei ole ),INS(nudp);DEL(ma)
+isadus;isadused;isadusINS(ed);INS(ed);
+imetama;on imetanud;INS(on )imetDEL(am)aINS(nud);INS(on ),INS(nud);DEL(am)
+ollus;olluseni;ollusINS(eni);INS(eni);
+öökima;öögitavat;ööDEL(kim)INS(gitav)aINS(t);INS(gitav),INS(t);DEL(kim)
+sahkluu;sahkluudeks;sahkluuINS(deks);INS(deks);
+tegema;tehakse;teDEL(g)INS(haks)eDEL(ma);INS(haks);DEL(g),DEL(ma)
+pisar;pisara;pisarINS(a);INS(a);
+ründama;ründasime;ründaINS(si)mDEL(a)INS(e);INS(si),INS(e);DEL(a)
+helmekuu;helmekuus;helmekuuINS(s);INS(s);
+saabuma;saabute;saabuDEL(ma)INS(te);INS(te);DEL(ma)
+jumalus;jumaluselt;jumalusINS(elt);INS(elt);
+jõulukuu;jõulukuult;jõulukuuINS(lt);INS(lt);
+oda;odades;odaINS(des);INS(des);
+soekuu;soekuuna;soekuuINS(na);INS(na);
+arutelu;aruteludel;aruteluINS(del);INS(del);
+tegema;tegema;tegema;;
+hööveldama;oleksite hööveldanud;INS(oleksite )hööveldDEL(am)aINS(nud);INS(oleksite ),INS(nud);DEL(am)
+jäätama;ei jäätatavat;INS(ei )jäätaDEL(m)INS(tav)aINS(t);INS(ei ),INS(tav),INS(t);DEL(m)
+andma;andma;andma;;
+kanarbikukuu;kanarbikukuus;kanarbikukuuINS(s);INS(s);
+õunapuu;õunapuude;õunapuuINS(de);INS(de);
+kurat;kuraditeta;kuraINS(dite)tINS(a);INS(dite),INS(a);
+vaidlema;olevat vaielnud;INS(olevat )vaiINS(elnu)dDEL(lema);INS(olevat ),INS(elnu);DEL(lema)
+ravim;ravimitena;ravimINS(itena);INS(itena);
+nülgima;oleksite nülginud;INS(oleksite )nülgiDEL(ma)INS(nud);INS(oleksite ),INS(nud);DEL(ma)
+põletama;ärgu olgu põletanud;INS(ärgu olgu )põletDEL(am)aINS(nud);INS(ärgu olgu ),INS(nud);DEL(am)
+lehis;lehisena;lehisINS(ena);INS(ena);
+vasar;vasarasse;vasarINS(asse);INS(asse);
+lendama;lennatakse;lenDEL(dam)INS(n)aINS(takse);INS(n),INS(takse);DEL(dam)
+jõulukuu;jõulukuud;jõulukuuINS(d);INS(d);
+helistama;olgu helistanud;INS(olgu )helistDEL(am)aINS(nud);INS(olgu ),INS(nud);DEL(am)
+sõdur;sõdurite;sõdurINS(ite);INS(ite);
+itsitama;ärgu itsitagu;INS(ärgu )itsitDEL(am)aINS(gu);INS(ärgu ),INS(gu);DEL(am)
+suitsetama;suitsetavad;suitsetaDEL(m)INS(v)aINS(d);INS(v),INS(d);DEL(m)
+saabuma;ei saabutavat;INS(ei )saabuDEL(m)INS(tav)aINS(t);INS(ei ),INS(tav),INS(t);DEL(m)
+süstal;süstaldeks;süstalINS(deks);INS(deks);
+tundma;ei ole tundnudp;INS(ei ole )tundDEL(ma)INS(nudp);INS(ei ole ),INS(nudp);DEL(ma)
+tapma;ei tapetud;INS(ei )tapDEL(ma)INS(etud);INS(ei ),INS(etud);DEL(ma)
+hukkama;ei hukata;INS(ei )huDEL(k)kaDEL(m)INS(t)a;INS(ei ),INS(t);DEL(k),DEL(m)
+polüester;polüestriteks;polüestDEL(e)rINS(iteks);INS(iteks);DEL(e)
+varastama;ei varastata;INS(ei )varastaDEL(m)INS(t)a;INS(ei ),INS(t);DEL(m)
+koperniitsium;koperniitsiumil;koperniitsiumINS(il);INS(il);
+kallistama;kallistav;kallistDEL(am)aINS(v);INS(v);DEL(am)
+jääma;oleksid jäänud;INS(oleksid )jääDEL(ma)INS(nud);INS(oleksid ),INS(nud);DEL(ma)
+üterbium;üterbiumis;üterbiumINS(is);INS(is);
+liibuma;liibud;liibuDEL(ma)INS(d);INS(d);DEL(ma)
+otsetabamus;otsetabamuseta;otsetabamusINS(eta);INS(eta);
+einsteinium;einsteiniumdeta;einsteiniumINS(deta);INS(deta);
+papagoi;papagoiks;papagoiINS(ks);INS(ks);
+häirima;häirisid;häiriDEL(ma)INS(sid);INS(sid);DEL(ma)
+nokkima;nokkisid;nokkiDEL(ma)INS(sid);INS(sid);DEL(ma)
+kuldmedal;kuldmedalini;kuldmedalINS(ini);INS(ini);
+pilu;piludeks;piluINS(deks);INS(deks);
+puu;puuta;puuINS(ta);INS(ta);
+viitsima;olgu viitsinud;INS(olgu )viitsiDEL(ma)INS(nud);INS(olgu ),INS(nud);DEL(ma)
+kobar;kobarateks;kobarINS(ateks);INS(ateks);
+alkohol;alkoholilt;alkoholINS(ilt);INS(ilt);
+aste;aste;aste;;
+võtma;võtaksin;võtDEL(m)aINS(ksin);INS(ksin);DEL(m)
+sünnitama;sünnitame;sünnitamDEL(a)INS(e);INS(e);DEL(a)
+suitsetama;ei suitsetavat;INS(ei )suitsetaDEL(m)INS(v)aINS(t);INS(ei ),INS(v),INS(t);DEL(m)
+teadma;teadku;teadDEL(ma)INS(ku);INS(ku);DEL(ma)
+põlema;põletaks;põleDEL(m)INS(t)aINS(ks);INS(t),INS(ks);DEL(m)
+hõlmkuu;hõlmkuid;hõlmkDEL(u)uINS(id);INS(id);DEL(u)
+tahtma;olid tahtnud;INS(olid )tahtDEL(ma)INS(nud);INS(olid ),INS(nud);DEL(ma)
+tähendama;tähendataks;tähendaDEL(m)INS(t)aINS(ks);INS(t),INS(ks);DEL(m)
+kooljakuu;kooljakuusse;kooljakuuINS(sse);INS(sse);
+õpetaja;õpetajatena;õpetajINS(aten)a;INS(aten);
+aitama;oleksin aidanud;INS(oleksin )aiDEL(tam)INS(d)aINS(nud);INS(oleksin ),INS(d),INS(nud);DEL(tam)
+tähendama;ei tähendata;INS(ei )tähendaDEL(m)INS(t)a;INS(ei ),INS(t);DEL(m)
+sakslane;sakslased;sakslaDEL(n)INS(s)eINS(d);INS(s),INS(d);DEL(n)
+kopikas;kopikatesse;kopikaINS(tes)sINS(e);INS(tes),INS(e);
+naerma;naervat;naerDEL(m)INS(v)aINS(t);INS(v),INS(t);DEL(m)
+vabastama;vabastatud;vabastDEL(am)aINS(tud);INS(tud);DEL(am)
+keiser;keisrist;keisDEL(e)rINS(ist);INS(ist);DEL(e)
+saatma;saadeti;saaINS(de)tDEL(ma)INS(i);INS(de),INS(i);DEL(ma)
+kadakasakslane;kadakasakslastest;kadakasakslaDEL(n)INS(st)eINS(st);INS(st),INS(st);DEL(n)
+langema;olgu langenud;INS(olgu )langeDEL(ma)INS(nud);INS(olgu ),INS(nud);DEL(ma)
+katus;katusele;katusINS(ele);INS(ele);
+kopikas;kopikani;kopikaDEL(s)INS(ni);INS(ni);DEL(s)
+looma;lõid;lDEL(ooma)INS(õid);INS(õid);DEL(ooma)
+tulema;tuleme;tulemDEL(a)INS(e);INS(e);DEL(a)
+suitsetama;suitsetasin;suitsetDEL(am)aINS(sin);INS(sin);DEL(am)
+nussima;nussite;nussiDEL(ma)INS(te);INS(te);DEL(ma)
+orkester;orkestritesse;orkestINS(ritess)eDEL(r);INS(ritess);DEL(r)
+tapma;tapeti;tapDEL(ma)INS(eti);INS(eti);DEL(ma)
+kohtama;oleks kohatud;INS(oleks )kohDEL(tam)aINS(tud);INS(oleks ),INS(tud);DEL(tam)
+õpetaja;õpetajateni;õpetajaINS(teni);INS(teni);
+aabe;aabetestaapeist;aabeINS(testaapeist);INS(testaapeist);
+paluma;palume;palumDEL(a)INS(e);INS(e);DEL(a)
+ameriitsium;ameriitsiumi;ameriitsiumINS(i);INS(i);
+kerjama;on kerjanud;INS(on )kerjDEL(am)aINS(nud);INS(on ),INS(nud);DEL(am)
+langev;langevaid;langevINS(aid);INS(aid);
+hirmuma;olgu hirmunud;INS(olgu )hirmuDEL(ma)INS(nud);INS(olgu ),INS(nud);DEL(ma)
+võitma;võidaksid;võiDEL(tm)INS(d)aINS(ksid);INS(d),INS(ksid);DEL(tm)
+kirik;kirikuid;kirikINS(uid);INS(uid);
+niisutama;oleksime niisutanud;INS(oleksime )niisutDEL(am)aINS(nud);INS(oleksime ),INS(nud);DEL(am)
+kerjama;kerjatagu;kerjaDEL(m)INS(t)aINS(gu);INS(t),INS(gu);DEL(m)
+kuurium;kuuriume;kuuriumINS(e);INS(e);
+tõlkima;tõlkisite;tõlkiDEL(ma)INS(site);INS(site);DEL(ma)
+narkar;narkarites;narkarINS(ites);INS(ites);
+teietama;on teietanud;INS(on )teietDEL(am)aINS(nud);INS(on ),INS(nud);DEL(am)
+jalanõu;jalanõule;jalanõuINS(le);INS(le);
+kohin;kohinatena;kohinINS(atena);INS(atena);
+masturbeerimine;masturbeerimised;masturbeerimiDEL(n)INS(s)eINS(d);INS(s),INS(d);DEL(n)
+õppima;õpitagu;õDEL(p)piDEL(m)INS(t)aINS(gu);INS(t),INS(gu);DEL(p),DEL(m)
+omandama;omandav;omandDEL(am)aINS(v);INS(v);DEL(am)
+ootama;ei olnud oodatudp;INS(ei olnud )ooDEL(tam)INS(d)aINS(tudp);INS(ei olnud ),INS(d),INS(tudp);DEL(tam)
+jõuluöö;jõuluöösse;jõuluööINS(sse);INS(sse);
+siduma;seome;sDEL(iduma)INS(eome);INS(eome);DEL(iduma)
+sipelgas;sipelgateni;sipelgaDEL(s)INS(teni);INS(teni);DEL(s)
+käsitlema;on käsitlenud;INS(on )käsitleDEL(ma)INS(nud);INS(on ),INS(nud);DEL(ma)
+oletama;oleks oletatud;INS(oleks )oletDEL(am)aINS(tud);INS(oleks ),INS(tud);DEL(am)
+ilu;ilul;iluINS(l);INS(l);
+soovima;ärgu soovigu;INS(ärgu )sooviDEL(ma)INS(gu);INS(ärgu ),INS(gu);DEL(ma)
+läbistama;läbistatavat;läbistaDEL(m)INS(tav)aINS(t);INS(tav),INS(t);DEL(m)
+õppima;ärgu õppigu;INS(ärgu )õppiDEL(ma)INS(gu);INS(ärgu ),INS(gu);DEL(ma)
+tundma;tunneksid;tunINS(neksi)dDEL(ma);INS(neksi);DEL(ma)
+sadam;sadamatega;sadamINS(atega);INS(atega);
+moslem;moslemilt;moslemINS(ilt);INS(ilt);
+kastan;kastanid;kastanINS(id);INS(id);
+ajama;ajatagu;ajaDEL(m)INS(t)aINS(gu);INS(t),INS(gu);DEL(m)
+nädal;nädal;nädal;;
+algama;oleksid alanud;INS(oleksid )alDEL(gam)aINS(nud);INS(oleksid ),INS(nud);DEL(gam)
+veski;veski;veski;;
+hööveldama;ei olnud hööveldanudp;INS(ei olnud )hööveldDEL(am)aINS(nudp);INS(ei olnud ),INS(nudp);DEL(am)
+nikkuma;nikud;niDEL(k)kuDEL(ma)INS(d);INS(d);DEL(k),DEL(ma)
+käsitlema;käsitleti;käsitleDEL(ma)INS(ti);INS(ti);DEL(ma)
+kanarbikukuu;kanarbikukuud;kanarbikukuuINS(d);INS(d);
+sittuma;ärgu sittugu;INS(ärgu )sittINS(ug)uDEL(ma);INS(ärgu ),INS(ug);DEL(ma)
+närima;ei ole näritudp;INS(ei ole )näriDEL(ma)INS(tudp);INS(ei ole ),INS(tudp);DEL(ma)
+põrgu;põrgutel;põrguINS(tel);INS(tel);
+maasikas;maasikateks;maasikaINS(tek)s;INS(tek);
+tõlkima;oleksid tõlkinud;INS(oleksid )tõlkiDEL(ma)INS(nud);INS(oleksid ),INS(nud);DEL(ma)
+surema;sureksid;sureDEL(ma)INS(ksid);INS(ksid);DEL(ma)
+vabastama;ei oleks vabastatudp;INS(ei oleks )vabastDEL(am)aINS(tudp);INS(ei oleks ),INS(tudp);DEL(am)
+elavhõbe;elavhõbedatena;elavhõbeINS(datena);INS(datena);
+põletama;ei põletatud;INS(ei )põletDEL(am)aINS(tud);INS(ei ),INS(tud);DEL(am)
+raamat;raamatuta;raamatINS(uta);INS(uta);
+protsessor;protsessorini;protsessorINS(ini);INS(ini);
+pubi;pubi;pubi;;
+toorium;tooriumi;tooriumINS(i);INS(i);
+pürgima;pürgib;pürgiDEL(ma)INS(b);INS(b);DEL(ma)
+muutma;ärgu muutku;INS(ärgu )muutDEL(ma)INS(ku);INS(ärgu ),INS(ku);DEL(ma)
+vöö;vöödeksvöiks;vööINS(deksvöiks);INS(deksvöiks);
+otsima;ärgu olgu otsitud;INS(ärgu olgu )otsiDEL(ma)INS(tud);INS(ärgu olgu ),INS(tud);DEL(ma)
+vibutama;vibutatavat;vibutaDEL(m)INS(tav)aINS(t);INS(tav),INS(t);DEL(m)
+keppima;olete keppinud;INS(olete )keppiDEL(ma)INS(nud);INS(olete ),INS(nud);DEL(ma)
+einsteinium;einsteiniumilt;einsteiniumINS(ilt);INS(ilt);
+protaktiinium;protaktiiniumdest;protaktiiniumINS(dest);INS(dest);
+keraamik;keraamikuks;keraamikINS(uks);INS(uks);
+avama;avat;avDEL(am)aINS(t);INS(t);DEL(am)
+alalütlev;alalütlevatesse;alalütlevINS(atesse);INS(atesse);
+rootslane;rootslased;rootslaDEL(n)INS(s)eINS(d);INS(s),INS(d);DEL(n)
+rääkima;räägiksite;rääINS(gi)kINS(s)iDEL(ma)INS(te);INS(gi),INS(s),INS(te);DEL(ma)
+kaelkirjak;kaelkirjakud;kaelkirjakINS(ud);INS(ud);
+tuumor;tuumorita;tuumorINS(ita);INS(ita);
+tarkvara;tarkvaradesse;tarkvaraINS(desse);INS(desse);
+kapital;kapitalis;kapitalINS(is);INS(is);
+pärak;pärakute;pärakINS(ute);INS(ute);
+õnnetu;õnnetuteks;õnnetuINS(teks);INS(teks);
+läbistama;oleksid läbistanud;INS(oleksid )läbistDEL(am)aINS(nud);INS(oleksid ),INS(nud);DEL(am)
+surema;surdagu;surDEL(em)INS(d)aINS(gu);INS(d),INS(gu);DEL(em)
+nikkuma;on nikkunud;INS(on )nikkuDEL(ma)INS(nud);INS(on ),INS(nud);DEL(ma)
+järjehoidja;järjehoidjaga;järjehoidjINS(ag)a;INS(ag);
+mõistma;mõisteti;mõistDEL(ma)INS(eti);INS(eti);DEL(ma)
+ankur;ankruid;ankDEL(u)rINS(uid);INS(uid);DEL(u)
+kajakas;kajakani;kajakaDEL(s)INS(ni);INS(ni);DEL(s)
+panema;ei pandud;INS(ei )panDEL(ema)INS(dud);INS(ei ),INS(dud);DEL(ema)
+katma;olgu katetud;INS(olgu )katDEL(ma)INS(etud);INS(olgu ),INS(etud);DEL(ma)
+lendama;oleksin lennanud;INS(oleksin )lenINS(nanu)dDEL(ama);INS(oleksin ),INS(nanu);DEL(ama)
+keerama;oli keeranud;INS(oli )keerDEL(am)aINS(nud);INS(oli ),INS(nud);DEL(am)
+kustutama;ärgu kustutagu;INS(ärgu )kustutDEL(am)aINS(gu);INS(ärgu ),INS(gu);DEL(am)
+kaevama;kaevaksite;kaevDEL(am)aINS(ksite);INS(ksite);DEL(am)
+käsi;käteskäsis;INS(kätes)käsiINS(s);INS(kätes),INS(s);
+eesel;eeslina;eesDEL(e)lINS(ina);INS(ina);DEL(e)
+ununoktium;ununoktiumi;ununoktiumINS(i);INS(i);
+diivan;diivaniks;diivanINS(iks);INS(iks);
+kange;kangeid;kangeINS(id);INS(id);
+andma;ära anna;INS(ära )anDEL(dm)INS(n)a;INS(ära ),INS(n);DEL(dm)
+olev;olevana;olevINS(ana);INS(ana);
+jääpurikas;jääpurikatel;jääpurikaDEL(s)INS(tel);INS(tel);DEL(s)
+keefir;keefirisse;keefirINS(isse);INS(isse);
+näitlejatar;näitlejatari;näitlejatarINS(i);INS(i);
+kaelakee;kaelakeid;kaelakDEL(e)eINS(id);INS(id);DEL(e)
+arvuti;arvutitel;arvutiINS(tel);INS(tel);
+sudenkuu;sudenkuudest;sudenkuuINS(dest);INS(dest);
+ettur;etturilt;etturINS(ilt);INS(ilt);
+sinatama;sinatab;sinatDEL(am)aINS(b);INS(b);DEL(am)
+kahvel;kahvliks;kahvDEL(e)lINS(iks);INS(iks);DEL(e)
+koristama;ärgu koristatagu;INS(ärgu )koristaDEL(m)INS(t)aINS(gu);INS(ärgu ),INS(t),INS(gu);DEL(m)
+küsima;ärgu küsigu;INS(ärgu )küsiDEL(ma)INS(gu);INS(ärgu ),INS(gu);DEL(ma)
+purema;puresid;pureDEL(ma)INS(sid);INS(sid);DEL(ma)
+avama;olgu avatud;INS(olgu )avDEL(am)aINS(tud);INS(olgu ),INS(tud);DEL(am)
+aiamaa;aiamaani;aiamaaINS(ni);INS(ni);
+tanner;tandrile;taDEL(n)nINS(dril)eDEL(r);INS(dril);DEL(n),DEL(r)
+tegema;olite teinud;INS(oli)teDEL(gema)INS( teinud);INS(oli),INS( teinud);DEL(gema)
+algaja;algajatega;algajINS(ateg)a;INS(ateg);
+männik;männikule;männikINS(ule);INS(ule);
+rula;rulale;rulaINS(le);INS(le);
+sinine;sinistena;siniINS(ste)nDEL(e)INS(a);INS(ste),INS(a);DEL(e)
+sigar;sigarites;sigarINS(ites);INS(ites);
+riidekoi;riidekoide;riidekoiINS(de);INS(de);
+püüdma;oli püüetud;INS(oli )püüINS(etu)dDEL(ma);INS(oli ),INS(etu);DEL(ma)
+diameeter;diameetritesse;diameetINS(ritess)eDEL(r);INS(ritess);DEL(r)
+kaklema;kaklev;kakleDEL(ma)INS(v);INS(v);DEL(ma)
+sõitma;sõitsid;sõitDEL(ma)INS(sid);INS(sid);DEL(ma)
+ühendama;ühendasin;ühendDEL(am)aINS(sin);INS(sin);DEL(am)
+läbistama;läbistasid;läbistDEL(am)aINS(sid);INS(sid);DEL(am)
+rahaühik;rahaühikutes;rahaühikINS(utes);INS(utes);
+katma;oleksin katnud;INS(oleksin )katDEL(ma)INS(nud);INS(oleksin ),INS(nud);DEL(ma)
+mardikas;mardikatel;mardikaDEL(s)INS(tel);INS(tel);DEL(s)
+hoiduma;ärgu hoidugu;INS(ärgu )hoidINS(ug)uDEL(ma);INS(ärgu ),INS(ug);DEL(ma)
+pere;peredeta;pereINS(deta);INS(deta);
+omandama;oleme omandanud;INS(oleme )omandDEL(am)aINS(nud);INS(oleme ),INS(nud);DEL(am)
+diivan;diivanita;diivanINS(ita);INS(ita);
+paluma;on palunud;INS(on )paluDEL(ma)INS(nud);INS(on ),INS(nud);DEL(ma)
+vanker;vankri;vankDEL(e)rINS(i);INS(i);DEL(e)
+kallistama;ei olevat kallistatudp;INS(ei olevat )kallistDEL(am)aINS(tudp);INS(ei olevat ),INS(tudp);DEL(am)
+põldpüü;põldpüült;põldpüüINS(lt);INS(lt);
+kuulma;olevat kuuldud;INS(olevat )kuulDEL(ma)INS(dud);INS(olevat ),INS(dud);DEL(ma)
+intervjuu;intervjuul;intervjuuINS(l);INS(l);
+laulma;laulaksid;laulDEL(m)aINS(ksid);INS(ksid);DEL(m)
+nutma;nutaksin;nutDEL(m)aINS(ksin);INS(ksin);DEL(m)
+vihkama;ei vihatud;INS(ei )vihDEL(kam)aINS(tud);INS(ei ),INS(tud);DEL(kam)
+oda;odadega;odINS(adeg)a;INS(adeg);
+nussima;olid nussinud;INS(olid )nussiDEL(ma)INS(nud);INS(olid ),INS(nud);DEL(ma)
+minema;lähen;DEL(mi)INS(lähe)nDEL(ema);INS(lähe);DEL(mi),DEL(ema)
+jaatama;ära jaata;INS(ära )jaatDEL(am)a;INS(ära );DEL(am)
+kiirendama;kiirendatagu;kiirendaDEL(m)INS(t)aINS(gu);INS(t),INS(gu);DEL(m)
+polüester;polüestritega;polüestDEL(e)rINS(itega);INS(itega);DEL(e)
+kivi;kivina;kiviINS(na);INS(na);
+kahjum;kahjumist;kahjumINS(ist);INS(ist);
+võitja;võitjateks;võitjaINS(teks);INS(teks);
+raamatukoi;raamatukoiks;raamatukoiINS(ks);INS(ks);
+ütlev;ütlevaks;ütlevINS(aks);INS(aks);
+parameeter;parameetrile;parameetINS(ril)eDEL(r);INS(ril);DEL(r)
+kirjutama;kirjutagem;kirjutaINS(ge)mDEL(a);INS(ge);DEL(a)
+hüppama;ei hüpatavat;INS(ei )hüpDEL(pam)aINS(tavat);INS(ei ),INS(tavat);DEL(pam)
+tähendama;tähendasime;tähendaINS(si)mDEL(a)INS(e);INS(si),INS(e);DEL(a)
+ühendama;ühendate;ühendDEL(am)aINS(te);INS(te);DEL(am)
+vaikima;vaikib;vaikiDEL(ma)INS(b);INS(b);DEL(ma)
+suur;suureks;suurINS(eks);INS(eks);
+kalastama;ära kalasta;INS(ära )kalastDEL(am)a;INS(ära );DEL(am)
+pesema;peseme;pesemDEL(a)INS(e);INS(e);DEL(a)
+rutherfordium;rutherfordiumdele;rutherfordiumINS(dele);INS(dele);
+nutma;ei olnud nutnudp;INS(ei olnud )nutDEL(ma)INS(nudp);INS(ei olnud ),INS(nudp);DEL(ma)
+osastav;osastavat;osastavINS(at);INS(at);
+vars;varrega;varDEL(s)INS(rega);INS(rega);DEL(s)
+veski;veskidesse;veskiINS(desse);INS(desse);
+omandama;oleksite omandanud;INS(oleksite )omandDEL(am)aINS(nud);INS(oleksite ),INS(nud);DEL(am)
+gadoliinium;gadoliiniumdele;gadoliiniumINS(dele);INS(dele);
+lebama;ei lebatavat;INS(ei )lebaDEL(m)INS(tav)aINS(t);INS(ei ),INS(tav),INS(t);DEL(m)
+aaloe;aaloes;aaloeINS(s);INS(s);
+tõlkima;ei ole tõlgitudp;INS(ei ole )tõlDEL(kima)INS(gitudp);INS(ei ole ),INS(gitudp);DEL(kima)
+käituma;ei olnud käitunudp;INS(ei olnud )käituDEL(ma)INS(nudp);INS(ei olnud ),INS(nudp);DEL(ma)
+rüütel;rüütlil;rüütDEL(e)INS(li)l;INS(li);DEL(e)
+hakkama;ei ole hakanudp;INS(ei ole )hakDEL(kam)aINS(nudp);INS(ei ole ),INS(nudp);DEL(kam)
+hõivama;ärgu olgu hõivatud;INS(ärgu olgu )hõivDEL(am)aINS(tud);INS(ärgu olgu ),INS(tud);DEL(am)
+kaotama;ärgu olgu kaotanud;INS(ärgu olgu )kaotDEL(am)aINS(nud);INS(ärgu olgu ),INS(nud);DEL(am)
+männik;männikutest;männikINS(utest);INS(utest);
+fopaa;fopaadelt;fopaaINS(delt);INS(delt);
+poolakas;poolakatele;poolakaDEL(s)INS(tele);INS(tele);DEL(s)
+astuma;olgu astunud;INS(olgu )astuDEL(ma)INS(nud);INS(olgu ),INS(nud);DEL(ma)
+tellimus;tellimusse;tellimusINS(se);INS(se);
+hiir;hiirena;hiirINS(ena);INS(ena);
+ründama;olgu rünnanud;INS(olgu )rünINS(nanu)dDEL(ama);INS(olgu ),INS(nanu);DEL(ama)
+jääma;ei oleks jäädudp;INS(ei oleks )jääDEL(ma)INS(dudp);INS(ei oleks ),INS(dudp);DEL(ma)
+kartul;kartuliteta;kartulINS(iteta);INS(iteta);
+kooljakuu;kooljakuudeni;kooljakuuINS(deni);INS(deni);
+siirup;siirupitel;siirupINS(itel);INS(itel);
+tosin;tosinatest;tosinINS(atest);INS(atest);
+jäätis;jäätiste;jäätisINS(te);INS(te);
+hõlmkuu;hõlmkuuta;hõlmkuuINS(ta);INS(ta);
+olema;on oldud;INS(on )olDEL(ema)INS(dud);INS(on ),INS(dud);DEL(ema)
+helistama;ei olevat helistanudp;INS(ei olevat )helistDEL(am)aINS(nudp);INS(ei olevat ),INS(nudp);DEL(am)
+eine;einet;eineINS(t);INS(t);
+palataliseerima;olen palataliseerinud;INS(olen )palataliseeriDEL(ma)INS(nud);INS(olen ),INS(nud);DEL(ma)
+diisel;diisel;diisel;;
+tätoveerija;tätoveerijatel;tätoveerijaINS(tel);INS(tel);
+ruteenium;ruteeniumi;ruteeniumINS(i);INS(i);
+kobedus;kobedusena;kobedusINS(ena);INS(ena);
+oksendama;oksendasime;oksendaINS(si)mDEL(a)INS(e);INS(si),INS(e);DEL(a)
+lavastama;lavastasin;lavastDEL(am)aINS(sin);INS(sin);DEL(am)
+kaevama;kaevama;kaevama;;
+surmama;surmaku;surDEL(ma)maINS(ku);INS(ku);DEL(ma)
+purema;on purenud;INS(on )pureDEL(ma)INS(nud);INS(on ),INS(nud);DEL(ma)
+külastama;külastatavat;külastaDEL(m)INS(tav)aINS(t);INS(tav),INS(t);DEL(m)
+kõri;kõrita;kõriINS(ta);INS(ta);
+katkema;olin katkenud;INS(olin )katkeDEL(ma)INS(nud);INS(olin ),INS(nud);DEL(ma)
+rubiidium;rubiidiumile;rubiidiumINS(ile);INS(ile);
+vara;varadest;varaINS(dest);INS(dest);
+asuma;asusid;asuDEL(ma)INS(sid);INS(sid);DEL(ma)
+sööma;oleksite söönud;INS(oleksite )sööDEL(ma)INS(nud);INS(oleksite ),INS(nud);DEL(ma)
+hõbemedal;hõbemedaliga;hõbemedalINS(iga);INS(iga);
+müüja;müüjateta;müüjINS(atet)a;INS(atet);
+üritama;üritasite;üritDEL(am)aINS(site);INS(site);DEL(am)
+vaidlema;ärge vaielge;INS(ärge )vaiDEL(d)INS(e)lINS(g)eDEL(ma);INS(ärge ),INS(e),INS(g);DEL(d),DEL(ma)
+lahkuma;ära lahku;INS(ära )lahkuDEL(ma);INS(ära );DEL(ma)
+vaatama;vaadatakse;vaINS(ad)atDEL(am)aINS(kse);INS(ad),INS(kse);DEL(am)
+telefon;telefonde;telefonINS(de);INS(de);
+helistama;ei helista;INS(ei )helistDEL(am)a;INS(ei );DEL(am)
+õpetama;ei ole õpetatudp;INS(ei ole )õpetDEL(am)aINS(tudp);INS(ei ole ),INS(tudp);DEL(am)
+nägu;nägudeni;näguINS(deni);INS(deni);
+ukrainlane;ukrainlasteks;ukrainlaDEL(n)INS(st)eINS(ks);INS(st),INS(ks);DEL(n)
+korjama;oleksite korjanud;INS(oleksite )korjDEL(am)aINS(nud);INS(oleksite ),INS(nud);DEL(am)
+sibul;sibulatesse;sibulINS(atesse);INS(atesse);
+poolakas;poolakates;poolakaINS(te)s;INS(te);
+võitja;võitjatesse;võitjaINS(tesse);INS(tesse);
+lavastama;oleksin lavastanud;INS(oleksin )lavastDEL(am)aINS(nud);INS(oleksin ),INS(nud);DEL(am)
+apelsin;apelsindel;apelsinINS(del);INS(del);
+rikastuma;olete rikastunud;INS(olete )rikastuDEL(ma)INS(nud);INS(olete ),INS(nud);DEL(ma)
+orjus;orjuseta;orjusINS(eta);INS(eta);
+kobedus;kobedusi;kobedusINS(i);INS(i);
+roojama;olevat roojatud;INS(olevat )roojDEL(am)aINS(tud);INS(olevat ),INS(tud);DEL(am)
+asuma;olid asunud;INS(olid )asuDEL(ma)INS(nud);INS(olid ),INS(nud);DEL(ma)
+lebama;oleksime lebanud;INS(oleksime )lebDEL(am)aINS(nud);INS(oleksime ),INS(nud);DEL(am)
+teadma;olite teadnud;INS(olite )teaINS(dnu)dDEL(ma);INS(olite ),INS(dnu);DEL(ma)
+olema;olgem;olINS(g)emDEL(a);INS(g);DEL(a)
+peaminister;peaministrisse;peaministINS(riss)eDEL(r);INS(riss);DEL(r)
+artikkel;artiklina;artikDEL(ke)lINS(ina);INS(ina);DEL(ke)
+küülik;küülikuid;küülikINS(uid);INS(uid);
+doktor;doktorist;doktorINS(ist);INS(ist);
+sahkluu;sahkluus;sahkluuINS(s);INS(s);
+masturbeerimine;masturbeerimisel;masturbeerimiDEL(n)INS(s)eINS(l);INS(s),INS(l);DEL(n)
+õigus;õigusteni;õigusINS(teni);INS(teni);
+koristama;ärgu olgu koristanud;INS(ärgu olgu )koristDEL(am)aINS(nud);INS(ärgu olgu ),INS(nud);DEL(am)
+hoiatama;ärgu hoiatagu;INS(ärgu )hoiatDEL(am)aINS(gu);INS(ärgu ),INS(gu);DEL(am)
+moslem;moslemi;moslemINS(i);INS(i);
+keema;ei ole keenudp;INS(ei ole )keeDEL(ma)INS(nudp);INS(ei ole ),INS(nudp);DEL(ma)
+kanep;kanepiteni;kanepINS(iteni);INS(iteni);
+talu;taludena;taluINS(dena);INS(dena);
+kaltsium;kaltsiume;kaltsiumINS(e);INS(e);
+sirel;sirelit;sirelINS(it);INS(it);
+teadma;ei tea;INS(ei )teDEL(adm)a;INS(ei );DEL(adm)
+lehtpuu;lehtpuu;lehtpuu;;
+sööma;ärgu söögu;INS(ärgu )sööDEL(ma)INS(gu);INS(ärgu ),INS(gu);DEL(ma)
+rikastuma;rikastus;rikastuDEL(ma)INS(s);INS(s);DEL(ma)
+keema;keeksin;keeDEL(ma)INS(ksin);INS(ksin);DEL(ma)
+vaheldama;ärgu olgu vaheldanud;INS(ärgu olgu )vaheldDEL(am)aINS(nud);INS(ärgu olgu ),INS(nud);DEL(am)
+tapma;oled tapnud;INS(oled )tapDEL(ma)INS(nud);INS(oled ),INS(nud);DEL(ma)
+kaotama;ärgu olgu kaotanud;INS(ärgu olgu )kaotDEL(am)aINS(nud);INS(ärgu olgu ),INS(nud);DEL(am)
+ava;avadestavust;avaINS(destavust);INS(destavust);
+astuma;astutaks;astuDEL(m)INS(t)aINS(ks);INS(t),INS(ks);DEL(m)
+büroo;büroolt;bürooINS(lt);INS(lt);
+arutlema;arutlegem;arutlINS(eg)emDEL(a);INS(eg);DEL(a)
+heitma;heidetakse;heiINS(de)tDEL(m)aINS(kse);INS(de),INS(kse);DEL(m)
+armastama;olin armastanud;INS(olin )armastDEL(am)aINS(nud);INS(olin ),INS(nud);DEL(am)
+kaubandus;kaubandustena;kaubandusINS(tena);INS(tena);
+paber;paberites;paberINS(ites);INS(ites);
+osastav;osastavatesse;osastavINS(atesse);INS(atesse);
+tooma;ära too;INS(ära )tooDEL(ma);INS(ära );DEL(ma)
+kohtama;ära kohta;INS(ära )kohtDEL(am)a;INS(ära );DEL(am)
+märkima;märgib;märDEL(kima)INS(gib);INS(gib);DEL(kima)
+telefon;telefon;telefon;;
+klubi;klubiga;klubiINS(ga);INS(ga);
+peatama;oleksime peatanud;INS(oleksime )peatDEL(am)aINS(nud);INS(oleksime ),INS(nud);DEL(am)
+selgitama;olgu selgitatud;INS(olgu )selgitDEL(am)aINS(tud);INS(olgu ),INS(tud);DEL(am)
+teadma;tea;teDEL(adm)a;;DEL(adm)
+seestütlev;seestütlevalt;seestütlevINS(alt);INS(alt);
+katalüüsneutralisaator;katalüüsneutralisaatorina;katalüüsneutralisaatorINS(ina);INS(ina);
+kiilluu;kiilluult;kiilluuINS(lt);INS(lt);
+põletama;olgu põletanud;INS(olgu )põletDEL(am)aINS(nud);INS(olgu ),INS(nud);DEL(am)
+jäätis;jäätisteks;jäätiINS(stek)s;INS(stek);
+rutherfordium;rutherfordiumdeta;rutherfordiumINS(deta);INS(deta);
+ujuma;ujute;ujuDEL(ma)INS(te);INS(te);DEL(ma)
+tätoveerima;ei ole tätoveeritudp;INS(ei ole )tätoveeriDEL(ma)INS(tudp);INS(ei ole ),INS(tudp);DEL(ma)
+tegema;olevat teinud;INS(olevat )teDEL(gema)INS(inud);INS(olevat ),INS(inud);DEL(gema)
+oskama;oskavat;oskaDEL(m)INS(v)aINS(t);INS(v),INS(t);DEL(m)
+lavrentsium;lavrentsiumdele;lavrentsiumINS(dele);INS(dele);
+kadakasakslane;kadakasakslasi;kadakasakslaDEL(ne)INS(si);INS(si);DEL(ne)
+mesilane;mesilastes;mesilaDEL(n)INS(st)eINS(s);INS(st),INS(s);DEL(n)
+näitlejatar;näitlejatarina;näitlejatarINS(ina);INS(ina);
+elama;ei olnud elanudp;INS(ei olnud )elDEL(am)aINS(nudp);INS(ei olnud ),INS(nudp);DEL(am)
+jääma;jäädakse;jääDEL(m)INS(d)aINS(kse);INS(d),INS(kse);DEL(m)
+tolmuimeja;tolmuimejateks;tolmuimejaINS(teks);INS(teks);
+rästik;rästikuta;rästikINS(uta);INS(uta);
+viitsima;viitsiti;viitsINS(it)iDEL(ma);INS(it);DEL(ma)
+höövel;höövlitele;höövINS(lit)elINS(e);INS(lit),INS(e);
+vaher;vahtrateni;vahDEL(e)INS(t)rINS(ateni);INS(t),INS(ateni);DEL(e)
+siduma;sidusid;siduDEL(ma)INS(sid);INS(sid);DEL(ma)
+kee;keed;keeINS(d);INS(d);
+jääma;oleksime jäänud;INS(oleksime )jääDEL(ma)INS(nud);INS(oleksime ),INS(nud);DEL(ma)
+pronksmedal;pronksmedalid;pronksmedalINS(id);INS(id);
+näiline;näiline;näiline;;
+viitsima;ärgu olgu viitsinud;INS(ärgu olgu )viitsiDEL(ma)INS(nud);INS(ärgu olgu ),INS(nud);DEL(ma)
+aaker;aakriga;aakDEL(e)rINS(iga);INS(iga);DEL(e)
+purema;olgu purenud;INS(olgu )pureDEL(ma)INS(nud);INS(olgu ),INS(nud);DEL(ma)
+kaalium;kaaliumid;kaaliumINS(id);INS(id);
+süda;südameks;südaINS(meks);INS(meks);
+vasar;vasaraga;vasarINS(aga);INS(aga);
+hüppama;olevat hüpatud;INS(olevat )hüpDEL(pam)aINS(tud);INS(olevat ),INS(tud);DEL(pam)
+hõbemedal;hõbemedalid;hõbemedalINS(id);INS(id);
+helmekuu;helmekuud;helmekuuINS(d);INS(d);
+juuksur;juuksuritega;juuksurINS(itega);INS(itega);
+politsei;politsei;politsei;;
+vaheldama;vaheldati;vaheldDEL(am)aINS(ti);INS(ti);DEL(am)
+lebama;lebati;lebDEL(am)aINS(ti);INS(ti);DEL(am)
+seisma;seisime;seisINS(i)mDEL(a)INS(e);INS(i),INS(e);DEL(a)
+tuletis;tuletisi;tuletisINS(i);INS(i);
+hoidma;hoiaksin;hoiDEL(dm)aINS(ksin);INS(ksin);DEL(dm)
+ilu;ilude;iluINS(de);INS(de);
+kinaver;kinaverist;kinaverINS(ist);INS(ist);
+arvutama;ei ole arvutatudp;INS(ei ole )arvutDEL(am)aINS(tudp);INS(ei ole ),INS(tudp);DEL(am)
+ninaluu;ninaluuni;ninaluuINS(ni);INS(ni);
+kabe;kabedega;kabeINS(dega);INS(dega);
+pisar;pisaraga;pisarINS(aga);INS(aga);
+lööma;ärgu olgu löödud;INS(ärgu olgu )lööDEL(ma)INS(dud);INS(ärgu olgu ),INS(dud);DEL(ma)
+ämber;ämbrit;ämbDEL(e)rINS(it);INS(it);DEL(e)
+elama;elasid;elDEL(am)aINS(sid);INS(sid);DEL(am)
+peenis;peenisteks;peeniINS(stek)s;INS(stek);
+kinnitama;kinnitaksid;kinnitDEL(am)aINS(ksid);INS(ksid);DEL(am)
+fallos;fallostelt;fallosINS(telt);INS(telt);
+niisutama;ärgu olgu niisutatud;INS(ärgu olgu )niisutDEL(am)aINS(tud);INS(ärgu olgu ),INS(tud);DEL(am)
+leheneeger;leheneegrina;leheneegDEL(e)rINS(ina);INS(ina);DEL(e)
+paaritumine;paaritumisteta;paaritumiDEL(n)INS(st)eINS(ta);INS(st),INS(ta);DEL(n)
+pisaraluu;pisaraluude;pisaraluuINS(de);INS(de);
+uba;oad;DEL(ub)INS(o)aINS(d);INS(o),INS(d);DEL(ub)
+kiirendama;kiirendas;kiirendDEL(am)aINS(s);INS(s);DEL(am)
+vabastama;oleksid vabastanud;INS(oleksid )vabastDEL(am)aINS(nud);INS(oleksid ),INS(nud);DEL(am)
+põrand;põrandata;põrandINS(ata);INS(ata);
+muna;muna;muna;;
+sittuma;ei olevat sittunudp;INS(ei olevat )sittuDEL(ma)INS(nudp);INS(ei olevat ),INS(nudp);DEL(ma)
+vaidlema;olgu vaielnud;INS(olgu )vaiINS(elnu)dDEL(lema);INS(olgu ),INS(elnu);DEL(lema)
+saatma;olen saatnud;INS(olen )saatDEL(ma)INS(nud);INS(olen ),INS(nud);DEL(ma)
+võima;on võinud;INS(on )võiDEL(ma)INS(nud);INS(on ),INS(nud);DEL(ma)
+õigus;õigustest;õigusINS(test);INS(test);
+mobiiltelefon;mobiiltelefoni;mobiiltelefonINS(i);INS(i);
+kalastama;ärgem kalastagem;INS(ärgem )kalastaINS(ge)mDEL(a);INS(ärgem ),INS(ge);DEL(a)
+mitmus;mitmusest;mitmusINS(est);INS(est);
+summutama;ei olevat summutatudp;INS(ei olevat )summutDEL(am)aINS(tudp);INS(ei olevat ),INS(tudp);DEL(am)
+leheneeger;leheneegrile;leheneegINS(ril)eDEL(r);INS(ril);DEL(r)
+naatrium;naatriumist;naatriumINS(ist);INS(ist);
+üterbium;üterbiumdeta;üterbiumINS(deta);INS(deta);
+käima;käisid;käiDEL(ma)INS(sid);INS(sid);DEL(ma)
+vaba;vaba;vaba;;
+harjutama;harjutatavat;harjutaDEL(m)INS(tav)aINS(t);INS(tav),INS(t);DEL(m)
+lebama;lebas;lebDEL(am)aINS(s);INS(s);DEL(am)
+hommik;hommikule;hommikINS(ule);INS(ule);
+harjutus;harjutusele;harjutusINS(ele);INS(ele);
+naatrium;naatriume;naatriumINS(e);INS(e);
+sadama;sadagem;sadaINS(ge)mDEL(a);INS(ge);DEL(a)
+jõgi;jõgedega;jõgDEL(i)INS(edega);INS(edega);DEL(i)
+naasma;naasete;naasDEL(ma)INS(ete);INS(ete);DEL(ma)
+võrduma;olgu võrdunud;INS(olgu )võrduDEL(ma)INS(nud);INS(olgu ),INS(nud);DEL(ma)
+laulma;olid laulnud;INS(olid )laulDEL(ma)INS(nud);INS(olid ),INS(nud);DEL(ma)
+järgnema;olgu järgnetud;INS(olgu )järgneDEL(ma)INS(tud);INS(olgu ),INS(tud);DEL(ma)
+lihas;lihasteni;lihasINS(teni);INS(teni);
+iriidium;iriidiumi;iriidiumINS(i);INS(i);
+sõudma;ei sõuetud;INS(ei )sõINS(uet)udDEL(ma);INS(ei ),INS(uet);DEL(ma)
+spioneerima;spioneeriksite;spioneeriDEL(ma)INS(ksite);INS(ksite);DEL(ma)
+kiirendama;ärgu kiirendatagu;INS(ärgu )kiirendaDEL(m)INS(t)aINS(gu);INS(ärgu ),INS(t),INS(gu);DEL(m)
+kustutama;kustutasin;kustutDEL(am)aINS(sin);INS(sin);DEL(am)
+peenar;peenraks;peenDEL(a)rINS(aks);INS(aks);DEL(a)
+jaapanlane;jaapanlasest;jaapanlaDEL(n)INS(s)eINS(st);INS(s),INS(st);DEL(n)
+hoiduma;hoiduksite;hoiduDEL(ma)INS(ksite);INS(ksite);DEL(ma)
+sümptom;sümptomitele;sümptomINS(itele);INS(itele);
+hirmuma;hirmunud;hirmuDEL(ma)INS(nud);INS(nud);DEL(ma)
+elav;elavatele;elavINS(atele);INS(atele);
+tahtma;on tahtnud;INS(on )tahtDEL(ma)INS(nud);INS(on ),INS(nud);DEL(ma)
+kaaries;kaariesed;kaariesINS(ed);INS(ed);
+tehneetsium;tehneetsiumita;tehneetsiumINS(ita);INS(ita);
+kesa;kesadeni;kesaINS(deni);INS(deni);
+palataliseerima;palataliseerige;palataliseeriDEL(ma)INS(ge);INS(ge);DEL(ma)
+katalüüsneutralisaator;katalüüsneutralisaatorid;katalüüsneutralisaatorINS(id);INS(id);
+mägi;mägedeni;mägINS(eden)i;INS(eden);
+ester;estrile;estINS(ril)eDEL(r);INS(ril);DEL(r)
+tätoveerima;on tätoveeritud;INS(on )tätoveeriDEL(ma)INS(tud);INS(on ),INS(tud);DEL(ma)
+nimetav;nimetavateni;nimetavINS(ateni);INS(ateni);
+tütar;tütreta;tüINS(tre)taDEL(r);INS(tre);DEL(r)
+kalifornium;kaliforniumiga;kaliforniumINS(iga);INS(iga);
+katkema;katkesid;katkeDEL(ma)INS(sid);INS(sid);DEL(ma)
+seletama;seletataks;seletaDEL(m)INS(t)aINS(ks);INS(t),INS(ks);DEL(m)
+žürii;žüriiks;žüriiINS(ks);INS(ks);
+pubi;pubidelt;pubiINS(delt);INS(delt);
+vibutama;vibutasite;vibutDEL(am)aINS(site);INS(site);DEL(am)
+õpilane;õpilaseni;õpilaINS(se)nDEL(e)INS(i);INS(se),INS(i);DEL(e)
+tuletis;tuletise;tuletisINS(e);INS(e);
+euro;eurodes;euroINS(des);INS(des);
+palataliseerima;ei palataliseeri;INS(ei )palataliseeriDEL(ma);INS(ei );DEL(ma)
+üterbium;üterbiumi;üterbiumINS(i);INS(i);
+vangerdus;vangerdusest;vangerdusINS(est);INS(est);
+pürgima;oleksin pürginud;INS(oleksin )pürgiDEL(ma)INS(nud);INS(oleksin ),INS(nud);DEL(ma)
+magama;ärge magage;INS(ärge )magDEL(am)aINS(ge);INS(ärge ),INS(ge);DEL(am)
+september;septembriks;septembDEL(e)rINS(iks);INS(iks);DEL(e)
+kustutama;oli kustutanud;INS(oli )kustutDEL(am)aINS(nud);INS(oli ),INS(nud);DEL(am)
+höövel;höövlil;höövDEL(e)INS(li)l;INS(li);DEL(e)
+kääbus;kääbuseta;kääbusINS(eta);INS(eta);
+masturbeerima;masturbeeriksin;masturbeeriDEL(ma)INS(ksin);INS(ksin);DEL(ma)
+närima;närigu;näriDEL(ma)INS(gu);INS(gu);DEL(ma)
+mihklikuu;mihklikuudeta;mihklikuuINS(deta);INS(deta);
+arvutama;ära arvuta;INS(ära )arvutDEL(am)a;INS(ära );DEL(am)
+september;septembrisse;septembINS(riss)eDEL(r);INS(riss);DEL(r)
+hirmuma;hirmuksid;hirmuDEL(ma)INS(ksid);INS(ksid);DEL(ma)
+vangerdus;vangerduse;vangerdusINS(e);INS(e);
+ujuma;olite ujunud;INS(olite )ujuDEL(ma)INS(nud);INS(olite ),INS(nud);DEL(ma)
+nikkuma;nikutagu;niDEL(k)kuDEL(m)INS(t)aINS(gu);INS(t),INS(gu);DEL(k),DEL(m)
+panema;paneme;panemDEL(a)INS(e);INS(e);DEL(a)
+tähendama;olevat tähendatud;INS(olevat )tähendDEL(am)aINS(tud);INS(olevat ),INS(tud);DEL(am)
+toitma;toidaksime;toiDEL(tm)INS(d)aINS(ksime);INS(d),INS(ksime);DEL(tm)
+aaloe;aaloele;aaloINS(el)e;INS(el);
+ajama;ei ole ajanudp;INS(ei ole )ajDEL(am)aINS(nudp);INS(ei ole ),INS(nudp);DEL(am)
+kaotama;ei oleks kaotanudp;INS(ei oleks )kaotDEL(am)aINS(nudp);INS(ei oleks ),INS(nudp);DEL(am)
+mölder;möldrini;möldDEL(e)rINS(ini);INS(ini);DEL(e)
+mustikas;mustikat;mustikaDEL(s)INS(t);INS(t);DEL(s)
+iriidium;iriidiumdeks;iriidiumINS(deks);INS(deks);
+tundma;olgu tunnetud;INS(olgu )tunINS(netu)dDEL(ma);INS(olgu ),INS(netu);DEL(ma)
+suitsetama;ära suitseta;INS(ära )suitsetDEL(am)a;INS(ära );DEL(am)
+vihkama;vihaku;vihDEL(kam)aINS(ku);INS(ku);DEL(kam)
+öökima;öökigu;öökiDEL(ma)INS(gu);INS(gu);DEL(ma)
+seisma;oleksid seisnud;INS(oleksid )seisDEL(ma)INS(nud);INS(oleksid ),INS(nud);DEL(ma)
+kohtama;kohtasite;kohtDEL(am)aINS(site);INS(site);DEL(am)
+kasutama;kasutatavat;kasutaDEL(m)INS(tav)aINS(t);INS(tav),INS(t);DEL(m)
+tooma;ei toovat;INS(ei )tooDEL(m)INS(v)aINS(t);INS(ei ),INS(v),INS(t);DEL(m)
+kapten;kaptenites;kaptenINS(ites);INS(ites);
+kodanlane;kodanlasele;kodanlaDEL(n)INS(sel)e;INS(sel);DEL(n)
+partii;partiidelt;partiiINS(delt);INS(delt);
+sudenkuu;sudenkuule;sudenkuuINS(le);INS(le);
+itsitama;ärgu olgu itsitatud;INS(ärgu olgu )itsitDEL(am)aINS(tud);INS(ärgu olgu ),INS(tud);DEL(am)
+kinkima;olgu kinkinud;INS(olgu )kinkiDEL(ma)INS(nud);INS(olgu ),INS(nud);DEL(ma)
+kerjama;oleks kerjatud;INS(oleks )kerjDEL(am)aINS(tud);INS(oleks ),INS(tud);DEL(am)
+protaktiinium;protaktiiniumi;protaktiiniumINS(i);INS(i);
+nülgima;ei nülitud;INS(ei )nülDEL(g)iDEL(ma)INS(tud);INS(ei ),INS(tud);DEL(g),DEL(ma)
+higistama;higistavat;higistaDEL(m)INS(v)aINS(t);INS(v),INS(t);DEL(m)
+sõnavabadus;sõnavabaduse;sõnavabadusINS(e);INS(e);
+käsitlema;oleksite käsitlenud;INS(oleksite )käsitleDEL(ma)INS(nud);INS(oleksite ),INS(nud);DEL(ma)
+hõbemedal;hõbemedalilt;hõbemedalINS(ilt);INS(ilt);
+kaalium;kaalium;kaalium;;
+hüppama;hüppame;hüppamDEL(a)INS(e);INS(e);DEL(a)
+toorium;tooriumdena;tooriumINS(dena);INS(dena);
+imik;imikutest;imikINS(utest);INS(utest);
+tehneetsium;tehneetsiume;tehneetsiumINS(e);INS(e);
+haarama;haaravat;haaraDEL(m)INS(v)aINS(t);INS(v),INS(t);DEL(m)
+tõlkima;tõlgitaks;tõlINS(gita)kDEL(ima)INS(s);INS(gita),INS(s);DEL(ima)
+rajav;rajavata;rajavINS(ata);INS(ata);
+vaatama;ei olnud vaadatudp;INS(ei olnud )vaaDEL(tam)INS(d)aINS(tudp);INS(ei olnud ),INS(d),INS(tudp);DEL(tam)
+ravim;ravimina;ravimINS(ina);INS(ina);
+lavastama;lavastama;lavastama;;
+lendur;lenduritel;lendurINS(itel);INS(itel);
+peenar;peenrana;peeINS(nra)naDEL(r);INS(nra);DEL(r)
+habe;habemete;habINS(emet)e;INS(emet);
+embama;oleksid emmanud;INS(oleksid )emDEL(ba)maINS(nud);INS(oleksid ),INS(nud);DEL(ba)
+vaatama;ei oleks vaadatudp;INS(ei oleks )vaaDEL(tam)INS(d)aINS(tudp);INS(ei oleks ),INS(d),INS(tudp);DEL(tam)
+haarama;ära haara;INS(ära )haarDEL(am)a;INS(ära );DEL(am)
+saladus;saladused;saladusINS(ed);INS(ed);
+sõsar;sõsarast;sõsarINS(ast);INS(ast);
+püüdma;ei püüeta;INS(ei )püüDEL(dm)INS(et)a;INS(ei ),INS(et);DEL(dm)
+kastan;kastanitesse;kastanINS(itesse);INS(itesse);
+lintšima;ei lintši;INS(ei )lintšiDEL(ma);INS(ei );DEL(ma)
+nõukogu;nõukogust;nõukoguINS(st);INS(st);
+aara;aaradeks;aaraINS(deks);INS(deks);
+kasutama;oleksime kasutanud;INS(oleksime )kasutDEL(am)aINS(nud);INS(oleksime ),INS(nud);DEL(am)
+kuritöö;kuritööl;kuritööINS(l);INS(l);
+kesa;kessa;kesINS(s)a;INS(s);
+rüütel;rüütlis;rüütDEL(e)lINS(is);INS(is);DEL(e)
+vahvel;vahvlitelt;vahvINS(lit)elINS(t);INS(lit),INS(t);
+jõuluöö;jõuluööga;jõuluööINS(ga);INS(ga);
+algama;olen alanud;INS(olen )alDEL(gam)aINS(nud);INS(olen ),INS(nud);DEL(gam)
+õnnelik;õnnelikesse;õnnelikINS(esse);INS(esse);
+asuma;oleksin asunud;INS(oleksin )asuDEL(ma)INS(nud);INS(oleksin ),INS(nud);DEL(ma)
+lehtpuu;lehtpuule;lehtpuuINS(le);INS(le);
+ajama;ajasid;ajDEL(am)aINS(sid);INS(sid);DEL(am)
+looma;lõid;lDEL(ooma)INS(õid);INS(õid);DEL(ooma)
+magustama;magustataks;magustaDEL(m)INS(t)aINS(ks);INS(t),INS(ks);DEL(m)
+seksuaalpartner;seksuaalpartnerid;seksuaalpartnerINS(id);INS(id);
+ihu;ihude;ihuINS(de);INS(de);
+paber;paberiks;paberINS(iks);INS(iks);
+petma;oleksime petnud;INS(oleksime )petDEL(ma)INS(nud);INS(oleksime ),INS(nud);DEL(ma)
+kallistama;kallistasin;kallistDEL(am)aINS(sin);INS(sin);DEL(am)
+nussima;olgu nussinud;INS(olgu )nussiDEL(ma)INS(nud);INS(olgu ),INS(nud);DEL(ma)
+pesema;ärgem peskem;INS(ärgem )pesINS(k)emDEL(a);INS(ärgem ),INS(k);DEL(a)
+seesütlev;seesütlevad;seesütlevINS(ad);INS(ad);
+ükssarvik;ükssarvikud;ükssarvikINS(ud);INS(ud);
+öökima;olite öökinud;INS(olite )öökiDEL(ma)INS(nud);INS(olite ),INS(nud);DEL(ma)
+valetaja;valetajana;valetajINS(an)a;INS(an);
+nahkhiir;nahkhiires;nahkhiirINS(es);INS(es);
+vannituba;vannitoast;vannitDEL(ub)INS(o)aINS(st);INS(o),INS(st);DEL(ub)
+kaevur;kaevuriteks;kaevurINS(iteks);INS(iteks);
+hüvitama;ärgu olgu hüvitanud;INS(ärgu olgu )hüvitDEL(am)aINS(nud);INS(ärgu olgu ),INS(nud);DEL(am)
+hööveldama;hööveldasid;hööveldDEL(am)aINS(sid);INS(sid);DEL(am)
+mitmus;mitmuseks;mitmuINS(sek)s;INS(sek);
+avama;olete avanud;INS(olete )avDEL(am)aINS(nud);INS(olete ),INS(nud);DEL(am)
+jääkaru;jääkarudeta;jääkaruINS(deta);INS(deta);
+tahtma;ei taheta;INS(ei )tahINS(e)tDEL(m)a;INS(ei ),INS(e);DEL(m)
+haarama;ei haaratud;INS(ei )haarDEL(am)aINS(tud);INS(ei ),INS(tud);DEL(am)
+nutma;olgu nutnud;INS(olgu )nutDEL(ma)INS(nud);INS(olgu ),INS(nud);DEL(ma)
+minema;olgu läinud;DEL(m)INS(olgu lä)inDEL(ema)INS(ud);INS(olgu lä),INS(ud);DEL(m),DEL(ema)
+lööma;ei ole löödudp;INS(ei ole )lööDEL(ma)INS(dudp);INS(ei ole ),INS(dudp);DEL(ma)
+saama;olin saanud;INS(olin )saDEL(am)aINS(nud);INS(olin ),INS(nud);DEL(am)
+saatma;on saatnud;INS(on )saatDEL(ma)INS(nud);INS(on ),INS(nud);DEL(ma)
+ühendama;ei olevat ühendatudp;INS(ei olevat )ühendDEL(am)aINS(tudp);INS(ei olevat ),INS(tudp);DEL(am)
+küsima;küsiksid;küsiDEL(ma)INS(ksid);INS(ksid);DEL(ma)
+jalus;jalustele;jalusINS(tele);INS(tele);
+jumalus;jumalustega;jumalusINS(tega);INS(tega);
+nägema;näinud;näDEL(gema)INS(inud);INS(inud);DEL(gema)
+kuulutama;kuulutage;kuulutDEL(am)aINS(ge);INS(ge);DEL(am)
+peenendama;peenendate;peenendDEL(am)aINS(te);INS(te);DEL(am)
+sõudma;oleksid sõudnud;INS(oleksid )sõINS(udn)udDEL(ma);INS(oleksid ),INS(udn);DEL(ma)
+vesi;vetelevesile;INS(vetele)vesiINS(le);INS(vetele),INS(le);
+teadlane;teadlane;teadlane;;
+aitama;oled aidanud;INS(oled )aiDEL(tam)INS(d)aINS(nud);INS(oled ),INS(d),INS(nud);DEL(tam)
+jõgi;jõgedelt;jõgDEL(i)INS(edelt);INS(edelt);DEL(i)
+terbium;terbiumilt;terbiumINS(ilt);INS(ilt);
+düsproosium;düsproosiumdel;düsproosiumINS(del);INS(del);
+liblikas;liblikateks;liblikaINS(tek)s;INS(tek);
+õhtu;õhtuks;õhtuINS(ks);INS(ks);
+taimer;taimerite;taimerINS(ite);INS(ite);
+karu;karude;karuINS(de);INS(de);
+lendama;lendate;lendDEL(am)aINS(te);INS(te);DEL(am)
+käskima;ei olnud käsitudp;INS(ei olnud )käsDEL(k)iDEL(ma)INS(tudp);INS(ei olnud ),INS(tudp);DEL(k),DEL(ma)
+tõsi;tõed;tõDEL(si)INS(ed);INS(ed);DEL(si)
+üritama;ei ole üritatudp;INS(ei ole )üritDEL(am)aINS(tudp);INS(ei ole ),INS(tudp);DEL(am)
+ootama;ei oodataks;INS(ei )ooINS(da)tDEL(am)aINS(ks);INS(ei ),INS(da),INS(ks);DEL(am)
+mihklikuu;mihklikuu;mihklikuu;;
+harjama;harjake;harjDEL(am)aINS(ke);INS(ke);DEL(am)
+summutama;summutasite;summutDEL(am)aINS(site);INS(site);DEL(am)
+hakkama;oli hakanud;INS(oli )hakDEL(kam)aINS(nud);INS(oli ),INS(nud);DEL(kam)
+algama;ei oleks alanudp;INS(ei oleks )alDEL(gam)aINS(nudp);INS(ei oleks ),INS(nudp);DEL(gam)
+harjutus;harjutusteta;harjutusINS(teta);INS(teta);
+aatom;aatomisse;aatomINS(isse);INS(isse);
+sõudma;sõuetud;sõINS(uet)udDEL(ma);INS(uet);DEL(ma)
+ekvaator;ekvaatorist;ekvaatorINS(ist);INS(ist);
+helmekuu;helmekuu;helmekuu;;
+hoidja;hoidjasse;hoidjaINS(sse);INS(sse);
+rahvastikuteadus;rahvastikuteadusse;rahvastikuteadusINS(se);INS(se);
+protaktiinium;protaktiiniumid;protaktiiniumINS(id);INS(id);
+närima;närivad;näriDEL(m)INS(v)aINS(d);INS(v),INS(d);DEL(m)
+istuma;ei ole istunudp;INS(ei ole )istuDEL(ma)INS(nudp);INS(ei ole ),INS(nudp);DEL(ma)
+doktor;doktoreid;doktorINS(eid);INS(eid);
+lahkuma;olete lahkunud;INS(olete )lahkuDEL(ma)INS(nud);INS(olete ),INS(nud);DEL(ma)
+artikkel;artiklile;artikDEL(ke)lINS(ile);INS(ile);DEL(ke)
+selgitama;selgitama;selgitama;;
+ameeriklane;ameeriklasena;ameeriklaINS(se)nDEL(e)INS(a);INS(se),INS(a);DEL(e)
+trofee;trofee;trofee;;
+otsmikuluu;otsmikuluu;otsmikuluu;;
+kobistama;ei olnud kobistanudp;INS(ei olnud )kobistDEL(am)aINS(nudp);INS(ei olnud ),INS(nudp);DEL(am)
+päike;päikeselt;päikeINS(selt);INS(selt);
+süstal;süstaldes;süstalINS(des);INS(des);
+raadium;raadiumdesse;raadiumINS(desse);INS(desse);
+kiitma;ei kiidetud;INS(ei )kiiINS(de)tDEL(ma)INS(ud);INS(ei ),INS(de),INS(ud);DEL(ma)
+ostma;ei oleks ostetudp;INS(ei oleks )ostDEL(ma)INS(etudp);INS(ei oleks ),INS(etudp);DEL(ma)
+keema;keegu;keeDEL(ma)INS(gu);INS(gu);DEL(ma)
+tseesium;tseesiumid;tseesiumINS(id);INS(id);
+lebama;lebame;lebamDEL(a)INS(e);INS(e);DEL(a)
+peenis;peenistel;peenisINS(tel);INS(tel);
+keemik;keemikusse;keemikINS(usse);INS(usse);
+koristama;koristatavat;koristaDEL(m)INS(tav)aINS(t);INS(tav),INS(t);DEL(m)
+närima;närisid;näriDEL(ma)INS(sid);INS(sid);DEL(ma)
+olev;olevatel;olevINS(atel);INS(atel);
+käsi;käed;käDEL(si)INS(ed);INS(ed);DEL(si)
+hafnium;hafniumdena;hafniumINS(dena);INS(dena);
+suitsetama;olen suitsetanud;INS(olen )suitsetDEL(am)aINS(nud);INS(olen ),INS(nud);DEL(am)
+imetama;imetatakse;imetaDEL(m)INS(t)aINS(kse);INS(t),INS(kse);DEL(m)
+jaanuar;jaanuarina;jaanuarINS(ina);INS(ina);
+hommik;hommikuks;hommikINS(uks);INS(uks);
+masin;masinana;masinINS(ana);INS(ana);
+korjama;ärgem korjakem;INS(ärgem )korjaINS(ke)mDEL(a);INS(ärgem ),INS(ke);DEL(a)
+hoiduma;hoidunud;hoiduDEL(ma)INS(nud);INS(nud);DEL(ma)
+vaheldama;oleksime vaheldanud;INS(oleksime )vaheldDEL(am)aINS(nud);INS(oleksime ),INS(nud);DEL(am)
+kütma;ärgu kütku;INS(ärgu )kütDEL(ma)INS(ku);INS(ärgu ),INS(ku);DEL(ma)
+palataliseerima;palataliseerigem;palataliseeriINS(ge)mDEL(a);INS(ge);DEL(a)
+šaakal;šaakaliteks;šaakalINS(iteks);INS(iteks);
+kroonu;kroonudeta;kroonuINS(deta);INS(deta);
+orkester;orkestris;orkestDEL(e)rINS(is);INS(is);DEL(e)
+pappel;paplil;papDEL(pe)INS(li)l;INS(li);DEL(pe)
+suitsetama;ei suitseta;INS(ei )suitsetDEL(am)a;INS(ei );DEL(am)
+avama;avab;avDEL(am)aINS(b);INS(b);DEL(am)
+toitma;toidaksin;toiDEL(tm)INS(d)aINS(ksin);INS(d),INS(ksin);DEL(tm)
+käima;oled käinud;INS(oled )käiDEL(ma)INS(nud);INS(oled ),INS(nud);DEL(ma)
+sõudma;ärgu sõudku;INS(ärgu )sõudDEL(ma)INS(ku);INS(ärgu ),INS(ku);DEL(ma)
+sihitav;sihitav;sihitav;;
+soo;soos;sooINS(s);INS(s);
+tsirkoonium;tsirkooniumdeni;tsirkooniumINS(deni);INS(deni);
+ajama;ei olnud ajatudp;INS(ei olnud )ajDEL(am)aINS(tudp);INS(ei olnud ),INS(tudp);DEL(am)
+nussima;on nussinud;INS(on )nussiDEL(ma)INS(nud);INS(on ),INS(nud);DEL(ma)
+lõpetama;ära lõpeta;INS(ära )lõpetDEL(am)a;INS(ära );DEL(am)
+kaevama;kaevasime;kaevaINS(si)mDEL(a)INS(e);INS(si),INS(e);DEL(a)
+soo;soolt;sooINS(lt);INS(lt);
+süli;süledeta;sülDEL(i)INS(edeta);INS(edeta);DEL(i)
+alkohol;alkoholdega;alkoholINS(dega);INS(dega);
+jäätama;ärgu olgu jäätanud;INS(ärgu olgu )jäätDEL(am)aINS(nud);INS(ärgu olgu ),INS(nud);DEL(am)
+põletama;põletame;põletamDEL(a)INS(e);INS(e);DEL(a)
+sidrun;sidrunitena;sidrunINS(itena);INS(itena);
+kadakasakslane;kadakasakslaseks;kadakasakslaDEL(n)INS(s)eINS(ks);INS(s),INS(ks);DEL(n)
+soovima;on soovinud;INS(on )sooviDEL(ma)INS(nud);INS(on ),INS(nud);DEL(ma)
+võitma;võitvat;võitDEL(m)INS(v)aINS(t);INS(v),INS(t);DEL(m)
+tätoveerima;tätoveeriksime;tätoveerINS(iks)imDEL(a)INS(e);INS(iks),INS(e);DEL(a)
+austama;oled austanud;INS(oled )austDEL(am)aINS(nud);INS(oled ),INS(nud);DEL(am)
+surmama;oleksime surmanud;INS(oleksime )surDEL(ma)maINS(nud);INS(oleksime ),INS(nud);DEL(ma)
+toomingas;toomingaid;toomingaDEL(s)INS(id);INS(id);DEL(s)
+rukis;rukiste;rukisINS(te);INS(te);
+isa;isadeks;isaINS(deks);INS(deks);
+hõivama;ära hõiva;INS(ära )hõivDEL(am)a;INS(ära );DEL(am)
+ütrium;ütriumid;ütriumINS(id);INS(id);
+kasutama;ärgu olgu kasutanud;INS(ärgu olgu )kasutDEL(am)aINS(nud);INS(ärgu olgu ),INS(nud);DEL(am)
+spioneerima;spioneeriksime;spioneerINS(iks)imDEL(a)INS(e);INS(iks),INS(e);DEL(a)
+heinakuu;heinakuude;heinakuuINS(de);INS(de);
+kiirendama;kiirendaksin;kiirendDEL(am)aINS(ksin);INS(ksin);DEL(am)
+ümberlõikamine;ümberlõikamiseks;ümberlõikamiDEL(n)INS(s)eINS(ks);INS(s),INS(ks);DEL(n)
+järgnema;järgnete;järgnINS(et)eDEL(ma);INS(et);DEL(ma)
+kohin;kohinad;kohinINS(ad);INS(ad);
+ilmaütlev;ilmaütlevat;ilmaütlevINS(at);INS(at);
+kihutama;olgu kihutatud;INS(olgu )kihutDEL(am)aINS(tud);INS(olgu ),INS(tud);DEL(am)
+kinkima;kingiksin;kinINS(gi)kINS(s)iDEL(ma)INS(n);INS(gi),INS(s),INS(n);DEL(ma)
+roojama;roojaksin;roojDEL(am)aINS(ksin);INS(ksin);DEL(am)
+põlema;põlesite;põlINS(esit)eDEL(ma);INS(esit);DEL(ma)
+magama;magasid;magDEL(am)aINS(sid);INS(sid);DEL(am)
