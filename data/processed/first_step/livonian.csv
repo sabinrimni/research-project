@@ -1,0 +1,101 @@
+Source;Target;Combined;Inserts;Deletes
+kuolmtuoistõnz;kuolmtuoistõnd;kuolmtuoistõnDEL(z)INS(d);INS(d);DEL(z)
+seistuoistõnz;seistuoistõndt;seistuoistõnDEL(z)INS(dt);INS(dt);DEL(z)
+pȯis;pūošõdõks;pDEL(ȯi)INS(ūošõdõk)s;INS(ūošõdõk);DEL(ȯi)
+nūoŗim;nūoŗim;nūoŗim;;
+rōntõz;rōntiž;rōntDEL(õz)INS(iž);INS(iž);DEL(õz)
+lešknai;lešknai;lešknai;;
+kalā;kalāks;kalāINS(ks);INS(ks);
+analōg;analōgõd;analōgINS(õd);INS(õd);
+äbknaš;äbknašīs;äbknašINS(īs);INS(īs);
+īdtuoistõnz;īdtuoistõndõs;īdtuoistõnDEL(z)INS(dõs);INS(dõs);DEL(z)
+mīez;mīekõks;mīeDEL(z)INS(kõks);INS(kõks);DEL(z)
+ab;abbõ;abINS(bõ);INS(bõ);
+allitas;alīzõstassõs;alDEL(li)INS(īzõs)taINS(ssõ)s;INS(īzõs),INS(ssõ);DEL(li)
+līdõ;līmõt;līDEL(d)INS(m)õINS(t);INS(m),INS(t);DEL(d)
+āmbaz;āmbaz;āmbaz;;
+kȭļimkū;kȭļimkū;kȭļimkū;;
+pǟgiņlug;pǟgiņlug;pǟgiņlug;;
+tūlda;um tulmõst;INS(um tulmõs)tDEL(ūlda);INS(um tulmõs);DEL(ūlda)
+nūoŗmīez;nūoŗmīeztõ;nūoŗmīezINS(tõ);INS(tõ);
+läpš;lapstā;lDEL(äpš)INS(apstā);INS(apstā);DEL(äpš)
+kūlõ;äb kūl;INS(äb )kūlDEL(õ);INS(äb );DEL(õ)
+jellõ;jelāb;jelDEL(lõ)INS(āb);INS(āb);DEL(lõ)
+sȭira;sȭiradõn;sȭiraINS(dõn);INS(dõn);
+tint;tīntidi;tDEL(i)INS(ī)ntINS(idi);INS(ī),INS(idi);DEL(i)
+inesīv;inesīv;inesīv;;
+nǟdõ;algõd nǟgõd;INS(algõd )nǟINS(gõ)dDEL(õ);INS(algõd ),INS(gõ);DEL(õ)
+kōdõkstuoistõnz;kōdõkstuoistõndõn;kōdõkstuoistINS(õnd)õnDEL(z);INS(õnd);DEL(z)
+ab;abūdõn;abINS(ūdõn);INS(ūdõn);
+likkõ;likkõt;likkõINS(t);INS(t);
+inesīv;inesīvõ;inesīvINS(õ);INS(õ);
+vȱlda;vȯl!;vDEL(ȱlda)INS(ȯl!);INS(ȯl!);DEL(ȱlda)
+alīz;alīzt;alīzINS(t);INS(t);
+nūoŗmīez;nūoŗmīedkõks;nūoŗmīeDEL(z)INS(dkõks);INS(dkõks);DEL(z)
+kuolmõz;kuolmõndidi;kuolmõDEL(z)INS(ndidi);INS(ndidi);DEL(z)
+ab;abbõ;abINS(bõ);INS(bõ);
+kuolmi;kuolmizõs;kuolmiINS(zõs);INS(zõs);
+vȱlda;ūom;DEL(vȱlda)INS(ūom);INS(ūom);DEL(vȱlda)
+tas;tassõdõks;taINS(ssõdõk)s;INS(ssõdõk);
+nǟdõ;neizmõ;nDEL(ǟd)INS(eizm)õ;INS(eizm);DEL(ǟd)
+alīztas;alīztassõ;alīztasINS(sõ);INS(sõ);
+tūontõz;tūontõndõd;tūontõDEL(z)INS(ndõd);INS(ndõd);DEL(z)
+likkõ;um likkõmõst;INS(um )likkõINS(mõst);INS(um ),INS(mõst);
+ougust;ougustõdõks;ougustINS(õdõks);INS(õdõks);
+kūora;kūoran;kūoraINS(n);INS(n);
+seismõztuoistõnz;seismõztuoistõndis;seismõztuoistõnDEL(z)INS(dis);INS(dis);DEL(z)
+instrumentāl;instrumentāls;instrumentālINS(s);INS(s);
+pȯiški;pȯiškizõst;pȯiškiINS(zõst);INS(zõst);
+kȭļimkū;kȭļimkūdõn;kȭļimkūINS(dõn);INS(dõn);
+jellõ;izt jelāt;INS(izt )jelDEL(lõ)INS(āt);INS(izt ),INS(āt);DEL(lõ)
+analīz;analīzõst;analīzINS(õst);INS(õst);
+nūoŗpōŗ;nūoŗpōŗštõ;nūoŗpōŗINS(štõ);INS(štõ);
+tūlda;äb līm tunnõd;DEL(tū)INS(äb )lINS(īm tunnõ)dDEL(a);INS(äb ),INS(īm tunnõ);DEL(tū),DEL(a)
+partitīv;partitīvst;partitīvINS(st);INS(st);
+april;apriliž;aprilINS(iž);INS(iž);
+tuoi;tuoizõn;tuoiINS(zõn);INS(zõn);
+sukā;sukīs;sukDEL(ā)INS(īs);INS(īs);DEL(ā)
+tūontõz;tūontõndõs;tūontõDEL(z)INS(ndõs);INS(ndõs);DEL(z)
+sukā;sukāks;sukāINS(ks);INS(ks);
+vȱlda;at;DEL(vȱld)aINS(t);INS(t);DEL(vȱld)
+neļļõndpǟva;neļļõndpäuvḑi;neļļõndpDEL(ǟva)INS(äuvḑi);INS(äuvḑi);DEL(ǟva)
+kuod;kuodkõks;kuodINS(kõks);INS(kõks);
+ablatīv;ablatīv;ablatīv;;
+tidār;tidār;tidār;;
+kanā;kanās;kanāINS(s);INS(s);
+pānda;paņņid;pDEL(ānd)aINS(ņņid);INS(ņņid);DEL(ānd)
+tūlda;tuldõd;tDEL(ū)INS(u)lINS(dõ)dDEL(a);INS(u),INS(dõ);DEL(ū),DEL(a)
+ǟma;ǟmad;ǟmaINS(d);INS(d);
+jellõ;jelāks;jelDEL(lõ)INS(āks);INS(āks);DEL(lõ)
+jūnij;jūnijõn;jūnijINS(õn);INS(õn);
+ab;abstõ;abINS(stõ);INS(stõ);
+septembõr;septembõris;septembõrINS(is);INS(is);
+nūoŗim;nūoŗimõn;nūoŗimINS(õn);INS(õn);
+instrumentāl;instrumentāl;instrumentāl;;
+kōdõksmõz;kōdõksmõndist;kōdõksmõDEL(z)INS(ndist);INS(ndist);DEL(z)
+ikšlug;ikšluggõ;ikšlugINS(gõ);INS(gõ);
+novembõr;novembõrst;novembõrINS(st);INS(st);
+ežmi;ežmizt;ežmiINS(zt);INS(zt);
+kuod;kuodūd;kuoINS(dū)d;INS(dū);
+kīņtš;kīndtõ;kīDEL(ņtš)INS(ndtõ);INS(ndtõ);DEL(ņtš)
+kuolmkimdõz;kuolmkimdõz;kuolmkimdõz;;
+dattõd;dattõdõn;dattõdINS(õn);INS(õn);
+brēḑig;brēḑigõdõks;brēḑigINS(õdõks);INS(õdõks);
+kaffetas;kaffetassõdõks;kaffetaINS(ssõdõk)s;INS(ssõdõk);
+tūlda;äb tulks;INS(äb )tDEL(ūlda)INS(ulks);INS(äb ),INS(ulks);DEL(ūlda)
+novembõr;novembõrõ;novembõrINS(õ);INS(õ);
+vȱlda;vȯļd;vDEL(ȱl)INS(ȯļ)dDEL(a);INS(ȯļ);DEL(ȱl),DEL(a)
+kuolmi;kuolmižis;kuolmiINS(žis);INS(žis);
+alli;alīztõks;alDEL(li)INS(īztõks);INS(īztõks);DEL(li)
+vȱlda;alā vȯl!;DEL(vȱld)aINS(lā vȯl!);INS(lā vȯl!);DEL(vȱld)
+dattõd;dattist;datINS(tis)tDEL(õd);INS(tis);DEL(õd)
+vīmkū;vīmkūd;vīmkūINS(d);INS(d);
+allitas;alīztõntassõn;alDEL(li)INS(īztõn)tasINS(sõn);INS(īztõn),INS(sõn);DEL(li)
+tīemizsõnā;tīemizsõnān;tīemizsõnāINS(n);INS(n);
+kaffetas;kaffetassõks;kaffetaINS(ssõk)s;INS(ssõk);
+mǟdlõ;līt mǟdlõnd;INS(līt )mǟdlõINS(nd);INS(līt ),INS(nd);
+kaffe;kaffis;kaffDEL(e)INS(is);INS(is);DEL(e)
+pānda;līb pand;INS(līb )pDEL(ā)INS(a)ndDEL(a);INS(līb ),INS(a);DEL(ā),DEL(a)
+pānda;äb līmõ pannõd;INS(äb līmõ )pDEL(ānd)aINS(nnõd);INS(äb līmõ ),INS(nnõd);DEL(ānd)
+nǟdõ;izt nǟ;INS(izt )nǟDEL(dõ);INS(izt );DEL(dõ)
+lǟdõ;algõ läkkõ;INS(a)lDEL(ǟd)INS(gõ läkk)õ;INS(a),INS(gõ läkk);DEL(ǟd)
