@@ -110,14 +110,20 @@ def write_second_step(file, operations: List[Operations]):
     counted_inserts = group_inserts_by_characters_only(operations)
     counted_deletes = group_deletes_by_characters_only(operations)
     writer = csv.writer(file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-    writer.writerow(["String", "Operation type", "Occurences"])
+    writer.writerow(["String", "Operation type", "Occurrences"])
     for characters in counted_inserts:
         writer.writerow([characters, "INS", counted_inserts[characters]])
     for characters in counted_deletes:
         writer.writerow([characters, "DEL", counted_deletes[characters]])
 
 
-def process_data_file(file_name, perform_step_one=False, perform_step_two=False):
+def write_third_step(file, operations: List[Operations]):
+    for op in operations:
+        file.writelines([f"{ins.letters}\n" for ins in op.inserts])
+        file.writelines([f"{delete.letters}\n" for delete in op.deletes])
+
+
+def process_data_file(file_name, perform_step_one=False, perform_step_two=False, perform_step_three=False):
     trans_data = read_file_data(file_name)
     operations = get_operations(trans_data)
     if perform_step_one:
@@ -126,6 +132,9 @@ def process_data_file(file_name, perform_step_one=False, perform_step_two=False)
     if perform_step_two:
         with open(f'data/processed/second_step/{language}.csv', mode='w+') as file:
             write_second_step(file, operations)
+    if perform_step_three:
+        with open(f'data/processed/third_step/{language}.txt', mode='w') as file:
+            write_third_step(file, operations)
 
 
 # grouped_inserts = group_inserts(operations)
@@ -136,13 +145,14 @@ def process_data_file(file_name, perform_step_one=False, perform_step_two=False)
 directory_name = "data/latin_alphabet"
 generate_step_1 = True
 generate_step_2 = True
+generate_step_3 = True
 
 for filename in os.listdir(directory_name):
     file_data = filename.split("-")
     language = file_data[0]
     operation = file_data[1]
-    print(f"Starting work on {language}")
     if operation == "dev":
-        process_data_file(f"{directory_name}/{filename}", generate_step_1, generate_step_2)
-    print(f"Finished work on {language}")
+        print(f"Starting work on {language}")
+        process_data_file(f"{directory_name}/{filename}", generate_step_1, generate_step_2, generate_step_3)
+        print(f"Finished work on {language}")
 print("Done")
