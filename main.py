@@ -125,7 +125,8 @@ def write_third_step(file, operations: List[Operations]):
         file.writelines([f"{delete.letters}\n" for delete in op.deletes])
 
 
-def process_data_file(file_name, language, perform_step_one=False, perform_step_two=False, perform_step_three=False):
+def process_data_file(file_name, language, perform_step_one=False, perform_step_two=False,
+                      perform_step_three=False):
     trans_data = read_file_data(file_name)
     operations = get_operations(trans_data)
     if perform_step_one:
@@ -152,6 +153,7 @@ def generate_steps_1_and_2(generate_step_1=False, generate_step_2=False):
         print(f"Finished work on {language}")
     print("Done")
 
+
 def generate_step_4():
     directory_name = "data/processed"
     for filename in os.listdir(f"{directory_name}/first_step"):
@@ -163,8 +165,7 @@ def generate_step_4():
         output_path = f"{directory_name}/fourth_step/{filename}"
         create_and_save_context_matrix(output_path, first_step_file, second_step_file)
 
-
         print(f"Finished work on {language}")
 
-generate_step_4()
 
+generate_step_4()
