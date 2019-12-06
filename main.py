@@ -1,12 +1,14 @@
 import collections
 import csv
 import os
-from typing import List
+from typing import List, Tuple
 
 import Bio.pairwise2 as pair
 import more_itertools as mit
 import regex as re
+import pandas as pd
 
+from context_matrix import create_and_save_context_matrix
 from data_model import Transformation, Operation, Operations
 
 
@@ -117,7 +119,7 @@ def write_second_step(file, operations: List[Operations]):
         writer.writerow([characters, "DEL", counted_deletes[characters]])
 
 
-def process_data_file(file_name, perform_step_one=False, perform_step_two=False):
+def process_data_file(file_name, language, perform_step_one=False, perform_step_two=False):
     trans_data = read_file_data(file_name)
     operations = get_operations(trans_data)
     if perform_step_one:
@@ -128,21 +130,32 @@ def process_data_file(file_name, perform_step_one=False, perform_step_two=False)
             write_second_step(file, operations)
 
 
-# grouped_inserts = group_inserts(operations)
-# grouped_deletes = group_deletes(operations)
-# print(grouped_inserts)
-# print(grouped_deletes)
+def generate_steps_1_and_2(generate_step_1=False, generate_step_2=False):
+    directory_name = "data/latin_alphabet"
+    for filename in os.listdir(directory_name):
+        file_data = filename.split("-")
+        language = file_data[0]
+        operation = file_data[1]
+        print(f"Starting work on {language}")
+        if operation == "dev":
+            process_data_file(f"{directory_name}/{filename}", language, generate_step_1,
+                              generate_step_2)
+        print(f"Finished work on {language}")
+    print("Done")
 
-directory_name = "data/latin_alphabet"
-generate_step_1 = True
-generate_step_2 = True
+def generate_step_4():
+    directory_name = "data/processed"
+    for filename in os.listdir(f"{directory_name}/first_step"):
+        file_data = filename.split(r".")
+        language = file_data[0]
+        print(f"Starting work on {language}")
+        first_step_file = f"{directory_name}/first_step/{filename}"
+        second_step_file = f"{directory_name}/second_step/{filename}"
+        output_path = f"{directory_name}/fourth_step/{filename}"
+        create_and_save_context_matrix(output_path, first_step_file, second_step_file)
 
-for filename in os.listdir(directory_name):
-    file_data = filename.split("-")
-    language = file_data[0]
-    operation = file_data[1]
-    print(f"Starting work on {language}")
-    if operation == "dev":
-        process_data_file(f"{directory_name}/{filename}", generate_step_1, generate_step_2)
-    print(f"Finished work on {language}")
-print("Done")
+
+        print(f"Finished work on {language}")
+
+generate_step_4()
+
