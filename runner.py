@@ -33,8 +33,10 @@ def generate_step_4():
         print(f"Finished work on {language}")
 
 
-ctx = load_context_matrix("data/processed/fourth_step/danish.csv")
-print(ctx)
-lattice = Lattice(ctx, 1)
-print(lattice.find_operations_for_context("en"))
+# ctx = load_context_matrix("data/processed/fourth_step/danish.csv")
+# print(ctx)
+# lattice = Lattice(ctx, 1)
+# print(lattice.find_operations_for_context("en"))
+# print(lattice.find_concept_for_object("INS(ser)"))
+generate_steps_1_2_3(generate_step_3=True)
 
