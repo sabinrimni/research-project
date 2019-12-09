@@ -123,9 +123,9 @@ def write_third_step(file, operations: List[Operations]):
     writer = csv.writer(file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
     for op in operations:
         for ins in op.inserts:
-            writer.writerow([ins.letters])
+            writer.writerow([f"I{ins.letters}"])
         for d in op.deletes:
-            writer.writerow([d.letters])
+            writer.writerow([f"D{d.letters}"])
 
 
 def process_data_file(file_name, language, perform_step_one=False, perform_step_two=False,
