@@ -1,7 +1,7 @@
 import collections
 import csv
 import os
-from typing import List, Tuple
+from typing import List
 
 import Bio.pairwise2 as pair
 import more_itertools as mit
@@ -120,9 +120,12 @@ def write_second_step(file, operations: List[Operations]):
 
 
 def write_third_step(file, operations: List[Operations]):
+    writer = csv.writer(file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
     for op in operations:
-        file.writelines([f"{ins.letters}\n" for ins in op.inserts])
-        file.writelines([f"{delete.letters}\n" for delete in op.deletes])
+        for ins in op.inserts:
+            writer.writerow([ins.letters])
+        for d in op.deletes:
+            writer.writerow([d.letters])
 
 
 def process_data_file(file_name, language, perform_step_one=False, perform_step_two=False,
@@ -140,32 +143,5 @@ def process_data_file(file_name, language, perform_step_one=False, perform_step_
             write_third_step(file, operations)
 
 
-def generate_steps_1_and_2(generate_step_1=False, generate_step_2=False):
-    directory_name = "data/latin_alphabet"
-    for filename in os.listdir(directory_name):
-        file_data = filename.split("-")
-        language = file_data[0]
-        operation = file_data[1]
-        print(f"Starting work on {language}")
-        if operation == "dev":
-            process_data_file(f"{directory_name}/{filename}", language, generate_step_1,
-                              generate_step_2)
-        print(f"Finished work on {language}")
-    print("Done")
 
 
-def generate_step_4():
-    directory_name = "data/processed"
-    for filename in os.listdir(f"{directory_name}/first_step"):
-        file_data = filename.split(r".")
-        language = file_data[0]
-        print(f"Starting work on {language}")
-        first_step_file = f"{directory_name}/first_step/{filename}"
-        second_step_file = f"{directory_name}/second_step/{filename}"
-        output_path = f"{directory_name}/fourth_step/{filename}"
-        create_and_save_context_matrix(output_path, first_step_file, second_step_file)
-
-        print(f"Finished work on {language}")
-
-
-generate_step_4()
