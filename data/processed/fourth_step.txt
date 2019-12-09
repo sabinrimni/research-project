@@ -17,10 +17,14 @@ n er</w>
 e d</w>
 u m</w>
 s er</w>
-r e</w>
-l ern</w>
-t en</w>
-m et</w>
+
+
+
+ern
+
+en
+m
+et</w>
 d et</w>
 d en</w>
 t ers</w>
