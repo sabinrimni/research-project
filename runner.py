@@ -1,7 +1,7 @@
 import os
 
 from context_matrix import create_and_save_context_matrix, load_context_matrix
-from lattice import Lattice
+from lattice import Lattice, get_matrix_without_zero_columns_and_zero_rows, MemorizingLattice
 from main import process_data_file
 import pandas as pd
 
@@ -62,11 +62,20 @@ def test_lattice():
     print(ctx)
 
 
-# ctx = load_context_matrix("data/processed/fourth_step/danish.csv")
+ctx = load_context_matrix("data/processed/fourth_step/danish.csv").transpose()
+memorizing_lattice = MemorizingLattice(ctx, 1)
+memorizing_lattice.calculate_superconcepts()
+memorizing_lattice.print_concepts(level=1)
+# memorizing_lattice.print_concepts()
 # print(ctx)
 # lattice = Lattice(ctx, 1)
-# print(lattice.find_operations_for_context("en"))
-# print(lattice.find_concept_for_object("INS(ser)"))
-# generate_steps_1_2_3(generate_step_3=True)
+# et_concept = lattice.find_concept_for_object("INS(et)")
+# ser_concept = lattice.find_concept_for_object("INS(ser)")
+# # print(et_concept.get_matrix_without_zero_columns_and_zero_rows())
+# # print(ser_concept.get_matrix_without_zero_columns_and_zero_rows())
+#
+# super_concept = lattice.find_superconcept(et_concept, ser_concept)
+# super_concept_support = lattice.get_support_for_concept(super_concept)
+# # print(get_matrix_without_zero_columns_and_zero_rows(super_concept_support))
+# print(get_matrix_without_zero_columns_and_zero_rows(lattice.get_confidence_for_concept(super_concept)))
 
-test_lattice()
