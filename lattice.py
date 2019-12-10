@@ -1,6 +1,22 @@
-from typing import List, Tuple
+from typing import List, Tuple, Dict
 
 import pandas as pd
+
+
+def get_matrix_without_zero_columns_and_zero_rows(data_matrix: pd.DataFrame,
+                                                  copy=False) -> pd.DataFrame:
+    matrix: pd.DataFrame = data_matrix.copy() if copy else data_matrix
+    non_zero_columns = matrix[get_non_zero_series_indexes(matrix.max(axis=0))]
+    non_zero_rows = non_zero_columns[non_zero_columns.max(axis=1) != 0]
+    return non_zero_rows
+
+
+def get_non_zero_series_indexes(series: pd.Series) -> pd.Series:
+    return series.index[series != 0]
+
+
+def get_zero_series_indexes(series: pd.Series) -> pd.Series:
+    return series.index[series == 0]
 
 
 class Concept:
@@ -21,21 +37,39 @@ class Concept:
     def __repr__(self) -> str:
         return f"(Contexts: {self.contexts}, Objects: {self.objects})"
 
+    def __eq__(self, o: object) -> bool:
+        if not isinstance(o, Concept):
+            return False
+        return self.contexts.equals(o.contexts) and self.objects.equals(o.objects)
+
+    def get_object_indexes(self) -> pd.Series:
+        return get_non_zero_series_indexes(self.objects)
+
+    def get_context_indexes(self) -> pd.Series:
+        return get_non_zero_series_indexes(self.contexts)
+
     def is_consistent(self) -> bool:
         actual_objects = self.binary_matrix.max(axis=0)
 
-        non_zero_columns = self.binary_matrix[actual_objects.index[actual_objects > 0]]
+        object_indexes = self.get_object_indexes()
+        non_zero_columns = self.binary_matrix[object_indexes]
         objects_match = (actual_objects == self.objects).all()
 
         non_zero_columns_transpose = non_zero_columns.transpose()
         contexts = non_zero_columns_transpose.prod()
         contexts_match = (contexts == self.contexts).all()
 
-        context_object_intersection = non_zero_columns_transpose[
-            self.contexts.index[self.contexts == 1]]
-        objects_fulfil_context_requirements = context_object_intersection.min().min() == 1
+        context_indexes = self.get_context_indexes()
+        if(context_indexes.empty):
+            objects_fulfil_context_requirements = len(object_indexes) == len(self.objects)
+        else:
+            context_object_intersection = non_zero_columns_transpose[context_indexes]
+            objects_fulfil_context_requirements = context_object_intersection.min().min() == 1
 
         return contexts_match and objects_match and objects_fulfil_context_requirements
+
+    def get_matrix_without_zero_columns_and_zero_rows(self, copy=False) -> pd.DataFrame:
+        return get_matrix_without_zero_columns_and_zero_rows(self.binary_matrix, copy)
 
 
 class Lattice:
@@ -50,7 +84,7 @@ class Lattice:
         self.binary_matrix = self._create_binary_matrix_based_on_threshold(self.context_matrix,
                                                                            self.threshold)
 
-    def find_subconcept(self, concept_1: Concept, concept_2: Concept) -> pd.DataFrame:
+    def find_subconcept(self, concept_1: Concept, concept_2: Concept) -> Concept:
         assert self._is_proper_concept(concept_1), f"Concept1 {concept_1} is not proper"
         assert self._is_proper_concept(concept_2), f"Concept1 {concept_2} is not proper"
 
@@ -82,6 +116,16 @@ class Lattice:
         assert self._is_proper_concept(concept), f"{concept} is not a proper concept"
         return concept
 
+    def get_support_for_concept(self, concept: Concept) -> pd.DataFrame:
+        return self.context_matrix[concept.get_object_indexes()]
+
+    def get_confidence_for_concept(self, concept: Concept) -> pd.DataFrame:
+        context_counts = self.context_matrix.sum(axis=1)
+        support_matrix: pd.DataFrame = self.get_support_for_concept(concept).copy()
+        return support_matrix.divide(context_counts, axis=0)
+
+        pass
+
     @staticmethod
     def _find_objects_from_concept_matrix(concept_matrix: pd.DataFrame) -> pd.Series:
         return (concept_matrix == 1).any().astype(int)
@@ -111,16 +155,6 @@ class Lattice:
         matrix[above_threshold] = 1
         return matrix
 
-    # @staticmethod
-    # def _zero_columns_not_matching_column(column: str,
-    #                                       binary_matrix: pd.DataFrame) -> pd.DataFrame:
-    #     matrix = binary_matrix.copy()
-    #     for c in matrix.columns:
-    #         non_matching_rows = matrix[column] > matrix[c]
-    #         if non_matching_rows.any():
-    #             matrix[c] = 0
-    #     return matrix
-
     def _zero_columns_not_matching_contexts(self, contexts: pd.Series,
                                             binary_matrix: pd.DataFrame) -> pd.DataFrame:
         matrix: pd.DataFrame = binary_matrix.copy()
@@ -133,36 +167,70 @@ class Lattice:
     def _zero_columns_not_matching_objects(self, objects: pd.Series,
                                            binary_matrix: pd.DataFrame) -> pd.DataFrame:
         matrix: pd.DataFrame = binary_matrix.copy()
-        non_object_indexes = objects.index[objects == 0]
-        matrix[non_object_indexes] = 0
+        matrix[get_zero_series_indexes(objects)] = 0
         return matrix
-
-    def _filter_rows_below_threshold(self, column: str, matrix) -> pd.DataFrame:
-        above_threshold = matrix[column] >= self.threshold
-        filtered = matrix[above_threshold]
-        return filtered
-
-    def _filter_columns_below_threshold(self, filtered_rows: pd.DataFrame) -> pd.DataFrame:
-        transposed = filtered_rows.transpose()
-        columns = transposed.columns
-        filtered_columns_transposed = \
-            transposed[(transposed[columns] >= self.threshold).all(axis=1)]
-        return filtered_columns_transposed.transpose()
 
     def _is_proper_concept(self, concept: Concept) -> bool:
         if not concept.is_consistent():
             return False
 
-        object_indexes = concept.objects.index[concept.objects == 1]
+        object_indexes = get_non_zero_series_indexes(concept.objects)
         objects_in_lattice = self.binary_matrix[object_indexes]
         objects_in_concept = concept.binary_matrix[object_indexes]
         objects_match = (objects_in_lattice == objects_in_concept).all().all()
         if not objects_match:
             return False
 
-        context_indexes = concept.contexts.index[concept.contexts == 1]
-        non_object_indexes = concept.objects.index[concept.objects == 0]
+        context_indexes = get_non_zero_series_indexes(concept.contexts)
+        non_object_indexes = get_zero_series_indexes(concept.objects)
         non_objects_for_contexts = self.binary_matrix[non_object_indexes].loc[context_indexes, :]
         non_objects_match_contexts = non_objects_for_contexts.all().any()
 
         return not non_objects_match_contexts
+
+
+class MemorizingLattice:
+    concepts: Dict[int, List[Concept]] = {0: []}
+    _lattice: Lattice
+
+    def __init__(self, context_matrix: pd.DataFrame,
+                 support_threshold: int) -> None:
+        super().__init__()
+        self._lattice = Lattice(context_matrix, support_threshold)
+        # TODO make a hash function and use set
+        repeating_concepts = self._get_base_concepts(context_matrix.columns)
+        self.concepts[0] = MemorizingLattice._remove_repeating_concepts(repeating_concepts)
+
+    def calculate_superconcepts(self):
+        next_level = len(self.concepts)
+        current_concepts = self.concepts[next_level - 1]
+        self.concepts[next_level] = self._get_superconcepts(current_concepts)
+
+    def _get_superconcepts(self, concepts: List[Concept]) -> List[Concept]:
+        superconcepts = []
+        concept_count = len(concepts)
+        for i in range(concept_count):
+            for j in range(i + 1, concept_count):
+                superconcepts.append(self._lattice.find_superconcept(concepts[i], concepts[j]))
+
+        return self._remove_repeating_concepts(superconcepts)
+
+
+    def print_concepts(self, level=0, use_confidence=True):
+        for concept in self.concepts[level]:
+            if use_confidence:
+                confidence_matrix = self._lattice.get_confidence_for_concept(concept)
+                print(get_matrix_without_zero_columns_and_zero_rows(confidence_matrix))
+            else:
+                print(concept.get_matrix_without_zero_columns_and_zero_rows())
+
+    def _get_base_concepts(self, objects: pd.Series) -> List[Concept]:
+        concepts = []
+        for o in objects:
+            concept = self._lattice.find_concept_for_object(o)
+            concepts.append(concept)
+        return concepts
+
+    @staticmethod
+    def _remove_repeating_concepts(concepts: List[Concept]):
+        return [c for c in concepts if all(c != x or c is x for x in concepts)]
