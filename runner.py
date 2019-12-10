@@ -62,11 +62,12 @@ def test_lattice():
     print(ctx)
 
 
-# ctx = load_context_matrix("data/processed/fourth_step/danish.csv")
-# print(ctx)
-# lattice = Lattice(ctx, 1)
-# print(lattice.find_operations_for_context("en"))
-# print(lattice.find_concept_for_object("INS(ser)"))
-# generate_steps_1_2_3(generate_step_3=True)
+ctx = load_context_matrix("data/processed/fourth_step/danish.csv").transpose()
+print(ctx)
+lattice = Lattice(ctx, 1)
+et_concept = lattice.find_concept_for_object("INS(et)")
+ser_concept = lattice.find_concept_for_object("INS(ser)")
+print(et_concept)
+print(ser_concept)
 
-test_lattice()
+

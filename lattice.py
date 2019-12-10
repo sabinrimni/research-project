@@ -162,7 +162,7 @@ class Lattice:
 
         context_indexes = concept.contexts.index[concept.contexts == 1]
         non_object_indexes = concept.objects.index[concept.objects == 0]
-        non_objects_for_contexts = self.binary_matrix[non_object_indexes].iloc[context_indexes]
+        non_objects_for_contexts = self.binary_matrix[non_object_indexes].loc[context_indexes, :]
         non_objects_match_contexts = non_objects_for_contexts.all().any()
 
         return not non_objects_match_contexts
