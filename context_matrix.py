@@ -90,5 +90,10 @@ def save_context_matrix(context_matrix: pd.DataFrame, path: str):
 def create_and_save_context_matrix(output_path: str, first_step_file_name: str,
                                    second_step_file_name: str, char_count=2,
                                    left=True, right=False):
-    matrix = create_context_matrix(None, first_step_file_name, second_step_file_name, char_count, left, right)
+    matrix = create_context_matrix(None, first_step_file_name, second_step_file_name, char_count,
+                                   left, right)
     save_context_matrix(matrix, output_path)
+
+
+def load_context_matrix(path: str) -> pd.DataFrame:
+    return pd.read_csv(path, sep=";", quotechar='"', index_col="Object")
