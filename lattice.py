@@ -19,6 +19,11 @@ def get_zero_series_indexes(series: pd.Series) -> pd.Series:
     return series.index[series == 0]
 
 
+def binary_series_have_common_items(series_1: pd.Series, series_2: pd.Series):
+    series_product = series_1 * series_2
+    return series_product.sum() > 0
+
+
 class Concept:
     contexts: pd.Series
     objects: pd.Series
@@ -60,7 +65,7 @@ class Concept:
         contexts_match = (contexts == self.contexts).all()
 
         context_indexes = self.get_context_indexes()
-        if(context_indexes.empty):
+        if (context_indexes.empty):
             objects_fulfil_context_requirements = len(object_indexes) == len(self.objects)
         else:
             context_object_intersection = non_zero_columns_transpose[context_indexes]
@@ -211,10 +216,13 @@ class MemorizingLattice:
         concept_count = len(concepts)
         for i in range(concept_count):
             for j in range(i + 1, concept_count):
-                superconcepts.append(self._lattice.find_superconcept(concepts[i], concepts[j]))
+                concept_1 = concepts[i]
+                concept_2 = concepts[j]
+                #Check that there are any shared contexts, otherwise the superconcept will just be the whole matrix
+                if binary_series_have_common_items(concept_1.contexts, concept_2.contexts):
+                    superconcepts.append(self._lattice.find_superconcept(concept_1, concept_2))
 
         return self._remove_repeating_concepts(superconcepts)
-
 
     def print_concepts(self, level=0, use_confidence=True):
         for concept in self.concepts[level]:
