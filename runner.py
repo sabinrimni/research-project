@@ -42,7 +42,7 @@ def write_alphabet_for_file(directory_name: str, filename: str):
     print(f"Finished alphabet for {language}")
 
 
-def generate_step_4():
+def write_context_matrices():
     directory_name = "data/processed"
     for filename in os.listdir(f"{directory_name}/first_step"):
         file_data = filename.split(r".")
@@ -50,10 +50,11 @@ def generate_step_4():
         print(f"Starting work on {language}")
         first_step_file = f"{directory_name}/first_step/{filename}"
         second_step_file = f"{directory_name}/second_step/{filename}"
-        output_path = f"{directory_name}/fourth_step/{filename}"
+        output_path = f"{directory_name}/context_matrix/{filename}"
         create_and_save_context_matrix(output_path, first_step_file, second_step_file)
 
         print(f"Finished work on {language}")
+
 
 
 def test_lattice():
@@ -83,15 +84,18 @@ def test_lattice():
     # print("Original")
     # print(ctx)
 
+def test_memorizing_lattice():
+    ctx = load_context_matrix("data/processed/context_matrix/danish.csv").transpose()
+    memorizing_lattice = l.MemorizingLattice(ctx, 1)
+    memorizing_lattice.calculate_superconcepts()
+    memorizing_lattice.print_concepts(level=1)
+    memorizing_lattice.calculate_superconcepts()
+    memorizing_lattice.print_concepts(level=2)
 
-ctx = load_context_matrix("data/processed/fourth_step/danish.csv").transpose()
-memorizing_lattice = l.MemorizingLattice(ctx, 1)
-memorizing_lattice.calculate_superconcepts()
-memorizing_lattice.print_concepts(level=1)
-memorizing_lattice.calculate_superconcepts()
-memorizing_lattice.print_concepts(level=2)
+generate_steps_1_2_3(True, True)
 
 # test_lattice()
+# test_memorizing_lattice()
 
 # print(ctx)
 # lattice = Lattice(ctx, 1)
