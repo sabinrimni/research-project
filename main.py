@@ -162,8 +162,8 @@ def process_data_file(file_name, language, perform_step_one=False, perform_step_
         with open(f'data/processed/second_step/{language}.csv', mode='w+') as file:
             write_second_step(file, operations)
     if perform_step_three:
-        with open(f'data/processed/third_step/ins_{language}.txt', mode='w') as file:
+        with open(f'data/processed/third_step/ins_{language}.txt', mode='w+') as file:
             write_third_step_ins(file, operations)
-        with open(f'data/processed/third_step/del_{language}.txt', mode='w') as file:
+        with open(f'data/processed/third_step/del_{language}.txt', mode='w+') as file:
             write_third_step_del(file, operations)
 

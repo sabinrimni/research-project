@@ -141,7 +141,7 @@ class Lattice:
         return confidence_matrix.mean().mean()
 
     def _calculate_mean_confidence_for_objects(self, objects: pd.Series):
-        support_matrix = self._get_support_matrix_for_objects(objects)
+        support_matrix = self._get_support_matrix_for_objects(get_non_zero_series_indexes(objects))
         confidence_matrix = self._get_confidence_matrix_from_support_matrix(support_matrix)
         return self._calculate_mean_confidence_from_confidence_matrix(confidence_matrix)
 
@@ -216,35 +216,62 @@ class MemorizingLattice:
                  support_threshold: int) -> None:
         super().__init__()
         self._lattice = Lattice(context_matrix, support_threshold)
-        # TODO make a hash function and use set
         repeating_concepts = self._get_base_concepts(context_matrix.columns)
         self.concepts = MemorizingLattice._remove_repeating_concepts(repeating_concepts)
 
-    def calculate_superconcepts(self):
-        queue = SortingQueue(self.concepts.copy(), lambda c: c.confidence)
+    def calculate_superconcepts(self, confidence_threshold: float):
+        queue = self.concepts
+        resulting_concepts = []
+        while len(queue) > 1:
+            current = queue.pop(0)
+            max_concepts_to_check = len(queue)
+            while max_concepts_to_check > 0:
+                next = queue.pop(0)
+                if binary_series_have_common_items(current.contexts, next.contexts):
+                    superconcept = self._lattice.find_superconcept(current, next)
+                    if self._is_better_confidence(current, next, superconcept, confidence_threshold):
+                        print(
+                            f"Superconcept made, confidence {superconcept.confidence}, old 1: {current.confidence} old 2: {next.confidence}")
+                        queue.append(superconcept)
+                        break
+                queue.append(next)
+                max_concepts_to_check -= 1
+            if max_concepts_to_check == 0:
+                print("Didn't find a better concept")
+                resulting_concepts.append(current)
+            else:
+                print(
+                    f"Concepts checked before finding better: {len(queue) - max_concepts_to_check}")
 
-    def _get_superconcepts(self, concepts: List[Concept]) -> List[Concept]:
-        superconcepts = []
-        concept_count = len(concepts)
-        for i in range(concept_count):
-            for j in range(i + 1, concept_count):
-                concept_1 = concepts[i]
-                concept_2 = concepts[j]
-                # Check that there are any shared contexts, otherwise the superconcept will just be the whole matrix
-                if binary_series_have_common_items(concept_1.contexts, concept_2.contexts):
-                    superconcepts.append(self._lattice.find_superconcept(concept_1, concept_2))
+        resulting_concepts += queue
+        return self._remove_repeating_concepts(resulting_concepts)
 
-        return self._remove_repeating_concepts(superconcepts)
+    def _is_better_confidence(self, concept_1: Concept, concept_2: Concept, merged_concept: Concept,
+                              uncertanity_threshold: float) -> bool:
+        return concept_1.confidence - uncertanity_threshold <= merged_concept.confidence \
+               and concept_2.confidence - uncertanity_threshold <= merged_concept.confidence
 
-    def print_concepts(self, level=0, use_confidence=True):
-        print(f"\nPrinting concepts, level: {level}\n")
-        for concept in self.concepts[level]:
+    # def _get_superconcepts(self, concepts: List[Concept]) -> List[Concept]:
+    #     superconcepts = []
+    #     concept_count = len(concepts)
+    #     for i in range(concept_count):
+    #         for j in range(i + 1, concept_count):
+    #             concept_1 = concepts[i]
+    #             concept_2 = concepts[j]
+    #             # Check that there are any shared contexts, otherwise the superconcept will just be the whole matrix
+    #             if binary_series_have_common_items(concept_1.contexts, concept_2.contexts):
+    #                 superconcepts.append(self._lattice.find_superconcept(concept_1, concept_2))
+    #
+    #     return self._remove_repeating_concepts(superconcepts)
+
+    def print_concepts(self, use_confidence=True):
+        print(f"\nPrinting concepts, using confidence {use_confidence}\n")
+        for concept in self.concepts:
             if use_confidence:
-                confidence_matrix = self._lattice._get_confidence_matrix_from_support_matrix(
-                    concept)
-                print(get_matrix_without_zero_columns_and_zero_rows(confidence_matrix))
+                print(f"Confidence: {concept.confidence}")
             else:
                 print(concept.get_matrix_without_zero_columns_and_zero_rows())
+                print("")
 
     def _get_base_concepts(self, objects: pd.Series) -> List[Concept]:
         concepts = []
@@ -255,4 +282,5 @@ class MemorizingLattice:
 
     @staticmethod
     def _remove_repeating_concepts(concepts: List[Concept]):
+        # TODO make a hash function and use set
         return [c for c in concepts if all(c != x or c is x for x in concepts)]
