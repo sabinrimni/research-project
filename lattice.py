@@ -2,6 +2,8 @@ from typing import List, Tuple, Dict
 
 import pandas as pd
 
+from pqueue import SortingQueue
+
 
 def get_matrix_without_zero_columns_and_zero_rows(data_matrix: pd.DataFrame,
                                                   copy=False) -> pd.DataFrame:
@@ -19,23 +21,31 @@ def get_zero_series_indexes(series: pd.Series) -> pd.Series:
     return series.index[series == 0]
 
 
+def binary_series_have_common_items(series_1: pd.Series, series_2: pd.Series):
+    series_product = series_1 * series_2
+    return series_product.sum() > 0
+
+
 class Concept:
     contexts: pd.Series
     objects: pd.Series
     binary_matrix: pd.DataFrame
+    confidence: float
 
     def __init__(self, binary_matrix: pd.DataFrame, contexts: pd.Series,
-                 objects: pd.Series) -> None:
+                 objects: pd.Series, confidence: float) -> None:
         super().__init__()
         self.binary_matrix = binary_matrix
         self.contexts = contexts
         self.objects = objects
+        self.confidence = confidence
 
     def __str__(self) -> str:
-        return f"Contexts:\n{self.contexts}\nObjects:\n{self.objects}\n{self.binary_matrix}"
+        return f"Contexts:\n{self.contexts}\nObjects:\n{self.objects}" + \
+               f"\nMatrix\n{self.binary_matrix}, Confidence {self.confidence}"
 
     def __repr__(self) -> str:
-        return f"(Contexts: {self.contexts}, Objects: {self.objects})"
+        return f"(Contexts: {self.contexts}, Objects: {self.objects}), Confidence: {self.confidence}"
 
     def __eq__(self, o: object) -> bool:
         if not isinstance(o, Concept):
@@ -60,7 +70,7 @@ class Concept:
         contexts_match = (contexts == self.contexts).all()
 
         context_indexes = self.get_context_indexes()
-        if(context_indexes.empty):
+        if (context_indexes.empty):
             objects_fulfil_context_requirements = len(object_indexes) == len(self.objects)
         else:
             context_object_intersection = non_zero_columns_transpose[context_indexes]
@@ -91,7 +101,8 @@ class Lattice:
         objects = self._find_series_intersection(concept_1.objects, concept_2.objects)
         concept_matrix = self._zero_columns_not_matching_objects(objects, self.binary_matrix)
         contexts = self._find_contexts_from_concept_matrix(concept_matrix, objects)
-        subconcept = Concept(concept_matrix, contexts, objects)
+        confidence = self._calculate_mean_confidence_for_objects(objects)
+        subconcept = Concept(concept_matrix, contexts, objects, confidence)
         assert self._is_proper_concept(subconcept), f"Subconcept {subconcept} is not proper"
         return subconcept
 
@@ -100,31 +111,39 @@ class Lattice:
         assert self._is_proper_concept(concept_2), f"Concept1 {concept_2} is not proper"
 
         contexts = self._find_series_intersection(concept_1.contexts, concept_2.contexts)
-        concept_matrix = self._zero_columns_not_matching_contexts(contexts, self.binary_matrix)
-        objects = self._find_objects_from_concept_matrix(concept_matrix)
-        superconcept = Concept(concept_matrix, contexts, objects)
+        superconcept = self._create_concept_from_contexts(contexts)
         assert self._is_proper_concept(superconcept), f"Superconcept {superconcept} is not proper"
         return superconcept
 
     def find_concept_for_object(self, object: str) -> Concept:
-        # concept_matrix = self._zero_columns_not_matching_column(object, self.binary_matrix)
         contexts = self.binary_matrix[object]
-        concept_matrix = self._zero_columns_not_matching_contexts(contexts, self.binary_matrix)
-        contexts = (concept_matrix[object] == 1).astype(int)
-        objects = self._find_objects_from_concept_matrix(concept_matrix)
-        concept = Concept(concept_matrix, contexts, objects)
+        concept = self._create_concept_from_contexts(contexts)
         assert self._is_proper_concept(concept), f"{concept} is not a proper concept"
         return concept
 
-    def get_support_for_concept(self, concept: Concept) -> pd.DataFrame:
-        return self.context_matrix[concept.get_object_indexes()]
+    def _create_concept_from_contexts(self, contexts: pd.Series) -> Concept:
+        concept_matrix = self._zero_columns_not_matching_contexts(contexts, self.binary_matrix)
+        objects = self._find_objects_from_concept_matrix(concept_matrix)
+        confidence = self._calculate_mean_confidence_for_objects(objects)
+        concept = Concept(concept_matrix, contexts, objects, confidence)
+        return concept
 
-    def get_confidence_for_concept(self, concept: Concept) -> pd.DataFrame:
+    def _get_support_matrix_for_objects(self, objects: pd.Series) -> pd.DataFrame:
+        return self.context_matrix[objects]
+
+    def _get_confidence_matrix_from_support_matrix(self,
+                                                   support_matrix: pd.DataFrame) -> pd.DataFrame:
         context_counts = self.context_matrix.sum(axis=1)
-        support_matrix: pd.DataFrame = self.get_support_for_concept(concept).copy()
         return support_matrix.divide(context_counts, axis=0)
 
-        pass
+    def _calculate_mean_confidence_from_confidence_matrix(self,
+                                                          confidence_matrix: pd.DataFrame) -> float:
+        return confidence_matrix.mean().mean()
+
+    def _calculate_mean_confidence_for_objects(self, objects: pd.Series):
+        support_matrix = self._get_support_matrix_for_objects(objects)
+        confidence_matrix = self._get_confidence_matrix_from_support_matrix(support_matrix)
+        return self._calculate_mean_confidence_from_confidence_matrix(confidence_matrix)
 
     @staticmethod
     def _find_objects_from_concept_matrix(concept_matrix: pd.DataFrame) -> pd.Series:
@@ -190,7 +209,7 @@ class Lattice:
 
 
 class MemorizingLattice:
-    concepts: Dict[int, List[Concept]] = {0: []}
+    concepts: List[Concept] = []
     _lattice: Lattice
 
     def __init__(self, context_matrix: pd.DataFrame,
@@ -199,27 +218,30 @@ class MemorizingLattice:
         self._lattice = Lattice(context_matrix, support_threshold)
         # TODO make a hash function and use set
         repeating_concepts = self._get_base_concepts(context_matrix.columns)
-        self.concepts[0] = MemorizingLattice._remove_repeating_concepts(repeating_concepts)
+        self.concepts = MemorizingLattice._remove_repeating_concepts(repeating_concepts)
 
     def calculate_superconcepts(self):
-        next_level = len(self.concepts)
-        current_concepts = self.concepts[next_level - 1]
-        self.concepts[next_level] = self._get_superconcepts(current_concepts)
+        queue = SortingQueue(self.concepts.copy(), lambda c: c.confidence)
 
     def _get_superconcepts(self, concepts: List[Concept]) -> List[Concept]:
         superconcepts = []
         concept_count = len(concepts)
         for i in range(concept_count):
             for j in range(i + 1, concept_count):
-                superconcepts.append(self._lattice.find_superconcept(concepts[i], concepts[j]))
+                concept_1 = concepts[i]
+                concept_2 = concepts[j]
+                # Check that there are any shared contexts, otherwise the superconcept will just be the whole matrix
+                if binary_series_have_common_items(concept_1.contexts, concept_2.contexts):
+                    superconcepts.append(self._lattice.find_superconcept(concept_1, concept_2))
 
         return self._remove_repeating_concepts(superconcepts)
 
-
     def print_concepts(self, level=0, use_confidence=True):
+        print(f"\nPrinting concepts, level: {level}\n")
         for concept in self.concepts[level]:
             if use_confidence:
-                confidence_matrix = self._lattice.get_confidence_for_concept(concept)
+                confidence_matrix = self._lattice._get_confidence_matrix_from_support_matrix(
+                    concept)
                 print(get_matrix_without_zero_columns_and_zero_rows(confidence_matrix))
             else:
                 print(concept.get_matrix_without_zero_columns_and_zero_rows())

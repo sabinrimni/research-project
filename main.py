@@ -119,6 +119,24 @@ def write_second_step(file, operations: List[Operations]):
         writer.writerow([characters, "DEL", counted_deletes[characters]])
 
 
+def extract_alphabet(words: List[str]):
+    alphabet = set()
+    for word in words:
+        print(word)
+        for letter in word:
+            if len(letter) > 0:
+                alphabet.add(letter.lower())
+    return alphabet
+
+
+def write_alphabet(output_file: str, first_step_file_name: str):
+    first_step = pd.read_csv(first_step_file_name, delimiter=";", quotechar='"')
+    words = first_step["Source"] + first_step["Target"]
+    alphabet = extract_alphabet(words)
+    pd.DataFrame(alphabet, columns=["Letter"]).to_csv(output_file, ";")
+
+
+
 def write_third_step_ins(file, operations: List[Operations]):
     writer = csv.writer(file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
     for op in operations:
@@ -148,7 +166,4 @@ def process_data_file(file_name, language, perform_step_one=False, perform_step_
             write_third_step_ins(file, operations)
         with open(f'data/processed/third_step/del_{language}.txt', mode='w') as file:
             write_third_step_del(file, operations)
-
-
-
 
