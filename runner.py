@@ -92,7 +92,7 @@ def test_memorizing_lattice():
     memorizing_lattice.calculate_superconcepts()
     memorizing_lattice.print_concepts(level=2)
 
-generate_steps_1_2_3(True, True)
+generate_steps_1_2_3(False, False, True)
 
 # test_lattice()
 # test_memorizing_lattice()
