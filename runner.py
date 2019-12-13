@@ -62,10 +62,10 @@ def test_lattice():
     print(ctx)
 
 
-ctx = load_context_matrix("data/processed/fourth_step/danish.csv").transpose()
-memorizing_lattice = MemorizingLattice(ctx, 1)
-memorizing_lattice.calculate_superconcepts()
-memorizing_lattice.print_concepts(level=1)
+# ctx = load_context_matrix("data/processed/fourth_step/danish.csv").transpose()
+#memorizing_lattice = MemorizingLattice(ctx, 1)
+#memorizing_lattice.calculate_superconcepts()
+#memorizing_lattice.print_concepts(level=1)
 # memorizing_lattice.print_concepts()
 # print(ctx)
 # lattice = Lattice(ctx, 1)
@@ -78,4 +78,3 @@ memorizing_lattice.print_concepts(level=1)
 # super_concept_support = lattice.get_support_for_concept(super_concept)
 # # print(get_matrix_without_zero_columns_and_zero_rows(super_concept_support))
 # print(get_matrix_without_zero_columns_and_zero_rows(lattice.get_confidence_for_concept(super_concept)))
-

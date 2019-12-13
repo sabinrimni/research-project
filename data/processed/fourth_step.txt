@@ -1,35 +1,31 @@
 #version: 0.2
-e r
+I e
+I s</w>
+Ie r
 n e</w>
+Ie r</w>
+Ier ne</w>
+Ie n</w>
+I r
+I r</w>
+Ier s</w>
+Ir s</w>
+Ie ne</w>
+I e</w>
+Ier n</w>
+I n</w>
+Ie t</w>
+D e</w>
+Ie s</w>
+e r
 e r</w>
-er ne</w>
 e n</w>
-er s</w>
-r s</w>
-e ne</w>
-er n</w>
-e t</w>
-e s</w>
-e n
-en d</w>
-d es</w>
-n er</w>
-e d</w>
-u m</w>
-s er</w>
-
-
-
-ern
-
-en
-m
-et</w>
-d et</w>
-d en</w>
-t ers</w>
-t er</w>
-t e</w>
-s e</w>
-r en</w>
-m ers</w>
+I ne</w>
+I d
+Id e
+I t
+er ne</w>
+Ie n
+Ien d</w>
+I l
+Ide s</w>

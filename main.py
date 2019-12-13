@@ -119,13 +119,18 @@ def write_second_step(file, operations: List[Operations]):
         writer.writerow([characters, "DEL", counted_deletes[characters]])
 
 
-def write_third_step(file, operations: List[Operations]):
+def write_third_step_ins(file, operations: List[Operations]):
     writer = csv.writer(file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
     for op in operations:
         for ins in op.inserts:
-            writer.writerow([f"I{ins.letters}"])
+            writer.writerow([ins.letters])
+
+
+def write_third_step_del(file, operations: List[Operations]):
+    writer = csv.writer(file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+    for op in operations:
         for d in op.deletes:
-            writer.writerow([f"D{d.letters}"])
+            writer.writerow([d.letters])
 
 
 def process_data_file(file_name, language, perform_step_one=False, perform_step_two=False,
@@ -139,8 +144,10 @@ def process_data_file(file_name, language, perform_step_one=False, perform_step_
         with open(f'data/processed/second_step/{language}.csv', mode='w+') as file:
             write_second_step(file, operations)
     if perform_step_three:
-        with open(f'data/processed/third_step/{language}.txt', mode='w') as file:
-            write_third_step(file, operations)
+        with open(f'data/processed/third_step/ins_{language}.txt', mode='w') as file:
+            write_third_step_ins(file, operations)
+        with open(f'data/processed/third_step/del_{language}.txt', mode='w') as file:
+            write_third_step_del(file, operations)
 
 
 
