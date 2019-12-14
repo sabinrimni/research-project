@@ -8,21 +8,21 @@ from main import process_data_file, write_alphabet
 import pandas as pd
 
 
-def generate_steps_1_2_3(generate_step_1=False, generate_step_2=False, generate_step_3=False):
+def generate_steps(generate_step_1=False, generate_step_2=False, generate_step_3=False, generate_step_4=False):
     directory_name = "data/latin_alphabet"
-    op = partial(run_steps_1_2_3, generate_step_1=generate_step_1, generate_step_2=generate_step_2,
-                 generate_step_3=generate_step_3)
+    op = partial(run_steps, generate_step_1=generate_step_1, generate_step_2=generate_step_2,
+                 generate_step_3=generate_step_3, generate_step_4=generate_step_4)
     iterate_directory(directory_name, op)
 
 
-def run_steps_1_2_3(directory_name: str, filename: str, generate_step_1: bool,
-                    generate_step_2: bool, generate_step_3: bool) -> None:
+def run_steps(directory_name: str, filename: str, generate_step_1: bool,
+                    generate_step_2: bool, generate_step_3: bool, generate_step_4: bool) -> None:
     file_data = filename.split("-")
     language = file_data[0]
     operation = file_data[1]
     if operation == "dev":
         process_data_file(f"{directory_name}/{filename}", language, generate_step_1,
-                          generate_step_2, generate_step_3)
+                          generate_step_2, generate_step_3, generate_step_4)
 
 
 def iterate_directory(directory_name, operation: Callable[[str, str], None]) -> None:
@@ -56,7 +56,6 @@ def write_context_matrices():
         print(f"Finished work on {language}")
 
 
-
 def test_lattice():
     data = {
         "a": [1, 2, 3, 4, 5, 6, 7],
@@ -84,6 +83,7 @@ def test_lattice():
     # print("Original")
     # print(ctx)
 
+
 def test_memorizing_lattice():
     ctx = load_context_matrix("data/processed/context_matrix/danish.csv").transpose()
     memorizing_lattice = l.MemorizingLattice(ctx, 1)
@@ -94,7 +94,7 @@ def test_memorizing_lattice():
     memorizing_lattice.print_concepts()
     print("\nDone")
 
-generate_steps_1_2_3(False, False, True)
+generate_steps(generate_step_4=True)
 
 # test_lattice()
 # test_memorizing_lattice()
