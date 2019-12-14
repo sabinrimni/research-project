@@ -56,6 +56,18 @@ def write_context_matrices():
         print(f"Finished work on {language}")
 
 
+def write_concepts():
+    directory_name = "data/processed"
+    for filename in os.listdir(f"{directory_name}/context_matrix"):
+        language = filename.split(r".")[0]
+        print(f"Starting work on {language}")
+        context_matrix = load_context_matrix(f"{directory_name}/context_matrix/{filename}")
+        mem_lattice = l.MemorizingLattice(context_matrix, 1)
+        mem_lattice.calculate_concepts()
+        mem_lattice.calculate_superconcepts(0)
+        mem_lattice.save_superconcepts(f"{directory_name}/concepts/{language}.xls")
+        print(f"Finished work on {language}")
+
 
 def test_lattice():
     data = {
@@ -84,20 +96,26 @@ def test_lattice():
     # print("Original")
     # print(ctx)
 
+
 def test_memorizing_lattice():
     ctx = load_context_matrix("data/processed/context_matrix/danish.csv").transpose()
     memorizing_lattice = l.MemorizingLattice(ctx, 1)
-    print("Created lattice")
-    print(f"Concept count: {len(memorizing_lattice.concepts)}")
-    print(f"Calculating superconcepts")
-    memorizing_lattice.calculate_superconcepts(0.05)
-    memorizing_lattice.print_concepts()
+    # memorizing_lattice.calculate_concepts()
+    # print("Created lattice")
+    # print(f"Concept count: {len(memorizing_lattice.concepts)}")
+    # print(f"Calculating superconcepts")
+    # memorizing_lattice.calculate_superconcepts(0)
+    memorizing_lattice.load_superconcepts("data/processed/concepts/danish.xls")
+    memorizing_lattice.print_superconcepts()
+    # memorizing_lattice.save_superconcepts("data/processed/concepts/danish.xls")
     print("\nDone")
 
-generate_steps_1_2_3(False, False, True)
+
+# generate_steps_1_2_3(False, False, True)
 
 # test_lattice()
 # test_memorizing_lattice()
+write_concepts()
 
 # print(ctx)
 # lattice = Lattice(ctx, 1)
@@ -110,4 +128,3 @@ generate_steps_1_2_3(False, False, True)
 # super_concept_support = lattice.get_support_for_concept(super_concept)
 # # print(get_matrix_without_zero_columns_and_zero_rows(super_concept_support))
 # print(get_matrix_without_zero_columns_and_zero_rows(lattice.get_confidence_for_concept(super_concept)))
-

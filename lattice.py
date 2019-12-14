@@ -1,8 +1,20 @@
-from typing import List, Tuple, Dict
+from functools import partial, partialmethod
+from typing import List, Tuple, Dict, Iterable, Union, Callable, Optional
 
 import pandas as pd
 
-from pqueue import SortingQueue
+
+def save_data_frames_to_excel(filename: str, data_frames: List[pd.DataFrame]):
+    writer = pd.ExcelWriter(filename)
+    for i, df in enumerate(data_frames):
+        df.to_excel(writer, f'sheet{i}')
+    writer.save()
+
+
+def read_data_frames_from_excel(filename: str) -> List[pd.DataFrame]:
+    xls = pd.ExcelFile(filename)
+    sheets_to_frames = pd.read_excel(xls, sheet_name=None, index_col=0)
+    return sheets_to_frames.values()
 
 
 def get_matrix_without_zero_columns_and_zero_rows(data_matrix: pd.DataFrame,
@@ -121,6 +133,14 @@ class Lattice:
         assert self._is_proper_concept(concept), f"{concept} is not a proper concept"
         return concept
 
+    def create_concept_from_concept_matrix(self, concept_matrix: pd.DataFrame) -> Concept:
+        objects = self._find_objects_from_concept_matrix(concept_matrix)
+        contexts = self._find_contexts_from_concept_matrix(concept_matrix, objects)
+        confidence = self._calculate_mean_confidence_for_objects(objects)
+        concept = Concept(concept_matrix, contexts, objects, confidence)
+        assert self._is_proper_concept(concept), f"Concept from matrix not proper: {concept}"
+        return concept
+
     def _create_concept_from_contexts(self, contexts: pd.Series) -> Concept:
         concept_matrix = self._zero_columns_not_matching_contexts(contexts, self.binary_matrix)
         objects = self._find_objects_from_concept_matrix(concept_matrix)
@@ -210,41 +230,87 @@ class Lattice:
 
 class MemorizingLattice:
     concepts: List[Concept] = []
+    superconcepts: List[Concept] = []
     _lattice: Lattice
 
     def __init__(self, context_matrix: pd.DataFrame,
                  support_threshold: int) -> None:
         super().__init__()
         self._lattice = Lattice(context_matrix, support_threshold)
-        repeating_concepts = self._get_base_concepts(context_matrix.columns)
-        self.concepts = MemorizingLattice._remove_repeating_concepts(repeating_concepts)
 
-    def calculate_superconcepts(self, confidence_threshold: float):
-        queue = self.concepts
+    def calculate_concepts(self):
+        repeating_concepts = self._get_base_concepts(self._lattice.context_matrix.columns)
+        self.concepts = repeating_concepts  # MemorizingLattice._remove_repeating_concepts(repeating_concepts)
+
+    def calculate_superconcepts(self, confidence_threshold: float) -> None:
+        superconcept_op = lambda c_1, c_2: \
+            self._create_superconcept_if_better(c_1, c_2, confidence_threshold)
+        superconcepts = self._merge_concepts_til_convergence(self.concepts, superconcept_op)
+        non_repeating_superconcepts = self._remove_repeating_concepts(superconcepts)
+        not_contained_objects = self._get_not_contained_objects_of_concepts(
+            non_repeating_superconcepts
+        )
+        assert len(not_contained_objects) == 0
+
+        self.superconcepts = non_repeating_superconcepts  # + concepts_for_not_contained
+
+    def _get_not_contained_objects_of_concepts(self, concepts: List[Concept]) -> List[str]:
+        assert len(concepts) > 0
+        objects = concepts[0].objects
+        for i in range(1, len(concepts)):
+            concept = concepts[i]
+            objects = objects + concept.objects
+        return get_zero_series_indexes(objects).tolist()
+
+    # def _get_base_concepts_for_objects(self, objects: List[str]):
+    #     base_concepts = []
+    #     for object in objects:
+    #         found = False
+    #         for concept in self.concepts:
+    #             if concept.objects[object] != 0:
+    #                 base_concepts.append(concept)
+    #                 found = True
+    #                 break
+    #         assert found, f"Concept not found for object {object}"
+    #     return base_concepts
+
+    def _merge_concepts_til_convergence(self, concepts: List[Concept],
+                                        merge_op: Callable[[Concept, Concept], Optional[Concept]]
+                                        ) -> List[Concept]:
+        queue = concepts.copy()
         resulting_concepts = []
         while len(queue) > 1:
-            current = queue.pop(0)
+            current_concept = queue.pop(0)
             max_concepts_to_check = len(queue)
+            print(f"Max to check: {max_concepts_to_check}")
             while max_concepts_to_check > 0:
-                next = queue.pop(0)
-                if binary_series_have_common_items(current.contexts, next.contexts):
-                    superconcept = self._lattice.find_superconcept(current, next)
-                    if self._is_better_confidence(current, next, superconcept, confidence_threshold):
-                        print(
-                            f"Superconcept made, confidence {superconcept.confidence}, old 1: {current.confidence} old 2: {next.confidence}")
-                        queue.append(superconcept)
-                        break
-                queue.append(next)
+                next_concept = queue.pop(0)
+                merged = merge_op(current_concept, next_concept)
+                if merged is not None:
+                    queue.append(merged)
+                    break
+                queue.append(next_concept)
                 max_concepts_to_check -= 1
             if max_concepts_to_check == 0:
-                print("Didn't find a better concept")
-                resulting_concepts.append(current)
-            else:
-                print(
-                    f"Concepts checked before finding better: {len(queue) - max_concepts_to_check}")
+                resulting_concepts.append(current_concept)
 
-        resulting_concepts += queue
-        return self._remove_repeating_concepts(resulting_concepts)
+        return resulting_concepts + queue
+
+    def _create_superconcept_if_better(self, concept_1: Concept, concept_2: Concept,
+                                       confidence_threshold: float) -> Optional[Concept]:
+        if binary_series_have_common_items(concept_1.contexts, concept_2.contexts):
+            superconcept = self._lattice.find_superconcept(concept_1, concept_2)
+            if self._is_better_confidence(concept_1, concept_2, superconcept, confidence_threshold):
+                return superconcept
+        return None
+
+    def _create_subconcept_if_better(self, concept_1: Concept, concept_2: Concept,
+                                     confidence_threshold: float):
+        if binary_series_have_common_items(concept_1.objects, concept_2.objects):
+            subconcept = self._lattice.find_subconcept(concept_1, concept_2)
+            if self._is_better_confidence(concept_1, concept_2, subconcept, confidence_threshold):
+                return subconcept
+        return None
 
     def _is_better_confidence(self, concept_1: Concept, concept_2: Concept, merged_concept: Concept,
                               uncertanity_threshold: float) -> bool:
@@ -267,20 +333,40 @@ class MemorizingLattice:
     def print_concepts(self, use_confidence=True):
         print(f"\nPrinting concepts, using confidence {use_confidence}\n")
         for concept in self.concepts:
-            if use_confidence:
-                print(f"Confidence: {concept.confidence}")
-            else:
-                print(concept.get_matrix_without_zero_columns_and_zero_rows())
-                print("")
+            self._print_concept(concept)
+
+    def print_superconcepts(self, use_confidence=True):
+        print(f"\nPrinting superconcepts, using confidence {use_confidence}\n")
+        for superconcept in self.superconcepts:
+            self._print_concept(superconcept)
+
+    def save_superconcepts(self, filename: str):
+        data = [s.binary_matrix for s in self.superconcepts]
+        save_data_frames_to_excel(filename, data)
+
+    def load_superconcepts(self, filename: str):
+        concept_matrices = read_data_frames_from_excel(filename)
+        self.superconcepts = [self._lattice.create_concept_from_concept_matrix(matrix)
+                              for matrix in concept_matrices]
+
+    def _print_concept(self, concept: Concept, use_confidence=True):
+        if use_confidence:
+            print(f"Confidence: {concept.confidence}")
+        else:
+            print(concept.get_matrix_without_zero_columns_and_zero_rows())
+            print("")
 
     def _get_base_concepts(self, objects: pd.Series) -> List[Concept]:
         concepts = []
+        base_concepts_left = len(objects)
         for o in objects:
+            print(f"Base concepts left: {base_concepts_left}")
+            base_concepts_left -= 1
             concept = self._lattice.find_concept_for_object(o)
             concepts.append(concept)
         return concepts
 
     @staticmethod
     def _remove_repeating_concepts(concepts: List[Concept]):
-        # TODO make a hash function and use set
+        # TODO make a hash function and use set, also fix this as it removes some concepts it shouldn't
         return [c for c in concepts if all(c != x or c is x for x in concepts)]
