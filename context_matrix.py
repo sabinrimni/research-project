@@ -1,18 +1,30 @@
+from typing import Union, List, Iterable
+
 import pandas as pd
 
 
-def get_chars_before_str(combined: str, sub_string: str, count: int) -> str:
+def get_chars_before_str(combined: str, sub_string: str, count: int, exact_count=True) -> Union[
+    str, None]:
     op_start = combined.index(sub_string)
     cleaned_combined, cleaned_op_start = escape_ops(combined, op_start)
     prefix = cleaned_combined[:cleaned_op_start]
-    return prefix if len(prefix) < count else prefix[-count:]
+    is_shorter_prefix = len(prefix) < count
+    if exact_count and is_shorter_prefix:
+        return None
+    adjusted_prefix = prefix if is_shorter_prefix else prefix[-count:]
+    return f"L({adjusted_prefix})"
 
 
-def get_chars_after_str(combined: str, sub_string: str, count: int) -> str:
+def get_chars_after_str(combined: str, sub_string: str, count: int, exact_count=True) -> Union[
+    str, None]:
     op_end = combined.index(sub_string) + len(sub_string)
     cleaned_combined, cleaned_op_end = escape_ops(combined, op_end)
     postfix = cleaned_combined[cleaned_op_end:]
-    return postfix if len(postfix) < count else postfix[:count]
+    is_shorter_postfix = len(postfix) < count
+    if is_shorter_postfix and exact_count:
+        return None
+    adjusted_postfix = postfix if is_shorter_postfix else postfix[:count]
+    return f"R({adjusted_postfix})"
 
 
 def escape_ops(combined: str, index_to_keep_track_of: int):
@@ -62,11 +74,25 @@ def get_surrounding_character_finder(left: bool, right: bool, count: int):
 
 
 def find_surrounding_characters_in_data(data: pd.DataFrame, left: bool, right: bool,
-                                        count: int) -> pd.DataFrame:
-    character_op = get_surrounding_character_finder(left, right, count)
-    data["Surrounding chars"] = data.apply(
-        lambda r: character_op(r["Combined"], r["Object"]), axis=1)
-    return data
+                                        counts: Iterable[int]) -> pd.DataFrame:
+    frames = []
+    surrounding_chars_column = "Surrounding chars"
+    for count in counts:
+        if left:
+            data_copy: pd.DataFrame = data.copy()
+            left_op = get_surrounding_character_finder(True, False, count)
+            data_copy[surrounding_chars_column] = data.apply(
+                lambda r: left_op(r["Combined"], r["Object"]), axis=1
+            )
+            frames.append(data_copy)
+        if right:
+            data_copy: pd.DataFrame = data.copy()
+            right_op = get_surrounding_character_finder(False, True, count)
+            data_copy[surrounding_chars_column] = data.apply(
+                lambda r: right_op(r["Combined"], r["Object"]), axis=1)
+            frames.append(data_copy)
+    combined = pd.concat(frames, axis=0)
+    return combined[combined[surrounding_chars_column].notnull()]
 
 
 def create_content_matrix_from_data(data: pd.DataFrame):
@@ -74,12 +100,12 @@ def create_content_matrix_from_data(data: pd.DataFrame):
 
 
 def create_context_matrix(objects, first_step_file_name: str, second_step_file_name: str,
-                          char_count=2,
-                          left=True, right=False) -> pd.DataFrame:
+                          char_counts: Iterable[int] = (1, 2),
+                          left=True, right=True) -> pd.DataFrame:
     first_step = load_csv_to_pandas(first_step_file_name)
     second_step = load_csv_to_pandas(second_step_file_name)
     combined = group_character_operations(first_step, second_step)
-    combined_with_chars = find_surrounding_characters_in_data(combined, left, right, char_count)
+    combined_with_chars = find_surrounding_characters_in_data(combined, left, right, char_counts)
     return create_content_matrix_from_data(combined_with_chars)
 
 
@@ -88,12 +114,22 @@ def save_context_matrix(context_matrix: pd.DataFrame, path: str):
 
 
 def create_and_save_context_matrix(output_path: str, first_step_file_name: str,
-                                   second_step_file_name: str, char_count=2,
-                                   left=True, right=False):
-    matrix = create_context_matrix(None, first_step_file_name, second_step_file_name, char_count,
+                                   second_step_file_name: str, char_counts: Iterable[int] = (1, 2),
+                                   left=True, right=True):
+    matrix = create_context_matrix(None, first_step_file_name, second_step_file_name, char_counts,
                                    left, right)
     save_context_matrix(matrix, output_path)
 
 
 def load_context_matrix(path: str) -> pd.DataFrame:
     return pd.read_csv(path, sep=";", quotechar='"', index_col="Object")
+
+# print(create_context_matrix(None, "data/processed/first_step/danish.csv",
+#                             "data/processed/second_step/danish.csv"))
+
+# test_data = pd.DataFrame({
+#     "Object": ["INS(x)", "INS(x)", "DEL(y)", "INS(x)", "INS(y)", "INS(x)"],
+#     "Combined": ["abcINS(x)def", "abcINS(x)xxx", "abDEL(y)cdef", "nINS(x)opqrs", "INS(y)tuwxyzINS(x)", "INS(y)tuwxyzINS(x)"]
+# })
+#
+# print(find_surrounding_characters_in_data(test_data, True, True, [1,2]))
