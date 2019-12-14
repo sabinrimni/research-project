@@ -1,6 +1,6 @@
 import collections
 import csv
-import os
+import subprocess
 from typing import List
 
 import Bio.pairwise2 as pair
@@ -136,7 +136,6 @@ def write_alphabet(output_file: str, first_step_file_name: str):
     pd.DataFrame(alphabet, columns=["Letter"]).to_csv(output_file, ";")
 
 
-
 def write_third_step_ins(file, operations: List[Operations]):
     writer = csv.writer(file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
     for op in operations:
@@ -152,7 +151,7 @@ def write_third_step_del(file, operations: List[Operations]):
 
 
 def process_data_file(file_name, language, perform_step_one=False, perform_step_two=False,
-                      perform_step_three=False):
+                      perform_step_three=False, perform_step_four= False):
     trans_data = read_file_data(file_name)
     operations = get_operations(trans_data)
     if perform_step_one:
@@ -166,4 +165,10 @@ def process_data_file(file_name, language, perform_step_one=False, perform_step_
             write_third_step_ins(file, operations)
         with open(f'data/processed/third_step/del_{language}.txt', mode='w+') as file:
             write_third_step_del(file, operations)
-
+    if perform_step_four:
+        subprocess.call(['subword-nmt', 'learn-bpe', '-s', '30',
+                         '<', f'./data/processed/third_step/ins_{language}.txt',
+                         '>', f'./data/processed/fourth_step/ins_{language}.txt'])
+        subprocess.call(['subword-nmt', 'learn-bpe', '-s', '30',
+                         '<', f'./data/processed/third_step/del_{language}.txt',
+                         '>', f'./data/processed/fourth_step/del_{language}.txt'])
