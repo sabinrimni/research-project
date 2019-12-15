@@ -14,7 +14,7 @@ def save_data_frames_to_excel(filename: str, data_frames: List[pd.DataFrame]):
 def read_data_frames_from_excel(filename: str) -> List[pd.DataFrame]:
     xls = pd.ExcelFile(filename)
     sheets_to_frames = pd.read_excel(xls, sheet_name=None, index_col=0)
-    return sheets_to_frames.values()
+    return [sheets_to_frames[sheet] for sheet in sheets_to_frames]
 
 
 def get_matrix_without_zero_columns_and_zero_rows(data_matrix: pd.DataFrame,

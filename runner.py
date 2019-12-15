@@ -7,6 +7,7 @@ import lattice as l
 from main import process_data_file, write_alphabet
 import pandas as pd
 import operation_revisor as rev
+import search_tree as tree
 
 
 def generate_steps(generate_step_1=False, generate_step_2=False, generate_step_3=False,
@@ -50,8 +51,8 @@ def write_context_matrices():
         file_data = filename.split(r".")
         language = file_data[0]
         print(f"Starting work on {language}")
-        first_step_file = f"{directory_name}/first_step/{filename}"
-        second_step_file = f"{directory_name}/second_step/{filename}"
+        first_step_file = f"{directory_name}/first_step_revised/{filename}"
+        second_step_file = f"{directory_name}/second_step_revised/{filename}"
         output_path = f"{directory_name}/context_matrix/{filename}"
         create_and_save_context_matrix(output_path, first_step_file, second_step_file)
 
@@ -117,17 +118,16 @@ def test_lattice():
 def test_memorizing_lattice():
     ctx = load_context_matrix("data/processed/context_matrix/danish.csv").transpose()
     memorizing_lattice = l.MemorizingLattice(ctx, 1)
-    # memorizing_lattice.calculate_concepts()
+    memorizing_lattice.calculate_concepts()
     # print("Created lattice")
     # print(f"Concept count: {len(memorizing_lattice.concepts)}")
     # print(f"Calculating superconcepts")
-    # memorizing_lattice.calculate_superconcepts(0)
-    memorizing_lattice.load_superconcepts("data/processed/concepts/danish.xls")
-    memorizing_lattice.print_superconcepts()
-    # memorizing_lattice.save_superconcepts("data/processed/concepts/danish.xls")
+    memorizing_lattice.calculate_superconcepts(0)
+    # memorizing_lattice.load_superconcepts("data/processed/concepts/danish.xls")
+    # memorizing_lattice.print_superconcepts()
+    memorizing_lattice.save_superconcepts("data/processed/concepts/danish.xls")
     print("\nDone")
 
-generate_steps(generate_step_5=True)
 
 def test_revisor():
     sub = rev._load_file("data/processed/subword/test.csv")
@@ -136,7 +136,18 @@ def test_revisor():
     print(rev._revise_second_step(sub, second))
 
 
-write_first_second_step_revision()
+def test_decision_tree():
+    concept_matrices = l.read_data_frames_from_excel("data/processed/concepts/danish.xls")
+    t = tree.OperationTree(concept_matrices)
+    print(t.get_operations_for_word("elskerinde", 3))
+    print("Done")
+
+# generate_steps_1_2_3(False, False, True)
+# generate_steps(generate_step_5=True)
+# write_first_second_step_revision()
+# write_context_matrices()
+# test_memorizing_lattice()
+write_concepts()
 
 # test_lattice()
 # test_memorizing_lattice()
