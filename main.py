@@ -250,7 +250,7 @@ def process_data_file(file_name, language, perform_step_one=False, perform_step_
         print(f'Delete Splits: {delete_splits}')
         print(f'Insert Thresholds: {bellow_threshold_inserts}')
         print(f'Delete Thresholds: {bellow_threshold_deletes}')
-        with open(f'data/processed/fifth_step/{language}.csv', mode='w+') as file:
+        with open(f'data/processed/subword/{language}.csv', mode='w+') as file:
             prepared_inserts = prepare_fifth_step('INS', insert_splits, bellow_threshold_inserts)
             prepared_deletes = prepare_fifth_step('DEL', delete_splits, bellow_threshold_deletes)
             write_fifth_step(file, prepared_inserts + prepared_deletes)
