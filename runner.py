@@ -3,6 +3,7 @@ from typing import Callable
 
 from functools import partial
 from context_matrix import create_and_save_context_matrix, load_context_matrix
+import context_matrix as cm
 import lattice as l
 from main import process_data_file, write_alphabet
 import pandas as pd
@@ -150,10 +151,16 @@ def _test_decision_tree():
 # write_context_matrices()
 # test_memorizing_lattice()
 # write_concepts()
-# _test_memorizing_lattice()
+_test_memorizing_lattice()
+# _test_decision_tree()
 
+# write_first_second_step_revision()
 # test_lattice()
 # test_memorizing_lattice()
+# res= cm.create_context_matrix(None, "data/processed/first_step_revised/danish.csv",
+#                          "data/processed/second_step_revised/danish.csv")
+# print(res)
+# write_context_matrices()
 
 # print(ctx)
 # lattice = Lattice(ctx, 1)

@@ -80,13 +80,20 @@ class Concept:
         non_zero_columns_transpose = non_zero_columns.transpose()
         contexts = non_zero_columns_transpose.prod()
         contexts_match = (contexts == self.contexts).all()
+        # print(f"Contexts: {len(contexts)}")
+        # print(f"Self contexts: {len(self.contexts)}")
+        # non_matching = contexts.index[contexts != self.contexts]
+        # print(f"Non matching {contexts[non_matching]}")
+        # print(f"Self Non matching {self.contexts[non_matching]}")
+        # print(f"Bin: {self.binary_matrix.loc[non_matching,:]}")
 
         context_indexes = self.get_context_indexes()
-        if (context_indexes.empty):
+        if context_indexes.empty:
             objects_fulfil_context_requirements = len(object_indexes) == len(self.objects)
         else:
             context_object_intersection = non_zero_columns_transpose[context_indexes]
             objects_fulfil_context_requirements = context_object_intersection.min().min() == 1
+        # print(f"OM: {objects_match}, CM: {contexts_match}, OFCR: {objects_fulfil_context_requirements}")
 
         return contexts_match and objects_match and objects_fulfil_context_requirements
 
@@ -101,8 +108,8 @@ class Lattice:
 
     def __init__(self, context_matrix: pd.DataFrame, threshold: int) -> None:
         super().__init__()
-        self.context_matrix = context_matrix
         self.threshold = threshold
+        self.context_matrix = self._zero_below_threshold(context_matrix)
         self.binary_matrix = self._create_binary_matrix_based_on_threshold(self.context_matrix,
                                                                            self.threshold)
 
@@ -165,6 +172,7 @@ class Lattice:
         confidence_matrix = self._get_confidence_matrix_from_support_matrix(support_matrix)
         return self._calculate_mean_confidence_from_confidence_matrix(confidence_matrix)
 
+
     @staticmethod
     def _find_objects_from_concept_matrix(concept_matrix: pd.DataFrame) -> pd.Series:
         return (concept_matrix == 1).any().astype(int)
@@ -185,13 +193,22 @@ class Lattice:
         merged: pd.DataFrame = pd.concat([series_1, series_2], axis=1)
         return merged.max(axis=1)
 
+    def _zero_below_threshold(self, matrix: pd.DataFrame) ->pd.DataFrame:
+        to_zero: pd.DataFrame = matrix.copy()
+        # print(matrix)
+        to_zero[to_zero < self.threshold] = 0
+        # print(to_zero)
+        return to_zero
+
     @staticmethod
     def _create_binary_matrix_based_on_threshold(context_matrix: pd.DataFrame,
                                                  threshold: int):
         matrix = context_matrix.copy()
-        above_threshold = matrix[matrix.columns] >= threshold
-        matrix[matrix.columns] = 0
-        matrix[above_threshold] = 1
+        matrix[matrix >= threshold] = 1
+        # above_threshold = matrix[matrix.columns] >= threshold
+        # matrix[matrix.columns] = 0
+        # matrix[above_threshold] = 1
+        # print(matrix)
         return matrix
 
     def _zero_columns_not_matching_contexts(self, contexts: pd.Series,
@@ -212,6 +229,7 @@ class Lattice:
     def _is_proper_concept(self, concept: Concept) -> bool:
         if not concept.is_consistent():
             return False
+        # print("Consistent")
 
         object_indexes = get_non_zero_series_indexes(concept.objects)
         objects_in_lattice = self.binary_matrix[object_indexes]
@@ -220,6 +238,7 @@ class Lattice:
         if not objects_match:
             return False
 
+        # print("Objects match")
         context_indexes = get_non_zero_series_indexes(concept.contexts)
         non_object_indexes = get_zero_series_indexes(concept.objects)
         non_objects_for_contexts = self.binary_matrix[non_object_indexes].loc[context_indexes, :]

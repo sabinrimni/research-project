@@ -1,3 +1,5 @@
+from itertools import chain
+import numpy as np
 from typing import Union, List, Iterable
 
 import pandas as pd
@@ -106,7 +108,24 @@ def create_context_matrix(objects, first_step_file_name: str, second_step_file_n
     second_step = load_csv_to_pandas(second_step_file_name)
     combined = group_character_operations(first_step, second_step)
     combined_with_chars = find_surrounding_characters_in_data(combined, left, right, char_counts)
-    return create_content_matrix_from_data(combined_with_chars)
+    data_with_grammar = _add_grammar_rules_to_data(first_step, combined_with_chars)
+    return create_content_matrix_from_data(data_with_grammar)
+
+
+def _add_grammar_rules_to_data(first_step: pd.DataFrame, data: pd.DataFrame) -> pd.DataFrame:
+    def chainer(s):
+        return list(chain.from_iterable(s.str.split(',')))
+
+    relevant_data = first_step[["Combined", "Grammar"]]
+    with_grammar: pd.DataFrame = data.merge(relevant_data, on="Combined")
+    lens = with_grammar['Grammar'].str.split(',').map(len)
+    grammar_replacing_chars = pd.DataFrame({
+        "Object": np.repeat(with_grammar["Object"], lens),
+        "Combined": np.repeat(with_grammar["Combined"], lens),
+        "Surrounding chars": chainer(with_grammar["Grammar"]),
+    })
+    chars_and_grammar = pd.concat([data, grammar_replacing_chars])
+    return chars_and_grammar
 
 
 def save_context_matrix(context_matrix: pd.DataFrame, path: str):

@@ -98,15 +98,16 @@ def group_operation_characters(operations: List[Operation]):
 
 def write_first_step(file, operations: List[Operations]):
     writer = csv.writer(file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-    writer.writerow(["Source", "Target", "Combined", "Inserts", "Deletes"])
+    writer.writerow(["Source", "Target", "Combined", "Inserts", "Deletes", "Grammar"])
     for op in operations:
         lemma = op.transformation.lemma
         inflection = op.transformation.inflection
         combined = op.combined()
         ins_steps = ",".join([f"INS({ins.letters})" for ins in op.inserts])
         del_steps = ",".join([f"DEL({delete.letters})" for delete in op.deletes])
+        grammar = ",".join(op.transformation.rules)
 
-        writer.writerow([lemma, inflection, combined, ins_steps, del_steps])
+        writer.writerow([lemma, inflection, combined, ins_steps, del_steps, grammar])
 
 
 def write_second_step(file, operations: List[Operations]):

@@ -4,7 +4,7 @@ from typing import List
 class Transformation:
     inflection: str
     lemma: str
-    rules: list
+    rules: List[str]
 
     def __str__(self) -> str:
         return f"(lemma: {self.lemma}, inflection: {self.inflection}, rules: {self.rules})"
