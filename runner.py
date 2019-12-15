@@ -8,21 +8,22 @@ from main import process_data_file, write_alphabet
 import pandas as pd
 
 
-def generate_steps(generate_step_1=False, generate_step_2=False, generate_step_3=False, generate_step_4=False):
+def generate_steps(generate_step_1=False, generate_step_2=False, generate_step_3=False,
+                   generate_step_4=False, generate_step_5=False):
     directory_name = "data/latin_alphabet"
     op = partial(run_steps, generate_step_1=generate_step_1, generate_step_2=generate_step_2,
-                 generate_step_3=generate_step_3, generate_step_4=generate_step_4)
+                 generate_step_3=generate_step_3, generate_step_4=generate_step_4, generate_step_5=generate_step_5)
     iterate_directory(directory_name, op)
 
 
-def run_steps(directory_name: str, filename: str, generate_step_1: bool,
-                    generate_step_2: bool, generate_step_3: bool, generate_step_4: bool) -> None:
+def run_steps(directory_name: str, filename: str, generate_step_1: bool, generate_step_2: bool,
+              generate_step_3: bool, generate_step_4: bool, generate_step_5: bool) -> None:
     file_data = filename.split("-")
     language = file_data[0]
     operation = file_data[1]
     if operation == "dev":
         process_data_file(f"{directory_name}/{filename}", language, generate_step_1,
-                          generate_step_2, generate_step_3, generate_step_4)
+                          generate_step_2, generate_step_3, generate_step_4, generate_step_5)
 
 
 def iterate_directory(directory_name, operation: Callable[[str, str], None]) -> None:
@@ -94,7 +95,7 @@ def test_memorizing_lattice():
     memorizing_lattice.print_concepts()
     print("\nDone")
 
-generate_steps(generate_step_4=True)
+generate_steps(generate_step_5=True)
 
 # test_lattice()
 # test_memorizing_lattice()

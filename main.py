@@ -11,6 +11,7 @@ import pandas as pd
 from context_matrix import create_and_save_context_matrix
 from data_model import Transformation, Operation, Operations
 
+FREQUENCY_THRESHOLD = 20
 
 def read_file_data(file_name: str) -> List[Transformation]:
     lines = open(file_name, mode="r", encoding="utf-8")
@@ -150,8 +151,79 @@ def write_third_step_del(file, operations: List[Operations]):
             writer.writerow([d.letters])
 
 
+def group_bellow_threshold_inserts(operations: List[Operations]):
+    counted_inserts = group_inserts_by_characters_only(operations)
+    bellow_threshold_inserts = []
+    for characters in counted_inserts:
+        if(counted_inserts[characters]<=FREQUENCY_THRESHOLD):
+            bellow_threshold_inserts.append(characters)
+    print(f'Counted Inserts: {counted_inserts}')
+    return bellow_threshold_inserts
+
+
+def group_bellow_threshold_deletes(operations: List[Operations]):
+    counted_deletes = group_deletes_by_characters_only(operations)
+    bellow_threshold_deletes = []
+    for characters in counted_deletes:
+        if(counted_deletes[characters]<=FREQUENCY_THRESHOLD):
+            bellow_threshold_deletes.append(characters)
+
+    return bellow_threshold_deletes
+
+
+def read_subword_file(file_name: str) -> List[List[str]]:
+    lines = open(file_name, mode="r", encoding="utf-8")
+    data = []
+    for l in lines:
+        if(l.find('#') == -1):
+            s = l.split(u'<')[0]
+            splits = s.strip().split(u' ')
+            data.append(splits)
+
+    return data
+
+
+def prepare_fifth_step(operation: str, operation_splits: List[List[str]], bellow_threshold_operations: List[str]) -> List[str]:
+    operation_result = []
+    for op in bellow_threshold_operations:
+        matches = []
+        for splits in operation_splits:
+            if(op == ''.join(splits)):
+                matches.append(splits)
+
+        s = f'{operation}({op});'
+        if(len(matches) == 0):
+            operation_result.append(s + ''.join([f'{operation}({c}),' for c in op]))
+        if(len(matches) == 1):
+            operation_result.append(s + ''.join([f'{operation}({s}),' for s in matches[0]]))
+        if(len(matches) > 1):
+            max_value_index = 0
+            max_split_value = 0
+            for i, splits in enumerate(matches):
+                split_value = 0
+                for s in splits:
+                    split_value += len(s)**2
+
+                if(split_value > max_split_value):
+                    max_split_value = split_value
+                    max_value_index = i
+            operation_result.append(s + ''.join([f'{operation}({s}),' for s in matches[max_value_index]]))
+
+        print(f'Matches found for {op}: {matches}')
+
+    return operation_result
+
+
+def write_fifth_step(file, operations_result: List[str]):
+    writer = csv.writer(file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+    writer.writerow(["Original", "Split"])
+    for op in operations_result:
+        print(f'Writing operation: {op}')
+        writer.writerow([op])
+
+
 def process_data_file(file_name, language, perform_step_one=False, perform_step_two=False,
-                      perform_step_three=False, perform_step_four= False):
+                      perform_step_three=False, perform_step_four=False, perform_step_five=False):
     trans_data = read_file_data(file_name)
     operations = get_operations(trans_data)
     if perform_step_one:
@@ -166,9 +238,19 @@ def process_data_file(file_name, language, perform_step_one=False, perform_step_
         with open(f'data/processed/third_step/del_{language}.txt', mode='w+') as file:
             write_third_step_del(file, operations)
     if perform_step_four:
-        subprocess.call(['subword-nmt', 'learn-bpe', '-s', '30',
-                         '<', f'./data/processed/third_step/ins_{language}.txt',
-                         '>', f'./data/processed/fourth_step/ins_{language}.txt'])
-        subprocess.call(['subword-nmt', 'learn-bpe', '-s', '30',
-                         '<', f'./data/processed/third_step/del_{language}.txt',
-                         '>', f'./data/processed/fourth_step/del_{language}.txt'])
+        subprocess.call(f'subword-nmt learn-bpe -s 30 < ./data/processed/third_step/ins_{language}.txt > ./data/processed/fourth_step/ins_{language}.txt', shell=True)
+        subprocess.call(f'subword-nmt learn-bpe -s 30 < ./data/processed/third_step/del_{language}.txt > ./data/processed/fourth_step/del_{language}.txt', shell=True)
+    if perform_step_five:
+        print(f'Processing Language: {language}')
+        insert_splits = read_subword_file(f'./data/processed/fourth_step/ins_{language}.txt')
+        delete_splits = read_subword_file(f'./data/processed/fourth_step/del_{language}.txt')
+        bellow_threshold_inserts = group_bellow_threshold_inserts(operations)
+        bellow_threshold_deletes = group_bellow_threshold_deletes(operations)
+        print(f'Insert Splits: {insert_splits}')
+        print(f'Delete Splits: {delete_splits}')
+        print(f'Insert Thresholds: {bellow_threshold_inserts}')
+        print(f'Delete Thresholds: {bellow_threshold_deletes}')
+        with open(f'data/processed/fifth_step/{language}.csv', mode='w+') as file:
+            prepared_inserts = prepare_fifth_step('INS', insert_splits, bellow_threshold_inserts)
+            prepared_deletes = prepare_fifth_step('DEL', delete_splits, bellow_threshold_deletes)
+            write_fifth_step(file, prepared_inserts + prepared_deletes)
