@@ -6,9 +6,11 @@ from context_matrix import create_and_save_context_matrix, load_context_matrix
 import lattice as l
 from main import process_data_file, write_alphabet
 import pandas as pd
+import operation_revisor as rev
 
 
-def generate_steps(generate_step_1=False, generate_step_2=False, generate_step_3=False, generate_step_4=False):
+def generate_steps(generate_step_1=False, generate_step_2=False, generate_step_3=False,
+                   generate_step_4=False):
     directory_name = "data/latin_alphabet"
     op = partial(run_steps, generate_step_1=generate_step_1, generate_step_2=generate_step_2,
                  generate_step_3=generate_step_3, generate_step_4=generate_step_4)
@@ -16,7 +18,7 @@ def generate_steps(generate_step_1=False, generate_step_2=False, generate_step_3
 
 
 def run_steps(directory_name: str, filename: str, generate_step_1: bool,
-                    generate_step_2: bool, generate_step_3: bool, generate_step_4: bool) -> None:
+              generate_step_2: bool, generate_step_3: bool, generate_step_4: bool) -> None:
     file_data = filename.split("-")
     language = file_data[0]
     operation = file_data[1]
@@ -69,6 +71,21 @@ def write_concepts():
         print(f"Finished work on {language}")
 
 
+def write_first_second_step_revision():
+    directory_name = "data/processed"
+    for filename in os.listdir(f"{directory_name}/subword"):
+        language = filename.split(r".")[0]
+        print(f"Starting work on {language}")
+        subword_file = f"{directory_name}/subword/{filename}"
+        first_step_file = f"{directory_name}/first_step/{filename}"
+        second_step_file = f"{directory_name}/second_step/{filename}"
+        revised_first_step_file = f"{directory_name}/first_step_revised/{filename}"
+        revised_second_step_file = f"{directory_name}/second_step_revised/{filename}"
+        rev.revise_steps(subword_file, first_step_file, second_step_file, revised_first_step_file,
+                         revised_second_step_file)
+        print(f"Finished work on {language}")
+
+
 def test_lattice():
     data = {
         "a": [1, 2, 3, 4, 5, 6, 7],
@@ -110,6 +127,15 @@ def test_memorizing_lattice():
     # memorizing_lattice.save_superconcepts("data/processed/concepts/danish.xls")
     print("\nDone")
 
+
+def test_revisor():
+    sub = rev._load_file("data/processed/subword/test.csv")
+    first = rev._load_file("data/processed/first_step/test.csv")
+    second = rev._load_file("data/processed/second_step/test.csv")
+    print(rev._revise_second_step(sub, second))
+
+
+write_first_second_step_revision()
 
 # generate_steps_1_2_3(False, False, True)
 
