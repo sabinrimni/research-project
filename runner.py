@@ -10,16 +10,8 @@ import operation_revisor as rev
 import search_tree as tree
 
 
-def generate_steps(generate_step_1=False, generate_step_2=False, generate_step_3=False,
-                   generate_step_4=False, generate_step_5=False):
-    directory_name = "data/latin_alphabet"
-    op = partial(run_steps, generate_step_1=generate_step_1, generate_step_2=generate_step_2,
-                 generate_step_3=generate_step_3, generate_step_4=generate_step_4, generate_step_5=generate_step_5)
-    iterate_directory(directory_name, op)
-
-
-def run_steps(directory_name: str, filename: str, generate_step_1: bool, generate_step_2: bool,
-              generate_step_3: bool, generate_step_4: bool, generate_step_5: bool) -> None:
+def _run_steps(directory_name: str, filename: str, generate_step_1: bool, generate_step_2: bool,
+               generate_step_3: bool, generate_step_4: bool, generate_step_5: bool) -> None:
     file_data = filename.split("-")
     language = file_data[0]
     operation = file_data[1]
@@ -28,21 +20,30 @@ def run_steps(directory_name: str, filename: str, generate_step_1: bool, generat
                           generate_step_2, generate_step_3, generate_step_4, generate_step_5)
 
 
-def iterate_directory(directory_name, operation: Callable[[str, str], None]) -> None:
+def _iterate_directory(directory_name, operation: Callable[[str, str], None]) -> None:
     for filename in os.listdir(directory_name):
         operation(directory_name, filename)
 
 
-def write_alphabets():
-    dir_name = "data/processed/first_step"
-    iterate_directory(dir_name, write_alphabet_for_file)
-
-
-def write_alphabet_for_file(directory_name: str, filename: str):
+def _write_alphabet_for_file(directory_name: str, filename: str):
     language = filename.split(".")[0]
     print(f"Writing alphabet for {language}")
     write_alphabet(f"data/processed/alphabet/{filename}", f"{directory_name}/{filename}")
     print(f"Finished alphabet for {language}")
+
+
+def write_alphabets():
+    dir_name = "data/processed/first_step"
+    _iterate_directory(dir_name, _write_alphabet_for_file)
+
+
+def write_steps(generate_step_1=False, generate_step_2=False, generate_step_3=False,
+                generate_step_4=False, generate_step_5=False):
+    directory_name = "data/latin_alphabet"
+    op = partial(_run_steps, generate_step_1=generate_step_1, generate_step_2=generate_step_2,
+                 generate_step_3=generate_step_3, generate_step_4=generate_step_4,
+                 generate_step_5=generate_step_5)
+    _iterate_directory(directory_name, op)
 
 
 def write_context_matrices():
@@ -87,7 +88,7 @@ def write_first_second_step_revision():
         print(f"Finished work on {language}")
 
 
-def test_lattice():
+def _test_lattice():
     data = {
         "a": [1, 2, 3, 4, 5, 6, 7],
         "b": [5, 5, 5, 5, 5, 5, 5],
@@ -115,7 +116,7 @@ def test_lattice():
     # print(ctx)
 
 
-def test_memorizing_lattice():
+def _test_memorizing_lattice():
     ctx = load_context_matrix("data/processed/context_matrix/danish.csv").transpose()
     memorizing_lattice = l.MemorizingLattice(ctx, 1)
     memorizing_lattice.calculate_concepts()
@@ -129,25 +130,27 @@ def test_memorizing_lattice():
     print("\nDone")
 
 
-def test_revisor():
+def _test_revisor():
     sub = rev._load_file("data/processed/subword/test.csv")
     first = rev._load_file("data/processed/first_step/test.csv")
     second = rev._load_file("data/processed/second_step/test.csv")
     print(rev._revise_second_step(sub, second))
 
 
-def test_decision_tree():
+def _test_decision_tree():
     concept_matrices = l.read_data_frames_from_excel("data/processed/concepts/danish.xls")
     t = tree.OperationTree(concept_matrices)
     print(t.get_operations_for_word("elskerinde", 3))
     print("Done")
+
 
 # generate_steps_1_2_3(False, False, True)
 # generate_steps(generate_step_5=True)
 # write_first_second_step_revision()
 # write_context_matrices()
 # test_memorizing_lattice()
-write_concepts()
+# write_concepts()
+# _test_memorizing_lattice()
 
 # test_lattice()
 # test_memorizing_lattice()
