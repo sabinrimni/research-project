@@ -6,6 +6,7 @@ from context_matrix import create_and_save_context_matrix, load_context_matrix
 import lattice as l
 from main import process_data_file, write_alphabet
 import pandas as pd
+import operation_revisor as rev
 
 
 def generate_steps(generate_step_1=False, generate_step_2=False, generate_step_3=False,
@@ -57,6 +58,34 @@ def write_context_matrices():
         print(f"Finished work on {language}")
 
 
+def write_concepts():
+    directory_name = "data/processed"
+    for filename in os.listdir(f"{directory_name}/context_matrix"):
+        language = filename.split(r".")[0]
+        print(f"Starting work on {language}")
+        context_matrix = load_context_matrix(f"{directory_name}/context_matrix/{filename}")
+        mem_lattice = l.MemorizingLattice(context_matrix, 1)
+        mem_lattice.calculate_concepts()
+        mem_lattice.calculate_superconcepts(0)
+        mem_lattice.save_superconcepts(f"{directory_name}/concepts/{language}.xls")
+        print(f"Finished work on {language}")
+
+
+def write_first_second_step_revision():
+    directory_name = "data/processed"
+    for filename in os.listdir(f"{directory_name}/subword"):
+        language = filename.split(r".")[0]
+        print(f"Starting work on {language}")
+        subword_file = f"{directory_name}/subword/{filename}"
+        first_step_file = f"{directory_name}/first_step/{filename}"
+        second_step_file = f"{directory_name}/second_step/{filename}"
+        revised_first_step_file = f"{directory_name}/first_step_revised/{filename}"
+        revised_second_step_file = f"{directory_name}/second_step_revised/{filename}"
+        rev.revise_steps(subword_file, first_step_file, second_step_file, revised_first_step_file,
+                         revised_second_step_file)
+        print(f"Finished work on {language}")
+
+
 def test_lattice():
     data = {
         "a": [1, 2, 3, 4, 5, 6, 7],
@@ -88,14 +117,26 @@ def test_lattice():
 def test_memorizing_lattice():
     ctx = load_context_matrix("data/processed/context_matrix/danish.csv").transpose()
     memorizing_lattice = l.MemorizingLattice(ctx, 1)
-    print("Created lattice")
-    print(f"Concept count: {len(memorizing_lattice.concepts)}")
-    print(f"Calculating superconcepts")
-    memorizing_lattice.calculate_superconcepts(0.05)
-    memorizing_lattice.print_concepts()
+    # memorizing_lattice.calculate_concepts()
+    # print("Created lattice")
+    # print(f"Concept count: {len(memorizing_lattice.concepts)}")
+    # print(f"Calculating superconcepts")
+    # memorizing_lattice.calculate_superconcepts(0)
+    memorizing_lattice.load_superconcepts("data/processed/concepts/danish.xls")
+    memorizing_lattice.print_superconcepts()
+    # memorizing_lattice.save_superconcepts("data/processed/concepts/danish.xls")
     print("\nDone")
 
 generate_steps(generate_step_5=True)
+
+def test_revisor():
+    sub = rev._load_file("data/processed/subword/test.csv")
+    first = rev._load_file("data/processed/first_step/test.csv")
+    second = rev._load_file("data/processed/second_step/test.csv")
+    print(rev._revise_second_step(sub, second))
+
+
+write_first_second_step_revision()
 
 # test_lattice()
 # test_memorizing_lattice()
@@ -111,4 +152,3 @@ generate_steps(generate_step_5=True)
 # super_concept_support = lattice.get_support_for_concept(super_concept)
 # # print(get_matrix_without_zero_columns_and_zero_rows(super_concept_support))
 # print(get_matrix_without_zero_columns_and_zero_rows(lattice.get_confidence_for_concept(super_concept)))
-
