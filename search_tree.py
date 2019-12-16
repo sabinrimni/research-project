@@ -1,14 +1,15 @@
 from typing import List, Dict, Iterable
 
 from sklearn import tree
+from graphviz import Source
 import pandas as pd
-import numpy as np
 
 
 class OperationTree:
     clf: tree.DecisionTreeClassifier
     object_mapping: Dict[str, int]
     num_to_object_mapping: Dict[int, str]
+    context_mapping: Dict[str, int]
     objects: List[str]
     contexts: List[str]
 
@@ -21,8 +22,27 @@ class OperationTree:
     def get_operations_for_word(self, word: str, grammar_rules: List[str] = None,
                                 max_context_len: int = 3) -> List[str]:
         data_for_word = _get_contexts_in_word(word, self.contexts, max_context_len)
+        data_for_word = self._include_grammar_rules_in_contexts(data_for_word, grammar_rules)
         predictions = self.clf.predict(data_for_word)
         return [self.num_to_object_mapping[pred] for pred in predictions]
+
+    def to_png(self, output_path: str):
+        graph = Source( tree.export_graphviz(self.clf, out_file=None, feature_names=self.contexts))
+        png_bytes = graph.pipe(format='png')
+        with open(output_path,'wb') as f:
+            f.write(png_bytes)
+
+
+    def _include_grammar_rules_in_contexts(self, contexts: List[List[int]],
+                                           grammar_rules: List[str] = None) -> List[List[int]]:
+        if grammar_rules is None:
+            return contexts
+
+        rule_indexes = [self.context_mapping[rule] for rule in grammar_rules]
+        for context in contexts:
+            for index in rule_indexes:
+                context[index] = 1
+        return contexts
 
     def _make_tree(self, feature_matrix: pd.DataFrame):
         self.objects = feature_matrix.index.tolist()
@@ -30,6 +50,7 @@ class OperationTree:
         labels = [self.object_mapping[l] for l in self.objects]
         features = feature_matrix.values
         self.contexts = feature_matrix.columns.tolist()
+        self.context_mapping = _labels_to_num_indexes(self.contexts)
         clf = tree.DecisionTreeClassifier(criterion="entropy")
         clf.fit(features, labels)
         self.clf = clf
@@ -38,14 +59,11 @@ class OperationTree:
 def _concept_matrices_to_feature_matrix(concept_matrices: List[pd.DataFrame]) -> pd.DataFrame:
     merged: pd.DataFrame = pd.concat([m.transpose() for m in concept_matrices], axis=0)
     merged.reset_index(inplace=True)
-    # TODO make this smarter, right now if 2 different objects have same contexts one will be lost
     empty_objects = merged.index[merged.sum(axis=1) == 0]
     merged.drop(index=empty_objects, inplace=True)
 
     merged.set_index("index", inplace=True)
 
-    print("Merged")
-    print(merged)
     return merged
 
 
@@ -89,12 +107,10 @@ def _find_substrings_on_pos(word: str, pos: int, max_len: int):
 def _get_contexts_in_word(word: str, all_contexts: List[str], max_len: int) -> List[List[int]]:
     context_count = len(all_contexts)
     context_mapping = _labels_to_num_indexes(all_contexts)
-    rev = _reverse_dict(context_mapping)
     contexts_for_all_poses = []
     for i in range(len(word)):
         subs = _find_substrings_on_pos(word, i, max_len)
         contexts = [context_mapping[c] for c in subs if c in context_mapping]
-        print([rev[c] for c in contexts])
         if (len(contexts)) == 0:
             continue
         binary_contexts = [1 if i in contexts else 0 for i in range(context_count)]

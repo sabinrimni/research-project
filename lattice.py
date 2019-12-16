@@ -1,11 +1,12 @@
 from functools import partial, partialmethod
 from typing import List, Tuple, Dict, Iterable, Union, Callable, Optional
+import xlsxwriter
 
 import pandas as pd
 
 
 def save_data_frames_to_excel(filename: str, data_frames: List[pd.DataFrame]):
-    writer = pd.ExcelWriter(filename)
+    writer = pd.ExcelWriter(filename, engine='xlsxwriter')
     for i, df in enumerate(data_frames):
         df.to_excel(writer, f'sheet{i}')
     writer.save()
