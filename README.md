@@ -24,10 +24,21 @@ given contexts (surrounding characters, grammar rules to apply)
     * subword-nmt
     * sklearn
     * xlsxwriter
+    * xlrd
     * openpyxl
+    * matplotlib
     * graphviz
-* Additionally, the graphviz must be installed to be able to create the decision tree charts.
-Follow [these](https://graphviz.gitlab.io/download/) instructions.
+        * Additionally, the graphviz binaries must be installed to be able to create the decision tree charts. Follow instructions:
+            * On Ubuntu (or Debian based distros):
+                * run `sudo apt-get install graphviz`
+            * On MacOS:
+                * run `brew install graphviz`
+            * On Windows
+                * [download](https://graphviz.gitlab.io/_pages/Download/Download_windows.html) the installer package and follow the instructions
+                * Add `C:\Program Files (x86)\Graphviz2.38\bin` to User path
+                * Add `C:\Program Files (x86)\Graphviz2.38\bin\dot.exe` to System Path
+                * restart computer
+    
 ### Running the project
 
 The simplest way to run the program is by navigating to the project root and typing `python runner.py`
@@ -44,10 +55,6 @@ The `data` folder in the project root contains the following structure:
 `write_steps(generate_step_1=False, generate_step_2=False, generate_step_3=False, generate_step_4=False, generate_step_5=False)`  
 By setting any of the steps to true will generate the appropriate files in the corresponding folder in the `./data/processed` folder.
 Further operations can be recreated using:
-
-`write_context_matrices()`
-
-
-`write_concepts()`
-
-`write_first_second_step_revision()`
+* `write_context_matrices()`
+* `write_concepts()`
+* `write_first_second_step_revision()`
