@@ -24,6 +24,7 @@ def read_file_data(file_name: str) -> List[Transformation]:
     return data
 
 
+# Inserts gaps in either the Lemma or Inflection to determine the psitions where we have to perform INS or DEL operations
 def find_gap_positions_and_matching_characters(gap_string: str, character_string: str) -> List[
     Operation]:
     assert len(gap_string) == len(character_string)
@@ -40,12 +41,14 @@ def find_gap_positions_and_matching_characters(gap_string: str, character_string
     return operations
 
 
-def transform_index_to_directional_index(index: int, string: str):
-    if index > len(string) / 2:
-        return index - len(string)
-    return index
+# Unused code
+# def transform_index_to_directional_index(index: int, string: str):
+#     if index > len(string) / 2:
+#         return index - len(string)
+#     return index
 
 
+# Grouping gaps to later bundle single-character operations into multi-character operations
 def group_consecutive_indexes(indexes: List[int]) -> List[List[int]]:
     return [list(group) for group in mit.consecutive_groups(indexes)]
 
