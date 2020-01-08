@@ -3,13 +3,12 @@ from typing import Callable
 
 from functools import partial
 from context_matrix import create_and_save_context_matrix, load_context_matrix
-import context_matrix as cm
 import lattice as l
 from main import process_data_file, write_alphabet
 import pandas as pd
 import operation_revisor as rev
 import search_tree as tree
-import matplotlib.pyplot as plt
+import baseline
 
 
 def _run_steps(directory_name: str, filename: str, generate_step_1: bool, generate_step_2: bool,
@@ -67,8 +66,9 @@ def write_concepts():
     for filename in os.listdir(f"{directory_name}/context_matrix"):
         language = filename.split(r".")[0]
         print(f"Starting work on {language}")
-        context_matrix = load_context_matrix(f"{directory_name}/context_matrix/{filename}")
-        mem_lattice = l.MemorizingLattice(context_matrix, 1)
+        context_matrix = load_context_matrix(
+            f"{directory_name}/context_matrix/{filename}").transpose()
+        mem_lattice = l.MemorizingLattice(context_matrix, 5)
         mem_lattice.calculate_concepts()
         mem_lattice.calculate_superconcepts(0)
         mem_lattice.save_superconcepts(f"{directory_name}/concepts/{language}.xlsx")
@@ -100,6 +100,38 @@ def draw_trees():
         decision_tree = tree.OperationTree(concept_matrices)
         decision_tree.to_png(f"{directory_name}/decision_tree/{language}.png")
         print(f"Finished work on {language}")
+
+
+def predict_words():
+    directory_name = "data"
+    for filename in os.listdir(f"{directory_name}/processed/concepts"):
+        language = filename.split(r".")[0]
+        print(f"Starting work on {language}")
+        data_file = f"{directory_name}/latin_alphabet/{language}-test"
+        concept_file = f"{directory_name}/processed/concepts/{language}.xlsx"
+        output_file = f"{directory_name}/processed/predictions/base/{language}.csv"
+        tree.predict_and_save_new_words(data_file, concept_file, output_file)
+        print(f"Finished work on {language}")
+
+
+def write_baseline_cost():
+    directory_name = "data/processed/predictions"
+    for filename in os.listdir(f"{directory_name}/base"):
+        language = filename.split(r".")[0]
+        print(f"Starting work on {language}")
+        word_and_prediction_file = f"{directory_name}/base/{filename}"
+        output_file = f"{directory_name}/base_cost/{filename}"
+        baseline.calculate_and_save_cost_baseline(word_and_prediction_file, output_file)
+        print(f"Finished work on {language}")
+
+
+def get_average_baseline_cost():
+    directory_name = "data/processed/predictions/base_cost"
+    for filename in os.listdir(f"{directory_name}"):
+        language = filename.split(r".")[0]
+        print(f"Language: {language}")
+        cost_file = f"{directory_name}/{filename}"
+        print(f"Cost: {baseline.calculate_average_cost(cost_file)}")
 
 
 def _test_lattice():
@@ -140,6 +172,9 @@ def _test_memorizing_lattice():
     memorizing_lattice.calculate_superconcepts(0)
     # memorizing_lattice.load_superconcepts("data/processed/concepts/danish.xls")
     # memorizing_lattice.print_superconcepts()
+    for s in memorizing_lattice.superconcepts:
+        s.clear_contexts_not_in_concept()
+        print(s)
     memorizing_lattice.save_superconcepts("data/processed/concepts/danish.xlsx")
     print("\nDone")
 
@@ -150,12 +185,17 @@ def _test_revisor():
     second = rev._load_file("data/processed/second_step/test.csv")
     print(rev._revise_second_step(sub, second))
 
-
-def _test_decision_tree():
-    concept_matrices = l.read_data_frames_from_excel("data/processed/concepts/danish.xlsx")
-    t = tree.OperationTree(concept_matrices)
-    print(t.get_operations_for_word("elskerinde", grammar_rules=["N", "INDF", "GEN", "SG"]))
-    print("Done")
+# def _test_decision_tree():
+#     concept_matrices = l.read_data_frames_from_excel("data/processed/concepts/italian.xlsx")
+#     t = tree.OperationTree(concept_matrices)
+#     words = load_first_step("data/processed/first_step_revised/italian.csv")
+#     for word in words:
+#         w = word[0]
+#         operations = t.get_operations_for_word(w)
+#         print(w)
+#         print(operations)
+#     # print(tree.perform_operations_for_word("elskerinde", operations))
+#     print("Done")
 
 
 # write_steps(True, True, True, True, True)
@@ -163,4 +203,9 @@ def _test_decision_tree():
 # write_first_second_step_revision()
 # write_context_matrices()
 # write_concepts()
-draw_trees()
+# draw_trees()
+# _test_memorizing_lattice()
+# _test_decision_tree()
+# predict_words()
+# write_baseline_cost()
+get_average_baseline_cost()

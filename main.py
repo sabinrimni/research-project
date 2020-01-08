@@ -1,7 +1,7 @@
 import collections
 import csv
 import subprocess
-from typing import List
+from typing import List, Tuple
 
 import Bio.pairwise2 as pair
 import more_itertools as mit

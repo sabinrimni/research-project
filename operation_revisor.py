@@ -1,6 +1,9 @@
+from typing import List, Tuple
+
 import pandas as pd
 import numpy as np
 from itertools import chain
+import csv
 
 
 def _load_file(path: str) -> pd.DataFrame:
@@ -9,6 +12,7 @@ def _load_file(path: str) -> pd.DataFrame:
 
 def _save_file(file_path: str, data: pd.DataFrame):
     data.to_csv(file_path, sep=";", quotechar='"', index=False)
+
 
 
 def revise_steps(subword_file: str, first_step_file: str, second_step_file: str,

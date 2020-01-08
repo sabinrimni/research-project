@@ -71,6 +71,9 @@ class Concept:
     def get_context_indexes(self) -> pd.Series:
         return get_non_zero_series_indexes(self.contexts)
 
+    def clear_contexts_not_in_concept(self):
+        self.binary_matrix.loc[get_zero_series_indexes(self.contexts),:] = 0
+
     def is_consistent(self) -> bool:
         actual_objects = self.binary_matrix.max(axis=0)
 
@@ -110,7 +113,7 @@ class Lattice:
     def __init__(self, context_matrix: pd.DataFrame, threshold: int) -> None:
         super().__init__()
         self.threshold = threshold
-        self.context_matrix = self._zero_below_threshold(context_matrix)
+        self.context_matrix = self._trim_empty(self._zero_below_threshold(context_matrix))
         self.binary_matrix = self._create_binary_matrix_based_on_threshold(self.context_matrix,
                                                                            self.threshold)
 
@@ -137,6 +140,7 @@ class Lattice:
 
     def find_concept_for_object(self, object: str) -> Concept:
         contexts = self.binary_matrix[object]
+        # print(f"Find concept for object, contexts: {contexts[contexts > 0]}")
         concept = self._create_concept_from_contexts(contexts)
         assert self._is_proper_concept(concept), f"{concept} is not a proper concept"
         return concept
@@ -200,6 +204,18 @@ class Lattice:
         to_zero[to_zero < self.threshold] = 0
         # print(to_zero)
         return to_zero
+
+    @staticmethod
+    def _trim_empty(matrix: pd.DataFrame) -> pd.DataFrame:
+        return Lattice._trim_empty_contexts(Lattice._trim_empty_objects(matrix))
+
+    @staticmethod
+    def _trim_empty_objects(matrix: pd.DataFrame) -> pd.DataFrame:
+        return matrix.loc[:, (matrix != 0).any(axis=0)]
+
+    @staticmethod
+    def _trim_empty_contexts(matrix: pd.DataFrame) -> pd.DataFrame:
+        return matrix[(matrix != 0).any(axis=1)]
 
     @staticmethod
     def _create_binary_matrix_based_on_threshold(context_matrix: pd.DataFrame,
