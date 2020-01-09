@@ -3,7 +3,7 @@ kulm;kulmine;kulmINS(ine);INS(ine);;INDF,LGSPEC1,N,PL
 "avrêjen ; meylbûna xanî ji bo ku av li ser xanî nemîne";"avrêjen ; meylbûna xanî ji bo ku av li ser xanî nemînean";"avrêjen ; meylbûna xanî ji bo ku av li ser xanî nemîneINS(an)";INS(an);;DEF,N,PL,ACC,LGSPEC2
 etab;etabno;etabINS(no);INS(no);;DEF,N,PL,VOC
 moþene;moþeneên;moþeneINS(ên);INS(ên);;DEF,LGSPEC1,N,PL,VOC
-hel-bijartin;nahel-bijaryî;INS(n)INS(a)hel-bijarDEL(t)DEL(in)INS(y)INS(î);INS(n),INS(a),INS(y),INS(î);DEL(t),DEL(in);2,IND,NEG,PRS,SG,V,IPFV
+hel-bijartin;nahel-bijaryî;INS(na)hel-bijarDEL(t)DEL(in)INS(y)INS(î);INS(na),INS(y),INS(î);DEL(t),DEL(in);2,IND,NEG,PRS,SG,V,IPFV
 þîþika pehn;þîþika pehnno;þîþika pehnINS(no);INS(no);;DEF,N,PL,VOC
 berdarî;berdarîinan;berdarîINS(inan);INS(inan);;INDF,N,PL,ACC
 cerr;cerrê;cerrINS(ê);INS(ê);;DEF,LGSPEC1,N,SG
@@ -13,14 +13,14 @@ etûd;etûdên;etûdINS(ên);INS(ên);;DEF,LGSPEC1,N,PL,VOC
 samagri;samagrinan;samagriINS(n)INS(a)INS(n);INS(n),INS(a),INS(n);;INDF,N,PL,ACC
 qesabe;qesabeine;qesabINS(e)INS(in)e;INS(e),INS(in);;INDF,LGSPEC1,N,PL
 ozbekî;ozbekîê;ozbekîINS(ê);INS(ê);;DEF,LGSPEC1,N,SG,VOC,ACC,LGSPEC2
-daring;daringekî;daringINS(ek)INS(î);INS(ek),INS(î);;INDF,LGSPEC1,N,SG,ACC
+daring;daringekî;daringINS(ekî);INS(ekî);;INDF,LGSPEC1,N,SG,ACC
 ihtiram;ihtiramê;ihtiramINS(ê);INS(ê);;DEF,N,SG,VOC,ACC,LGSPEC2
 navmemik;navmemikan;navmemikINS(an);INS(an);;DEF,N,PL,ACC,LGSPEC2
 gulbijêrk;gulbijêrk;gulbijêrk;;;DEF,N,NOM,PL,SG
 beiti;beitian;beitiINS(an);INS(an);;DEF,N,PL,ACC,LGSPEC2
 geþtyar;geþtyarin;geþtyarINS(in);INS(in);;INDF,N,NOM,PL
 da-xistin;neda-xistin;INS(ne)da-xistin;INS(ne);;1,2,3,IND,NEG,PFV,PL,PST,V,V.MSDR
-ra-kirin;dira-kirin;INS(d)INS(i)ra-kirin;INS(d),INS(i);;1,2,3,IND,PL,POS,PST,V,PROG
+ra-kirin;dira-kirin;INS(di)ra-kirin;INS(di);;1,2,3,IND,PL,POS,PST,V,PROG
 kosmos;kosmosan;kosmosINS(an);INS(an);;DEF,N,PL,ACC,LGSPEC2
 telefona bêtêl;telefona bêtêlên;telefona bêtêlINS(ên);INS(ên);;DEF,LGSPEC1,N,PL,VOC
 cils;cilsan;cilsINS(an);INS(an);;DEF,N,PL,ACC,LGSPEC2
@@ -28,12 +28,12 @@ cils;cilsan;cilsINS(an);INS(an);;DEF,N,PL,ACC,LGSPEC2
 raz;razan;razINS(an);INS(an);;DEF,N,PL,ACC,LGSPEC2
 yar-cento;yar-centoo;yar-centoINS(o);INS(o);;DEF,N,SG,VOC
 siwal;siwaline;siwalINS(ine);INS(ine);;INDF,LGSPEC1,N,PL
-vizîn;divizîin;INS(d)INS(i)vizîINS(i)n;INS(d),INS(i),INS(i);;1,2,3,IND,PL,POS,PST,V,PROG
+vizîn;divizîin;INS(di)vizîINS(i)n;INS(di),INS(i);;1,2,3,IND,PL,POS,PST,V,PROG
 gûnî;gûnîa;gûnîINS(a);INS(a);;DEF,LGSPEC1,N,SG
 zaroktî, zarotî;zaroktî;zarokDEL(tî, zaro)tî;;DEL(tî, zaro);DEF,N,NOM,PL,SG
 nîfaq;nîfaqinan;nîfaqINS(inan);INS(inan);;INDF,N,PL,ACC
 sûpermodel;sûpermodeleke;sûpermodelINS(eke);INS(eke);;INDF,LGSPEC1,N,SG,ACC
-quloç;quloçekî;quloçINS(ek)INS(î);INS(ek),INS(î);;INDF,LGSPEC1,N,SG,ACC
+quloç;quloçekî;quloçINS(ekî);INS(ekî);;INDF,LGSPEC1,N,SG,ACC
 þayîþ;þayîþin;þayîþINS(in);INS(in);;INDF,N,NOM,PL
 alav;alavin;alavINS(in);INS(in);;INDF,N,NOM,PL
 kundîl;kundîlan;kundîlINS(an);INS(an);;DEF,N,PL,ACC,LGSPEC2
@@ -52,7 +52,7 @@ mekanîk;mekanîkinan;mekanîkINS(inan);INS(inan);;INDF,N,PL,ACC
 benderuhî;benderuhîin;benderuhîINS(in);INS(in);;INDF,N,NOM,PL
 esman;esmanin;esmaINS(n)INS(i)n;INS(n),INS(i);;INDF,N,NOM,PL
 ceger;cegerin;cegerINS(in);INS(in);;INDF,N,NOM,PL
-wekîl;wekîlekî;wekîlINS(ek)INS(î);INS(ek),INS(î);;INDF,LGSPEC1,N,SG,ACC
+wekîl;wekîlekî;wekîlINS(ekî);INS(ekî);;INDF,LGSPEC1,N,SG,ACC
 porteqal;porteqalo;porteqalINS(o);INS(o);;DEF,N,SG,VOC
 melû;melûinan;melûINS(inan);INS(inan);;INDF,N,PL,ACC
 mehîn;mehîneke;mehînINS(eke);INS(eke);;INDF,LGSPEC1,N,SG,ACC
@@ -66,10 +66,10 @@ ra-xistin;nera-xistim;INS(ne)ra-xistiDEL(n)INS(m);INS(ne),INS(m);DEL(n);1,IND,NE
 kulek;kulekê;kulekINS(ê);INS(ê);;DEF,N,SG,VOC,ACC,LGSPEC2
 çema stû;çema stûinan;çema stûINS(inan);INS(inan);;INDF,N,PL,ACC
 ezox;ezoxine;ezoxINS(ine);INS(ine);;INDF,LGSPEC1,N,PL
-budceya salane;budceya salaneekî;budceya salaneINS(ek)INS(î);INS(ek),INS(î);;INDF,LGSPEC1,N,SG,ACC
+budceya salane;budceya salaneekî;budceya salaneINS(ekî);INS(ekî);;INDF,LGSPEC1,N,SG,ACC
 hekê;hekêno;hekêINS(no);INS(no);;DEF,N,PL,VOC
 lîlandin;nelîlandî;INS(ne)lîlandDEL(i)DEL(n)INS(î);INS(ne),INS(î);DEL(i),DEL(n);2,IND,NEG,PFV,PST,SG,V,V.PTCP
-zibûn;zibûnan;zibûINS(n)INS(a)n;INS(n),INS(a);;DEF,N,PL,ACC,LGSPEC2
+zibûn;zibûnan;zibûINS(na)n;INS(na);;DEF,N,PL,ACC,LGSPEC2
 kaniyên avdanê;kaniyên avdanêa;kaniyên avdanêINS(a);INS(a);;DEF,LGSPEC1,N,SG
 zirrbav;zirrbavno;zirrbavINS(no);INS(no);;DEF,N,PL,VOC
 sirrandin;sirrandinin;sirrandINS(in)in;INS(in);;INDF,N,NOM,PL
@@ -92,7 +92,7 @@ mîzkêþ;mîzkêþên;mîzkêþINS(ên);INS(ên);;DEF,LGSPEC1,N,PL,VOC
 dirrêt;dirrêtin;dirrêtINS(in);INS(in);;INDF,N,NOM,PL
 kargeh;kargehên;kargehINS(ên);INS(ên);;DEF,LGSPEC1,N,PL,VOC
 hoste;hoste;hoste;;;DEF,N,NOM,PL,SG
-qalib;qalibekî;qalibINS(ek)INS(î);INS(ek),INS(î);;INDF,LGSPEC1,N,SG,ACC
+qalib;qalibekî;qalibINS(ekî);INS(ekî);;INDF,LGSPEC1,N,SG,ACC
 ûr;ûrin;ûrINS(in);INS(in);;INDF,N,NOM,PL
 dol;dolinan;dolINS(inan);INS(inan);;INDF,N,PL,ACC
 tora çav;tora çavên;tora çavINS(ên);INS(ên);;DEF,LGSPEC1,N,PL,VOC
@@ -131,7 +131,7 @@ herimandin;neherimandibûya;INS(ne)herimandiDEL(n)INS(b)INS(û)INS(y)INS(a);INS(
 kurtayî;kurtayîno;kurtayîINS(no);INS(no);;DEF,N,PL,VOC
 rewêþtin;rewêþtinine;rewêþtinINS(ine);INS(ine);;INDF,LGSPEC1,N,PL
 tanq;tanqno;tanqINS(no);INS(no);;DEF,N,PL,VOC
-ewtîn;diewtîin;INS(d)INS(i)ewtîINS(i)n;INS(d),INS(i),INS(i);;1,2,3,IND,PL,POS,PST,V,PROG
+ewtîn;diewtîin;INS(di)ewtîINS(i)n;INS(di),INS(i);;1,2,3,IND,PL,POS,PST,V,PROG
 rukn;rukn;rukn;;;DEF,N,NOM,PL,SG,ACC
 huneryar;huneryarin;huneryarINS(in);INS(in);;INDF,N,NOM,PL
 legan;leganeke;leganINS(eke);INS(eke);;INDF,LGSPEC1,N,SG,ACC
@@ -166,7 +166,7 @@ lerzîn;lerzîn;lerzîn;;;1,2,3,IND,PFV,PL,POS,PST,V,V.MSDR
 lutf;lutfên;lutfINS(ên);INS(ên);;DEF,LGSPEC1,N,PL,VOC
 bikaranîn;bikaranîn;bikaranîn;;;DEF,N,NOM,PL,SG
 firîkê nokan);firîkê nokan)no;firîkê nokan)INS(no);INS(no);;DEF,N,PL,VOC
-kefen;kefenan;kefeINS(n)INS(a)n;INS(n),INS(a);;DEF,N,PL,ACC,LGSPEC2
+kefen;kefenan;kefeINS(na)n;INS(na);;DEF,N,PL,ACC,LGSPEC2
 xaþik;xaþikno;xaþikINS(no);INS(no);;DEF,N,PL,VOC
 gerdek;gerdekê;gerdekINS(ê);INS(ê);;DEF,N,SG,VOC,ACC,LGSPEC2
 fotografer;fotograferinan;fotograferINS(inan);INS(inan);;INDF,N,PL,ACC
@@ -195,11 +195,11 @@ seng;senga;sengINS(a);INS(a);;DEF,LGSPEC1,N,SG
 neçarî;neçarî;neçarî;;;DEF,N,NOM,PL,SG
 evdî;evdîên;evdîINS(ên);INS(ên);;DEF,LGSPEC1,N,PL,VOC
 þantiye;þantiyea;þantiyeINS(a);INS(a);;DEF,LGSPEC1,N,SG
-ra-kirin;dira-kim;INS(d)INS(i)ra-kiDEL(r)DEL(in)INS(m);INS(d),INS(i),INS(m);DEL(r),DEL(in);1,IND,POS,PRS,SG,V,IPFV
+ra-kirin;dira-kim;INS(di)ra-kiDEL(r)DEL(in)INS(m);INS(di),INS(m);DEL(r),DEL(in);1,IND,POS,PRS,SG,V,IPFV
 penah;penahên;penahINS(ên);INS(ên);;DEF,LGSPEC1,N,PL,VOC
 mistexalib;mistexalibî;mistexalibINS(î);INS(î);;DEF,N,SG,LGSPEC2
 xeftan;xeftanî;xeftanINS(î);INS(î);;DEF,N,SG,LGSPEC2
-tê-xistin;natê-xî;INS(n)INS(a)tê-xDEL(i)DEL(stin)INS(î);INS(n),INS(a),INS(î);DEL(i),DEL(stin);2,IND,NEG,PRS,SG,V,IPFV
+tê-xistin;natê-xî;INS(na)tê-xDEL(i)DEL(stin)INS(î);INS(na),INS(î);DEL(i),DEL(stin);2,IND,NEG,PRS,SG,V,IPFV
 melez;melezeke;melezINS(eke);INS(eke);;INDF,LGSPEC1,N,SG,ACC
 askil;askilên;askilINS(ên);INS(ên);;DEF,LGSPEC1,N,PL,VOC
 gelî;gelîek;gelîINS(ek);INS(ek);;INDF,N,NOM,SG
@@ -222,7 +222,7 @@ bildsäule;bildsäuleo;bildsäuleINS(o);INS(o);;DEF,N,SG,VOC
 kuxuyan;nekuxuyan;INS(ne)kuxuyan;INS(ne);;1,2,3,IND,NEG,PFV,PL,PST,V,V.MSDR
 zêr;zêrên;zêrINS(ên);INS(ên);;DEF,LGSPEC1,N,PL,VOC
 civak;civaka;civakINS(a);INS(a);;DEF,LGSPEC1,N,SG
-çîçik;çîçikekî;çîçikINS(ek)INS(î);INS(ek),INS(î);;INDF,LGSPEC1,N,SG,ACC
+çîçik;çîçikekî;çîçikINS(ekî);INS(ekî);;INDF,LGSPEC1,N,SG,ACC
 pirpitîn;pirpitîneke;pirpitînINS(eke);INS(eke);;INDF,LGSPEC1,N,SG,ACC
 tacir;taciro;tacirINS(o);INS(o);;DEF,N,SG,VOC
 binbêder;binbêderin;binbêderINS(in);INS(in);;INDF,N,NOM,PL
@@ -251,14 +251,14 @@ sefhe;sefheinan;sefheINS(inan);INS(inan);;INDF,N,PL,ACC
 kartêkirin;kartêkirinno;kartêkirinINS(no);INS(no);;DEF,N,PL,VOC
 rewahî;rewahîo;rewahîINS(o);INS(o);;DEF,N,SG,VOC
 pijiqandin;pijiqandim;pijiqandiDEL(n)INS(m);INS(m);DEL(n);1,IND,PFV,POS,PST,SG,V
-hebandin;dihebînin;INS(d)INS(i)hebDEL(a)INS(î)nDEL(d)in;INS(d),INS(i),INS(î);DEL(a),DEL(d);1,2,3,IND,PL,POS,PRS,V,IPFV
+hebandin;dihebînin;INS(di)hebDEL(a)INS(î)nDEL(d)in;INS(di),INS(î);DEL(a),DEL(d);1,2,3,IND,PL,POS,PRS,V,IPFV
 bernamzed;bernamzed;bernamzed;;;DEF,N,NOM,PL,SG,ACC
 bilîn;bilînên;bilîINS(n)INS(ê)n;INS(n),INS(ê);;DEF,LGSPEC1,N,PL,VOC
 hilpekîn;hilpekîn;hilpekîn;;;DEF,N,NOM,PL,SG
 têrker;têrkerî;têrkerINS(î);INS(î);;DEF,N,SG,LGSPEC2
 Çekistan;Çekistaneke;ÇekistanINS(eke);INS(eke);;INDF,LGSPEC1,N,SG,ACC
 liqandin;liqandim;liqandiDEL(n)INS(m);INS(m);DEL(n);1,IND,PFV,POS,PST,SG,V
-xistin;naxin;INS(n)INS(a)xDEL(i)DEL(s)DEL(t)in;INS(n),INS(a);DEL(i),DEL(s),DEL(t);1,2,3,IND,NEG,PL,PRS,V,IPFV
+xistin;naxin;INS(na)xDEL(i)DEL(s)DEL(t)in;INS(na);DEL(i),DEL(s),DEL(t);1,2,3,IND,NEG,PL,PRS,V,IPFV
 nekrofîlî;nekrofîlîê;nekrofîlîINS(ê);INS(ê);;DEF,N,SG,VOC,ACC,LGSPEC2
 rîþî;rîþîê;rîþîINS(ê);INS(ê);;DEF,LGSPEC1,N,SG,VOC,ACC,LGSPEC2
 kerpîç;kerpîç;kerpîç;;;DEF,N,NOM,PL,SG,ACC
@@ -275,7 +275,7 @@ ratib;ratibin;ratibINS(in);INS(in);;INDF,N,NOM,PL
 beliþandin;beliþandina;beliþandinINS(a);INS(a);;DEF,LGSPEC1,N,SG
 rebî;rebî;rebî;;;DEF,N,NOM,PL,SG,ACC
 rezalet;rezaletine;rezaletINS(ine);INS(ine);;INDF,LGSPEC1,N,PL
-pismîr;pismîrekî;pismîrINS(ek)INS(î);INS(ek),INS(î);;INDF,LGSPEC1,N,SG,ACC
+pismîr;pismîrekî;pismîrINS(ekî);INS(ekî);;INDF,LGSPEC1,N,SG,ACC
 oy;oyê;oyINS(ê);INS(ê);;DEF,LGSPEC1,N,SG,VOC,ACC,LGSPEC2
 sermayedar;sermayedarek;sermayedarINS(ek);INS(ek);;INDF,N,NOM,SG
 hêftyar;hêftyara;hêftyarINS(a);INS(a);;DEF,LGSPEC1,N,SG
@@ -284,7 +284,7 @@ narsîst;narsîsto;narsîstINS(o);INS(o);;DEF,N,SG,VOC
 telefone móvel;telefone móvela;telefone móvelINS(a);INS(a);;DEF,LGSPEC1,N,SG
 arena;arenaeke;arenaINS(eke);INS(eke);;INDF,LGSPEC1,N,SG,ACC
 pêþkirin;pêþkirinno;pêþkirinINS(no);INS(no);;DEF,N,PL,VOC
-neyar;neyarekî;neyarINS(ek)INS(î);INS(ek),INS(î);;INDF,LGSPEC1,N,SG,ACC
+neyar;neyarekî;neyarINS(ekî);INS(ekî);;INDF,LGSPEC1,N,SG,ACC
 nearamî;nearamî;nearamî;;;DEF,N,NOM,PL,SG
 agah;agah;agah;;;ADJ,DEF,N,NOM,PL,SG
 patrîk;patrîkî;patrîkINS(î);INS(î);;DEF,N,SG,LGSPEC2
@@ -301,7 +301,7 @@ reþe;reþeno;reþeINS(no);INS(no);;DEF,N,PL,VOC
 reqisîn;bireqisîbayî;INS(bi)reqisINS(î)INS(b)INS(a)INS(y)îDEL(n);INS(bi),INS(î),INS(b),INS(a),INS(y);DEL(n);2,COND,POS,PRF,PST,SG,V
 dindikê dirnixê;dindikê dirnixêine;dindikê dirnixêINS(ine);INS(ine);;INDF,LGSPEC1,N,PL
 matmayîn;matmayîneke;matmayînINS(eke);INS(eke);;INDF,LGSPEC1,N,SG,ACC
-rex;rexekî;rexINS(ek)INS(î);INS(ek),INS(î);;INDF,LGSPEC1,N,SG,ACC
+rex;rexekî;rexINS(ekî);INS(ekî);;INDF,LGSPEC1,N,SG,ACC
 enwai;enwaine;enwaiINS(ne);INS(ne);;INDF,LGSPEC1,N,PL
 sivnik;sivnikine;sivnikINS(ine);INS(ine);;INDF,LGSPEC1,N,PL
 hil-weþandin;nehil-weþandiana;INS(ne)hil-weþandiINS(a)nINS(a);INS(ne),INS(a),INS(a);;1,2,3,COND,NEG,PL,PST,V
@@ -465,13 +465,13 @@ arêkerdox;arêkerdoxa;arêkerdoxINS(a);INS(a);;DEF,LGSPEC1,N,SG
 dest;dest;dest;;;DEF,N,NOM,PL,SG,ACC
 hekîm;hekîmek;hekîmINS(ek);INS(ek);;INDF,N,NOM,SG
 çolter;çolterno;çolterINS(no);INS(no);;DEF,N,PL,VOC
-jiyan;dijîyî;INS(d)INS(i)jDEL(i)DEL(y)DEL(a)DEL(n)INS(î)INS(y)INS(î);INS(d),INS(i),INS(î),INS(y),INS(î);DEL(i),DEL(y),DEL(a),DEL(n);2,IND,POS,PRS,SG,V,IPFV
+jiyan;dijîyî;INS(di)jDEL(i)DEL(y)DEL(a)DEL(n)INS(î)INS(y)INS(î);INS(di),INS(î),INS(y),INS(î);DEL(i),DEL(y),DEL(a),DEL(n);2,IND,POS,PRS,SG,V,IPFV
 hîraganayî;hîraganayîên;hîraganayîINS(ên);INS(ên);;DEF,LGSPEC1,N,PL,VOC
 konto;kontoinan;kontoINS(inan);INS(inan);;INDF,N,PL,ACC
 war;warinan;warINS(inan);INS(inan);;INDF,N,PL,ACC
 serbilindî;serbilindîa;serbilindîINS(a);INS(a);;DEF,LGSPEC1,N,SG
 vihanpito;vihanpitoinan;vihanpitoINS(inan);INS(inan);;INDF,N,PL,ACC
-hûrêwezîr;hûrêwezîrekî;hûrêwezîrINS(ek)INS(î);INS(ek),INS(î);;INDF,LGSPEC1,N,SG,ACC
+hûrêwezîr;hûrêwezîrekî;hûrêwezîrINS(ekî);INS(ekî);;INDF,LGSPEC1,N,SG,ACC
 zêdegun;zêdeguno;zêdegunINS(o);INS(o);;DEF,N,SG,VOC
 qidqidandin;qidqidandininan;qidqidandiINS(nin)INS(a)n;INS(nin),INS(a);;INDF,N,PL,ACC
 riwek;riwekî;riwekINS(î);INS(î);;DEF,N,SG,LGSPEC2
@@ -507,7 +507,7 @@ awir;awirê;awirINS(ê);INS(ê);;DEF,N,SG,VOC,ACC,LGSPEC2
 serkantiya giþtî;serkantiya giþtîno;serkantiya giþtîINS(no);INS(no);;DEF,N,PL,VOC
 senarîst;senarîstinan;senarîstINS(inan);INS(inan);;INDF,N,PL,ACC
 dozgêrr;dozgêrr;dozgêrr;;;DEF,N,NOM,PL,SG,ACC
-barandin;dibarînin;INS(d)INS(i)barDEL(a)INS(î)nDEL(d)in;INS(d),INS(i),INS(î);DEL(a),DEL(d);1,2,3,IND,PL,POS,PRS,V,IPFV
+barandin;dibarînin;INS(di)barDEL(a)INS(î)nDEL(d)in;INS(di),INS(î);DEL(a),DEL(d);1,2,3,IND,PL,POS,PRS,V,IPFV
 mekteb;mektebek;mektebINS(ek);INS(ek);;INDF,N,NOM,SG
 tevþo;tevþoan;tevþoINS(an);INS(an);;DEF,N,PL,ACC,LGSPEC2
 derpî;derpîî;derpîINS(î);INS(î);;DEF,N,SG,LGSPEC2
@@ -521,7 +521,7 @@ destve-înan;nedestve-înaibam;INS(ne)destve-înaDEL(n)INS(i)INS(b)INS(a)INS(m);
 rêze;rêzean;rêzeINS(an);INS(an);;DEF,N,PL,ACC,LGSPEC2
 akîle û makîle;akîle û makîleeke;akîle û makîlINS(e)INS(ek)e;INS(e),INS(ek);;INDF,LGSPEC1,N,SG,ACC
 ximþ;ximþ;ximþ;;;DEF,N,NOM,PL,SG,ACC
-behs kirin;dibehs kim;INS(d)INS(i)behs kiDEL(r)DEL(in)INS(m);INS(d),INS(i),INS(m);DEL(r),DEL(in);1,IND,POS,PRS,SG,V,IPFV
+behs kirin;dibehs kim;INS(di)behs kiDEL(r)DEL(in)INS(m);INS(di),INS(m);DEL(r),DEL(in);1,IND,POS,PRS,SG,V,IPFV
 veqetandin;veqetandinno;veqetandinINS(no);INS(no);;DEF,N,PL,VOC
 kurdayetî;kurdayetîine;kurdayetîINS(ine);INS(ine);;INDF,LGSPEC1,N,PL
 mûçinkê nînokan;mûçinkê nînokanan;mûçinkê nînokINS(an)an;INS(an);;DEF,N,PL,ACC,LGSPEC2
@@ -578,7 +578,7 @@ xuh;xuhno;xuhINS(no);INS(no);;DEF,N,PL,VOC
 lewerandin;lewerandineke;lewerandinINS(eke);INS(eke);;INDF,LGSPEC1,N,SG,ACC
 marîfet;marîfetek;marîfetINS(ek);INS(ek);;INDF,N,NOM,SG
 liqandin;nediliqandin;INS(ne)INS(di)liqandin;INS(ne),INS(di);;1,2,3,IND,NEG,PL,PST,V,PROG
-zivirîn;dizivirîn;INS(d)INS(i)zivirîn;INS(d),INS(i);;1,2,3,IND,PL,POS,PST,V,PROG
+zivirîn;dizivirîn;INS(di)zivirîn;INS(di);;1,2,3,IND,PL,POS,PST,V,PROG
 dost;dostê;dostINS(ê);INS(ê);;DEF,LGSPEC1,N,SG,VOC,ACC,LGSPEC2
 xelasî;xelasîine;xelasîINS(ine);INS(ine);;INDF,LGSPEC1,N,PL
 der-xistin;bider-xe;INS(bi)der-xDEL(i)DEL(stin)INS(e);INS(bi),INS(e);DEL(i),DEL(stin);3,IMP,POS,PRS,SBJV,SG,V
@@ -591,7 +591,7 @@ espar;esparan;esparINS(an);INS(an);;DEF,N,PL,ACC,LGSPEC2
 behecandin;behecandinên;behecandiINS(n)INS(ê)n;INS(n),INS(ê);;DEF,LGSPEC1,N,PL,VOC
 fezl;fezlek;fezlINS(ek);INS(ek);;INDF,N,NOM,SG
 xulametî;xulametîeke;xulametîINS(eke);INS(eke);;INDF,LGSPEC1,N,SG,ACC
-kêþan;dikêþam;INS(d)INS(i)kêþaDEL(n)INS(m);INS(d),INS(i),INS(m);DEL(n);1,IND,POS,PST,SG,V,PROG
+kêþan;dikêþam;INS(di)kêþaDEL(n)INS(m);INS(di),INS(m);DEL(n);1,IND,POS,PST,SG,V,PROG
 munasebet;munasebetek;munasebetINS(ek);INS(ek);;INDF,N,NOM,SG
 miwazene;miwazeneno;miwazeneINS(no);INS(no);;DEF,N,PL,VOC
 þirînmeh;þirînmeheke;þirînmehINS(eke);INS(eke);;INDF,LGSPEC1,N,SG,ACC
@@ -601,10 +601,10 @@ kurdîpeyiv;kurdîpeyivek;kurdîpeyivINS(ek);INS(ek);;INDF,N,NOM,SG
 pirsîn;pirsînê;pirsînINS(ê);INS(ê);;DEF,N,SG,V,V.MSDR,VOC,ACC,LGSPEC2
 gildik;gildikno;gildikINS(no);INS(no);;DEF,N,PL,VOC
 torin;torino;torinINS(o);INS(o);;DEF,N,SG,VOC
-cîhangir;cîhangirekî;cîhangirINS(ek)INS(î);INS(ek),INS(î);;INDF,LGSPEC1,N,SG,ACC
+cîhangir;cîhangirekî;cîhangirINS(ekî);INS(ekî);;INDF,LGSPEC1,N,SG,ACC
 pelik;pelikî;pelikINS(î);INS(î);;DEF,N,SG,LGSPEC2
 stuvank;stuvankno;stuvankINS(no);INS(no);;DEF,N,PL,VOC
-liqandin;diliqînim;INS(d)INS(i)liqDEL(a)DEL(ndi)INS(î)nINS(i)INS(m);INS(d),INS(i),INS(î),INS(i),INS(m);DEL(a),DEL(ndi);1,IND,POS,PRS,SG,V,IPFV
+liqandin;diliqînim;INS(di)liqDEL(a)DEL(ndi)INS(î)nINS(i)INS(m);INS(di),INS(î),INS(i),INS(m);DEL(a),DEL(ndi);1,IND,POS,PRS,SG,V,IPFV
 derî;derîên;derîINS(ên);INS(ên);;DEF,LGSPEC1,N,PL,VOC
 lale;laleên;laleINS(ên);INS(ên);;DEF,LGSPEC1,N,PL,VOC
 tendûr;tendûrên;tendûrINS(ên);INS(ên);;DEF,LGSPEC1,N,PL,VOC
@@ -653,7 +653,7 @@ zêrrname;zêrrnameê;zêrrnameINS(ê);INS(ê);;DEF,N,SG,VOC,ACC,LGSPEC2
 têkoþer;têkoþerinan;têkoþerINS(inan);INS(inan);;INDF,N,PL,ACC
 hembêz hesret;hembêz hesretek;hembêz hesretINS(ek);INS(ek);;INDF,N,NOM,SG
 lap;lap;lap;;;ADJ,DEF,N,NOM,PL,SG,ACC
-qeliþîn;qeliþînan;qeliþîINS(n)INS(a)n;INS(n),INS(a);;DEF,N,PL,ACC,LGSPEC2
+qeliþîn;qeliþînan;qeliþîINS(na)n;INS(na);;DEF,N,PL,ACC,LGSPEC2
 qûrç;qûrçek;qûrçINS(ek);INS(ek);;INDF,N,NOM,SG
 dal;dalan;dalINS(an);INS(an);;DEF,N,PL,ACC,LGSPEC2
 sarasen;sarasenî;sarasenINS(î);INS(î);;DEF,N,SG,LGSPEC2
@@ -666,7 +666,7 @@ lîlandin;bilîlandibûna;INS(bi)lîlandiINS(b)INS(û)nINS(a);INS(bi),INS(b),INS
 hesibandin;nedihesibandim;INS(ne)INS(di)hesibandiDEL(n)INS(m);INS(ne),INS(di),INS(m);DEL(n);1,IND,NEG,PST,SG,V,PROG
 mêwe;mêwea;mêweINS(a);INS(a);;DEF,LGSPEC1,N,SG
 deyndar;deyndarek;deyndarINS(ek);INS(ek);;INDF,N,NOM,SG
-ve-xistin;dive-xistin;INS(d)INS(i)ve-xistin;INS(d),INS(i);;1,2,3,IND,PL,POS,PST,V,PROG
+ve-xistin;dive-xistin;INS(di)ve-xistin;INS(di);;1,2,3,IND,PL,POS,PST,V,PROG
 mehlî;mehlîek;mehlîINS(ek);INS(ek);;INDF,N,NOM,SG
 awayê pêveberî;awayê pêveberîa;awayê pêveberîINS(a);INS(a);;DEF,LGSPEC1,N,SG
 fînal;fînala;fînalINS(a);INS(a);;DEF,LGSPEC1,N,SG
@@ -678,19 +678,19 @@ hekê;hekê;hekê;;;DEF,N,NOM,PL,SG,ACC
 bi dest xistin;bi dest xistinno;bi dest xistinINS(no);INS(no);;DEF,N,PL,VOC
 dehlûdirr;dehlûdirrinan;dehlûdirrINS(inan);INS(inan);;INDF,N,PL,ACC
 serkurrker;serkurrkero;serkurrkerINS(o);INS(o);;DEF,N,SG,VOC
-rejîsor;rejîsorekî;rejîsorINS(ek)INS(î);INS(ek),INS(î);;INDF,LGSPEC1,N,SG,ACC
+rejîsor;rejîsorekî;rejîsorINS(ekî);INS(ekî);;INDF,LGSPEC1,N,SG,ACC
 yekîneyên leþkerî;yekîneyên leþkerîeke;yekîneyên leþkerîINS(eke);INS(eke);;INDF,LGSPEC1,N,SG,ACC
 wewre;wewreinan;wewreINS(inan);INS(inan);;INDF,N,PL,ACC
 naqos;naqos;naqos;;;DEF,N,NOM,PL,SG
 taþîner;taþînerek;taþînerINS(ek);INS(ek);;INDF,N,NOM,SG
 komkujî;komkujîno;komkujîINS(no);INS(no);;DEF,N,PL,VOC
-behs kirin;nabehs kim;INS(n)INS(a)behs kiDEL(r)DEL(in)INS(m);INS(n),INS(a),INS(m);DEL(r),DEL(in);1,IND,NEG,PRS,SG,V,IPFV
+behs kirin;nabehs kim;INS(na)behs kiDEL(r)DEL(in)INS(m);INS(na),INS(m);DEL(r),DEL(in);1,IND,NEG,PRS,SG,V,IPFV
 kuliyet;kuliyeta;kuliyetINS(a);INS(a);;DEF,LGSPEC1,N,SG
 ra-girtin;nera-girm;INS(ne)ra-girDEL(t)DEL(in)INS(m);INS(ne),INS(m);DEL(t),DEL(in);1,NEG,PRS,SBJV,SG,V
 qehirîn;qehirîneke;qehirînINS(eke);INS(eke);;INDF,LGSPEC1,N,SG,ACC
 sebete;sebete;sebete;;;DEF,N,NOM,PL,SG,ACC
 ahenga deman;ahenga demana;ahenga demanINS(a);INS(a);;DEF,LGSPEC1,N,SG
-qelizandin;diqelizînim;INS(d)INS(i)qelizDEL(a)DEL(ndi)INS(î)nINS(i)INS(m);INS(d),INS(i),INS(î),INS(i),INS(m);DEL(a),DEL(ndi);1,IND,POS,PRS,SG,V,IPFV
+qelizandin;diqelizînim;INS(di)qelizDEL(a)DEL(ndi)INS(î)nINS(i)INS(m);INS(di),INS(î),INS(i),INS(m);DEL(a),DEL(ndi);1,IND,POS,PRS,SG,V,IPFV
 berayik;berayiko;berayikINS(o);INS(o);;DEF,N,SG,VOC
 darav;daravê;daravINS(ê);INS(ê);;DEF,N,SG,VOC,ACC,LGSPEC2
 cîhêlkirin;cîhêlkirinê;cîhêlkirinINS(ê);INS(ê);;DEF,N,SG,VOC,ACC,LGSPEC2
@@ -728,7 +728,7 @@ mêwe;mêweê;mêweINS(ê);INS(ê);;DEF,N,SG,VOC,ACC,LGSPEC2
 rijiyan;nerijiyaayî;INS(ne)rijiyaDEL(n)INS(a)INS(y)INS(î);INS(ne),INS(a),INS(y),INS(î);DEL(n);2,COND,NEG,PST,SG,V
 bawername;bawernamein;bawernameINS(in);INS(in);;INDF,N,NOM,PL
 pejir;pejirek;pejirINS(ek);INS(ek);;INDF,N,NOM,SG
-atación;ataciónekî;ataciónINS(ek)INS(î);INS(ek),INS(î);;INDF,LGSPEC1,N,SG,ACC
+atación;ataciónekî;ataciónINS(ekî);INS(ekî);;INDF,LGSPEC1,N,SG,ACC
 þeþxane;þeþxaneine;þeþxaINS(n)INS(e)INS(i)ne;INS(n),INS(e),INS(i);;INDF,LGSPEC1,N,PL
 rojava;rojavaê;rojavaINS(ê);INS(ê);;DEF,N,SG,VOC,ACC,LGSPEC2
 nifûz;nifûzek;nifûzINS(ek);INS(ek);;INDF,N,NOM,SG
@@ -757,7 +757,7 @@ tenzîm;tenzîm;tenzîm;;;DEF,N,NOM,PL,SG
 rêk-xistin;nerêk-xistima;INS(ne)rêk-xistiDEL(n)INS(m)INS(a);INS(ne),INS(m),INS(a);DEL(n);1,COND,NEG,PST,SG,V
 rûnê biharê;rûnê biharêa;rûnê biharêINS(a);INS(a);;DEF,LGSPEC1,N,SG
 nifîn;nifîna;nifînINS(a);INS(a);;DEF,LGSPEC1,N,SG
-hebûn;dihebûyî;INS(d)INS(i)hebûDEL(n)INS(y)INS(î);INS(d),INS(i),INS(y),INS(î);DEL(n);2,IND,POS,PST,SG,V,PROG
+hebûn;dihebûyî;INS(di)hebûDEL(n)INS(y)INS(î);INS(di),INS(y),INS(î);DEL(n);2,IND,POS,PST,SG,V,PROG
 melhem;melhemno;melhemINS(no);INS(no);;DEF,N,PL,VOC
 sengînî;sengînîeke;sengînîINS(eke);INS(eke);;INDF,LGSPEC1,N,SG,ACC
 xûy;xûya;xûyINS(a);INS(a);;DEF,LGSPEC1,N,SG
@@ -767,8 +767,8 @@ penêrê pûngê;penêrê pûngê;penêrê pûngê;;;DEF,N,NOM,PL,SG,ACC
 oralet;oraleta;oraletINS(a);INS(a);;DEF,LGSPEC1,N,SG
 alkoz;alkozin;alkozINS(in);INS(in);;INDF,N,NOM,PL
 bûra;bûraê;bûraINS(ê);INS(ê);;DEF,LGSPEC1,N,SG
-hevcih;hevcihekî;hevcihINS(ek)INS(î);INS(ek),INS(î);;INDF,LGSPEC1,N,SG,ACC
-nivîsîn;dinivîsin;INS(d)INS(i)nivîsDEL(î)INS(i)n;INS(d),INS(i),INS(i);DEL(î);1,2,3,IND,PL,POS,PRS,V,IPFV
+hevcih;hevcihekî;hevcihINS(ekî);INS(ekî);;INDF,LGSPEC1,N,SG,ACC
+nivîsîn;dinivîsin;INS(di)nivîsDEL(î)INS(i)n;INS(di),INS(i);DEL(î);1,2,3,IND,PL,POS,PRS,V,IPFV
 kelmêþ;kelmêþinan;kelmêþINS(inan);INS(inan);;INDF,N,PL,ACC
 çam;çamê;çamINS(ê);INS(ê);;DEF,N,SG,VOC,ACC,LGSPEC2
 fotik;fotikên;fotikINS(ên);INS(ên);;DEF,LGSPEC1,N,PL,VOC
@@ -785,8 +785,8 @@ plakard;plakardek;plakardINS(ek);INS(ek);;INDF,N,NOM,SG
 piyarî;piyarîine;piyarîINS(ine);INS(ine);;INDF,LGSPEC1,N,PL
 rayda;rayda;rayda;;;DEF,N,NOM,PL,SG
 bêkulek;bêkuleka;bêkulekINS(a);INS(a);;DEF,LGSPEC1,N,SG
-palerîn;palerînekî;palerînINS(ek)INS(î);INS(ek),INS(î);;INDF,LGSPEC1,N,SG,ACC
-kelemkot;kelemkotekî;kelemkotINS(ek)INS(î);INS(ek),INS(î);;INDF,LGSPEC1,N,SG,ACC
+palerîn;palerînekî;palerînINS(ekî);INS(ekî);;INDF,LGSPEC1,N,SG,ACC
+kelemkot;kelemkotekî;kelemkotINS(ekî);INS(ekî);;INDF,LGSPEC1,N,SG,ACC
 tawis;tawisên;tawisINS(ên);INS(ên);;DEF,LGSPEC1,N,PL,VOC
 kinaye;kinaye;kinaye;;;DEF,N,NOM,PL,SG
 transport;transporta;transportINS(a);INS(a);;DEF,LGSPEC1,N,SG
@@ -794,7 +794,7 @@ ewtîn;neewtîibayî;INS(ne)ewtINS(î)INS(i)INS(b)INS(a)INS(y)îDEL(n);INS(ne),I
 rêçik;rêçikinan;rêçikINS(inan);INS(inan);;INDF,N,PL,ACC
 hawirdor;hawirdora;hawirdorINS(a);INS(a);;DEF,LGSPEC1,N,SG
 xiþikîn;nexiþikyî;INS(ne)xiþikINS(y)îDEL(n);INS(ne),INS(y);DEL(n);2,NEG,PRS,SBJV,SG,V
-temirîn;natemir;INS(n)INS(a)temirDEL(î)DEL(n);INS(n),INS(a);DEL(î),DEL(n);3,IND,NEG,PRS,SG,V,IPFV
+temirîn;natemir;INS(na)temirDEL(î)DEL(n);INS(na);DEL(î),DEL(n);3,IND,NEG,PRS,SG,V,IPFV
 navandin;navandinin;navandINS(in)in;INS(in);;INDF,N,NOM,PL
 rewiþt;rewiþtê;rewiþtINS(ê);INS(ê);;DEF,LGSPEC1,N,SG
 texe;texeê;texeINS(ê);INS(ê);;DEF,N,SG,VOC,ACC,LGSPEC2
@@ -816,7 +816,7 @@ tecwîd;tecwîdan;tecwîdINS(an);INS(an);;DEF,N,PL,ACC,LGSPEC2
 boç;boçno;boçINS(no);INS(no);;DEF,N,PL,VOC
 giriyan;negiriyaibûna;INS(ne)giriyaINS(i)INS(b)INS(û)nINS(a);INS(ne),INS(i),INS(b),INS(û),INS(a);;2,3,COND,NEG,PL,PRF,PST,V
 þalgerdan;þalgerdaninan;þalgerdINS(a)INS(n)INS(i)INS(n)an;INS(a),INS(n),INS(i),INS(n);;INDF,N,PL,ACC
-têþtxwer;têþtxwerekî;têþtxwerINS(ek)INS(î);INS(ek),INS(î);;INDF,LGSPEC1,N,SG,ACC
+têþtxwer;têþtxwerekî;têþtxwerINS(ekî);INS(ekî);;INDF,LGSPEC1,N,SG,ACC
 qeþmerî;qeþmerîek;qeþmerîINS(ek);INS(ek);;INDF,N,NOM,SG
 hemawî;hemawîek;hemawîINS(ek);INS(ek);;INDF,N,NOM,SG
 qereçî;qereçîo;qereçîINS(o);INS(o);;DEF,N,SG,VOC
@@ -852,7 +852,7 @@ sînûsa eniyê;sînûsa eniyêo;sînûsa eniyêINS(o);INS(o);;DEF,N,SG,VOC
 qîzxal;qîzxalinan;qîzxalINS(inan);INS(inan);;INDF,N,PL,ACC
 pizrûk;pizrûkin;pizrûkINS(in);INS(in);;INDF,N,NOM,PL
 serrad;serradek;serradINS(ek);INS(ek);;INDF,N,NOM,SG
-rutbe;rutbeekî;rutbeINS(ek)INS(î);INS(ek),INS(î);;INDF,LGSPEC1,N,SG,ACC
+rutbe;rutbeekî;rutbeINS(ekî);INS(ekî);;INDF,LGSPEC1,N,SG,ACC
 maêf penaberiyê;maêf penaberiyêan;maêf penaberiyêINS(an);INS(an);;DEF,N,PL,ACC,LGSPEC2
 þamik;þamikê;þamikINS(ê);INS(ê);;DEF,N,SG,VOC,ACC,LGSPEC2
 rêzefilm;rêzefilm;rêzefilm;;;DEF,N,NOM,PL,SG,ACC
@@ -860,7 +860,7 @@ sefer;seferinan;seferINS(inan);INS(inan);;INDF,N,PL,ACC
 lawur;lawurine;lawurINS(ine);INS(ine);;INDF,LGSPEC1,N,PL
 tewafiq;tewafiqine;tewafiqINS(ine);INS(ine);;INDF,LGSPEC1,N,PL
 hilû;hilûo;hilûINS(o);INS(o);;DEF,N,SG,VOC
-kulindir;kulindirekî;kulindirINS(ek)INS(î);INS(ek),INS(î);;INDF,LGSPEC1,N,SG,ACC
+kulindir;kulindirekî;kulindirINS(ekî);INS(ekî);;INDF,LGSPEC1,N,SG,ACC
 hecac;hecacek;hecacINS(ek);INS(ek);;INDF,N,NOM,SG
 peyivîn;bipeyivîa;INS(bi)peyivîDEL(n)INS(a);INS(bi),INS(a);DEL(n);3,COND,POS,PST,SG,V
 þiwît;þiwîtek;þiwîtINS(ek);INS(ek);;INDF,N,NOM,SG
@@ -886,7 +886,7 @@ text;texto;textINS(o);INS(o);;DEF,N,SG,VOC
 gîtarîst;gîtarîsta;gîtarîstINS(a);INS(a);;DEF,LGSPEC1,N,SG
 winda;windaek;windaINS(ek);INS(ek);;INDF,N,NOM,SG
 bezîn;nebezîn;INS(ne)bezîn;INS(ne);;1,2,3,IND,NEG,PFV,PL,PST,V,V.MSDR
-qewirandin;naqewirînyî;INS(n)INS(a)qewirDEL(a)DEL(ndi)INS(î)nINS(y)INS(î);INS(n),INS(a),INS(î),INS(y),INS(î);DEL(a),DEL(ndi);2,IND,NEG,PRS,SG,V,IPFV
+qewirandin;naqewirînyî;INS(na)qewirDEL(a)DEL(ndi)INS(î)nINS(y)INS(î);INS(na),INS(î),INS(y),INS(î);DEL(a),DEL(ndi);2,IND,NEG,PRS,SG,V,IPFV
 þerbet;þerbetek;þerbetINS(ek);INS(ek);;INDF,N,NOM,SG
 fîqerojk;fîqerojkê;fîqerojkINS(ê);INS(ê);;DEF,N,SG,VOC,ACC,LGSPEC2
 serpêçî;serpêçîên;serpêçîINS(ên);INS(ên);;DEF,LGSPEC1,N,PL,VOC
@@ -904,21 +904,21 @@ ragirtxane;ragirtxaneo;ragirtxaneINS(o);INS(o);;DEF,N,SG,VOC
 lebat;lebatên;lebatINS(ên);INS(ên);;DEF,LGSPEC1,N,PL,VOC
 land;landê;landINS(ê);INS(ê);;DEF,N,SG,VOC,ACC,LGSPEC2
 totalîter;totalîterin;totalîterINS(in);INS(in);;INDF,N,NOM,PL
-nefismezin;nefismezinan;nefismeziINS(n)INS(a)n;INS(n),INS(a);;DEF,N,PL,ACC,LGSPEC2
+nefismezin;nefismezinan;nefismeziINS(na)n;INS(na);;DEF,N,PL,ACC,LGSPEC2
 þans;þansin;þansINS(in);INS(in);;INDF,N,NOM,PL
 goga piyan;goga piyana;goga piyanINS(a);INS(a);;DEF,LGSPEC1,N,SG
 bervank;bervankê;bervankINS(ê);INS(ê);;DEF,LGSPEC1,N,SG,VOC,ACC,LGSPEC2
 qêrîn;biqêrîa;INS(bi)qêrîDEL(n)INS(a);INS(bi),INS(a);DEL(n);3,COND,POS,PST,SG,V
 ve-ciniqandin;ve-ciniqandiyî;ve-ciniqandiDEL(n)INS(y)INS(î);INS(y),INS(î);DEL(n);2,IND,PFV,POS,PST,SG,V,V.PTCP
-ra-pîvan;dira-pîvayî;INS(d)INS(i)ra-pîvaDEL(n)INS(y)INS(î);INS(d),INS(i),INS(y),INS(î);DEL(n);2,IND,POS,PST,SG,V,PROG
+ra-pîvan;dira-pîvayî;INS(di)ra-pîvaDEL(n)INS(y)INS(î);INS(di),INS(y),INS(î);DEL(n);2,IND,POS,PST,SG,V,PROG
 navberk;navberkin;navberkINS(in);INS(in);;INDF,N,NOM,PL
 model;model;model;;;DEF,N,NOM,PL,SG
 bizin;bizinê;bizinINS(ê);INS(ê);;DEF,N,SG,VOC,ACC,LGSPEC2
-gihistin;nagihim;INS(n)INS(a)gihiDEL(s)DEL(tin)INS(m);INS(n),INS(a),INS(m);DEL(s),DEL(tin);1,IND,NEG,PRS,SG,V,IPFV
+gihistin;nagihim;INS(na)gihiDEL(s)DEL(tin)INS(m);INS(na),INS(m);DEL(s),DEL(tin);1,IND,NEG,PRS,SG,V,IPFV
 nihayet;nihayetan;nihayetINS(an);INS(an);;DEF,N,PL,ACC,LGSPEC2
 nerazîbûn;nerazîbûninan;nerazîbûINS(nin)INS(a)n;INS(nin),INS(a);;INDF,N,PL,ACC
 þûjin;þûjinê;þûjinINS(ê);INS(ê);;DEF,N,SG,VOC,ACC,LGSPEC2
-niþtin;niþtinan;niþtiINS(n)INS(a)n;INS(n),INS(a);;DEF,N,PL,ACC,LGSPEC2
+niþtin;niþtinan;niþtiINS(na)n;INS(na);;DEF,N,PL,ACC,LGSPEC2
 tas;tasin;tasINS(in);INS(in);;INDF,N,NOM,PL
 kurdî;kurdî;kurdî;;;ADJ,DEF,N,NOM,PL,SG
 firoþer;firoþero;firoþerINS(o);INS(o);;DEF,N,SG,VOC

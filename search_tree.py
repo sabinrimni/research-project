@@ -75,6 +75,9 @@ def _concept_matrices_to_feature_matrix(concept_matrices: List[pd.DataFrame]) ->
     merged.drop(index=empty_objects, inplace=True)
     merged.drop_duplicates(inplace=True)
 
+    no_action_row = pd.Series(0, index=merged.columns)
+    no_action_row["index"] = "NO_ACTION"
+    merged = merged.append(no_action_row, ignore_index=True)
     merged.set_index("index", inplace=True)
     # print(merged)
 
@@ -139,7 +142,7 @@ def _perform_operations_for_word(word: str, operations: List[str]) -> str:
     new_word = ""
     for index in range(len(word)):
         operation = operations[index]
-        if operation is None:
+        if operation is None or operation == "NO_ACTION":
             new_word += word[index]
         elif operation.startswith("INS"):
             new_word += _get_op_chars(operation) + word[index]

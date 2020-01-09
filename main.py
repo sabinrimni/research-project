@@ -10,7 +10,7 @@ import regex as re
 
 from data_model import Transformation, Operation, Operations
 
-FREQUENCY_THRESHOLD = 20
+FREQUENCY_THRESHOLD = 10
 
 
 def read_file_data(file_name: str) -> List[Transformation]:
