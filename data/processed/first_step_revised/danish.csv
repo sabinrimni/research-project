@@ -76,7 +76,7 @@ trafikprop;trafikproppen;trafikpropINS(p)INS(e)INS(n);INS(p),INS(e),INS(n);;N,DE
 storhed;storheders;storhedINS(ers);INS(ers);;N,INDF,GEN,PL
 kryds;kryds';krydsINS(');INS(');;N,INDF,GEN,PL
 nødudgang;nødudgangene;nødudgangINS(ene);INS(ene);;N,DEF,NOM,PL
-translitteration;translitterationen;translitteratioINS(n)INS(e)n;INS(n),INS(e);;N,DEF,NOM,SG
+translitteration;translitterationen;translitteratioINS(ne)n;INS(ne);;N,DEF,NOM,SG
 hørfrø;hørfrø;hørfrø;;;N,INDF,NOM,PL
 emne;emnerne;emINS(n)INS(er)ne;INS(n),INS(er);;N,DEF,NOM,PL
 pulver;pulver;pulver;;;N,INDF,NOM,SG
@@ -179,7 +179,7 @@ nederdel;nederdels;nederdelINS(s);INS(s);;N,INDF,GEN,SG
 palmesøndag;palmesøndage;palmesøndagINS(e);INS(e);;N,INDF,NOM,PL
 geometri;geometrierne;geometriINS(erne);INS(erne);;N,DEF,NOM,PL
 voldtægt;voldtægters;voldtægtINS(ers);INS(ers);;N,INDF,GEN,PL
-brugerdiskussion;brugerdiskussionen;brugerdiskussioINS(n)INS(e)n;INS(n),INS(e);;N,DEF,NOM,SG
+brugerdiskussion;brugerdiskussionen;brugerdiskussioINS(ne)n;INS(ne);;N,DEF,NOM,SG
 harmonika;harmonika;harmonika;;;N,INDF,NOM,SG
 videospilkarakter;videospilkarakter;videospilkarakter;;;N,INDF,NOM,SG
 fuchsia;fuchsiaers;fuchsiaINS(ers);INS(ers);;N,INDF,GEN,PL
@@ -232,7 +232,7 @@ tragt;tragt;tragt;;;N,INDF,NOM,SG
 kardinalitet;kardinaliteterne;kardinalitetINS(erne);INS(erne);;N,DEF,NOM,PL
 lort;lorts;lortINS(s);INS(s);;N,INDF,GEN,SG
 vejrhane;vejrhaner;vejrhaneINS(r);INS(r);;N,INDF,NOM,PL
-bon;bonen;boINS(n)INS(e)n;INS(n),INS(e);;N,DEF,NOM,SG
+bon;bonen;boINS(ne)n;INS(ne);;N,DEF,NOM,SG
 næs;næs';næsINS(');INS(');;N,INDF,GEN,PL
 hingst;hingst;hingst;;;N,INDF,NOM,SG
 solsikke;solsikkers;solsikkeINS(rs);INS(rs);;N,INDF,GEN,PL
@@ -300,12 +300,12 @@ burgerbar;burgerbarers;burgerbarINS(ers);INS(ers);;N,INDF,GEN,PL
 krebs;krebsen;krebsINS(en);INS(en);;N,DEF,NOM,SG
 uheld;uheldet;uheldINS(et);INS(et);;N,DEF,NOM,SG
 babyloner;babyloner;babyloner;;;N,INDF,NOM,SG
-konjunktion;konjunktionen;konjunktioINS(n)INS(e)n;INS(n),INS(e);;N,DEF,NOM,SG
+konjunktion;konjunktionen;konjunktioINS(ne)n;INS(ne);;N,DEF,NOM,SG
 intervention;interventions;interventionINS(s);INS(s);;N,INDF,GEN,SG
 chaiselong;chaiselongers;chaiselongINS(ers);INS(ers);;N,INDF,GEN,PL
 tatovere;tatoverer;tatovereINS(r);INS(r);;V,ACT,IND,PRS
 tryne;tryne;tryne;;;N,INDF,NOM,SG
-kaution;kautionen;kautioINS(n)INS(e)n;INS(n),INS(e);;N,DEF,NOM,SG
+kaution;kautionen;kautioINS(ne)n;INS(ne);;N,DEF,NOM,SG
 brøk;brøken;brøkINS(en);INS(en);;N,DEF,NOM,SG
 bæk;bækken;bækINS(k)INS(e)INS(n);INS(k),INS(e),INS(n);;N,DEF,NOM,SG
 bål;båls;bålINS(s);INS(s);;N,INDF,GEN,PL
@@ -317,7 +317,7 @@ bogklub;bogklubs;bogklubINS(s);INS(s);;N,INDF,GEN,SG
 elskerinde;elskerinders;elskerindeINS(rs);INS(rs);;N,INDF,GEN,PL
 svigte;svigtedes;svigteINS(d)INS(es);INS(d),INS(es);;V,PASS,IND,PST
 trone;troners;troneINS(rs);INS(rs);;N,INDF,GEN,PL
-erektion;erektionen;erektioINS(n)INS(e)n;INS(n),INS(e);;N,DEF,NOM,SG
+erektion;erektionen;erektioINS(ne)n;INS(ne);;N,DEF,NOM,SG
 fordanskning;fordanskningerne;fordanskningINS(erne);INS(erne);;N,DEF,NOM,PL
 palindrom;palindromet;palindromINS(et);INS(et);;N,DEF,NOM,SG
 forårsrulle;forårsrulle;forårsrulle;;;N,INDF,NOM,SG
@@ -338,7 +338,7 @@ spektakel;spektaklerne;spektakINS(l)INS(ern)eDEL(l);INS(l),INS(ern);DEL(l);N,DEF
 skomager;skomagere;skomagerINS(e);INS(e);;N,INDF,NOM,PL
 kandisere;kandiser;kandiserDEL(e);;DEL(e);V,ACT,IMP
 skalerbarhed;skalerbarheder;skalerbarhedINS(er);INS(er);;N,INDF,NOM,PL
-mannequin;mannequinen;mannequiINS(n)INS(e)n;INS(n),INS(e);;N,DEF,NOM,SG
+mannequin;mannequinen;mannequiINS(ne)n;INS(ne);;N,DEF,NOM,SG
 hyæne;hyænen;hyæneINS(n);INS(n);;N,DEF,NOM,SG
 inspicere;inspicerer;inspicereINS(r);INS(r);;V,ACT,IND,PRS
 maskine;maskinerne;maskiINS(n)INS(er)ne;INS(n),INS(er);;N,DEF,NOM,PL
@@ -359,7 +359,7 @@ tåge;tåger;tågeINS(r);INS(r);;N,INDF,NOM,PL
 svoger;svogre;svogDEL(e)rINS(e);INS(e);DEL(e);N,INDF,NOM,PL
 radiobil;radiobiler;radiobilINS(er);INS(er);;N,INDF,NOM,PL
 vadested;vadestederne;vadestedINS(erne);INS(erne);;N,DEF,NOM,PL
-kongepingvin;kongepingvinen;kongepingviINS(n)INS(e)n;INS(n),INS(e);;N,DEF,NOM,SG
+kongepingvin;kongepingvinen;kongepingviINS(ne)n;INS(ne);;N,DEF,NOM,SG
 tæller;tællere;tællerINS(e);INS(e);;N,INDF,NOM,PL
 skib;skib;skib;;;N,INDF,NOM,SG
 semiotiker;semiotiker;semiotiker;;;N,INDF,NOM,SG
@@ -426,7 +426,7 @@ sætning;sætnings;sætningINS(s);INS(s);;N,INDF,GEN,SG
 knob;knob;knob;;;N,INDF,NOM,PL
 butik;butikkerne;butikINS(k)INS(e)INS(r)INS(n)INS(e);INS(k),INS(e),INS(r),INS(n),INS(e);;N,DEF,NOM,PL
 fedtsyl;fedtsylerne;fedtsylINS(erne);INS(erne);;N,DEF,NOM,PL
-eventyrer;eventyrerne;eventyrerINS(n)INS(e);INS(n),INS(e);;N,DEF,NOM,PL
+eventyrer;eventyrerne;eventyrerINS(ne);INS(ne);;N,DEF,NOM,PL
 violin;violins;violinINS(s);INS(s);;N,INDF,GEN,SG
 vektorprodukt;vektorprodukter;vektorproduktINS(er);INS(er);;N,INDF,NOM,PL
 hjemmeside;hjemmesides;hjemmesideINS(s);INS(s);;N,INDF,GEN,SG
@@ -461,7 +461,7 @@ recept;recepters;receptINS(ers);INS(ers);;N,INDF,GEN,PL
 biprodukt;biprodukts;biproduktINS(s);INS(s);;N,INDF,GEN,SG
 trampolin;trampoliners;trampolinINS(ers);INS(ers);;N,INDF,GEN,PL
 forglemmigej;forglemmigejer;forglemmigejINS(er);INS(er);;N,INDF,NOM,PL
-redoxreaktion;redoxreaktionen;redoxreaktioINS(n)INS(e)n;INS(n),INS(e);;N,DEF,NOM,SG
+redoxreaktion;redoxreaktionen;redoxreaktioINS(ne)n;INS(ne);;N,DEF,NOM,SG
 indbygger;indbyggere;indbyggerINS(e);INS(e);;N,INDF,NOM,PL
 cirkel;cirklen;cirkDEL(e)lINS(en);INS(en);DEL(e);N,DEF,NOM,SG
 flakon;flakoners;flakonINS(ers);INS(ers);;N,INDF,GEN,PL
@@ -517,7 +517,7 @@ skib;skibene;skibINS(ene);INS(ene);;N,DEF,NOM,PL
 onsdag;onsdag;onsdag;;;N,INDF,NOM,SG
 citat;citatet;citaINS(t)INS(e)t;INS(t),INS(e);;N,DEF,NOM,SG
 konservatorie;konservatoriers;konservatorieINS(rs);INS(rs);;N,INDF,GEN,PL
-urin;urinen;uriINS(n)INS(e)n;INS(n),INS(e);;N,DEF,NOM,SG
+urin;urinen;uriINS(ne)n;INS(ne);;N,DEF,NOM,SG
 høstak;høstak;høstak;;;N,INDF,NOM,SG
 smykke;smykket;smykkeINS(t);INS(t);;N,DEF,NOM,SG
 hjerte;hjertet;hjerteINS(t);INS(t);;N,DEF,NOM,SG
@@ -710,7 +710,7 @@ skrin;skrin;skrin;;;N,INDF,NOM,PL
 måge;måge;måge;;;N,INDF,NOM,SG
 vom;voms;vomINS(s);INS(s);;N,INDF,GEN,SG
 mikrobølge;mikrobølger;mikrobølgeINS(r);INS(r);;N,INDF,NOM,PL
-hollænder;hollænderne;hollænderINS(n)INS(e);INS(n),INS(e);;N,DEF,NOM,PL
+hollænder;hollænderne;hollænderINS(ne);INS(ne);;N,DEF,NOM,PL
 gasturbine;gasturbinerne;gasturbiINS(n)INS(er)ne;INS(n),INS(er);;N,DEF,NOM,PL
 hundesnor;hundesnoren;hundesnorINS(en);INS(en);;N,DEF,NOM,SG
 differentialkvotient;differentialkvotienter;differentialkvotientINS(er);INS(er);;N,INDF,NOM,PL
@@ -772,7 +772,7 @@ dokument;dokumenters;dokumentINS(ers);INS(ers);;N,INDF,GEN,PL
 mangel;mangels;mangelINS(s);INS(s);;N,INDF,GEN,SG
 karaffel;karafler;karafDEL(f)DEL(e)lINS(er);INS(er);DEL(f),DEL(e);N,INDF,NOM,PL
 diplom;diplomerne;diplomINS(erne);INS(erne);;N,DEF,NOM,PL
-agnostiker;agnostikerne;agnostikerINS(n)INS(e);INS(n),INS(e);;N,DEF,NOM,PL
+agnostiker;agnostikerne;agnostikerINS(ne);INS(ne);;N,DEF,NOM,PL
 syllogisme;syllogismer;syllogismeINS(r);INS(r);;N,INDF,NOM,PL
 filosof;filosof;filosof;;;N,INDF,NOM,SG
 biord;biords;biordINS(s);INS(s);;N,INDF,GEN,SG
@@ -960,7 +960,7 @@ monarki;monarkis;monarkiINS(s);INS(s);;N,INDF,GEN,SG
 argument;argumenterne;argumentINS(erne);INS(erne);;N,DEF,NOM,PL
 gemytlighed;gemytligheden;gemytlighedINS(en);INS(en);;N,DEF,NOM,SG
 horkarl;horkarls;horkarlINS(s);INS(s);;N,INDF,GEN,SG
-fluesmækker;fluesmækkerne;fluesmækkerINS(n)INS(e);INS(n),INS(e);;N,DEF,NOM,PL
+fluesmækker;fluesmækkerne;fluesmækkerINS(ne);INS(ne);;N,DEF,NOM,PL
 bænk;bænks;bænkINS(s);INS(s);;N,INDF,GEN,SG
 liv;livet;livINS(et);INS(et);;N,DEF,NOM,SG
 konstruktion;konstruktions;konstruktionINS(s);INS(s);;N,INDF,GEN,SG
@@ -994,7 +994,7 @@ forstærkning;forstærkning;forstærkning;;;N,INDF,NOM,SG
 syre;syren;syreINS(n);INS(n);;N,DEF,NOM,SG
 fjende;fjenders;fjendeINS(rs);INS(rs);;N,INDF,GEN,PL
 kurs;kursers;kuINS(r)INS(s)INS(e)rs;INS(r),INS(s),INS(e);;N,INDF,GEN,PL
-appelsin;appelsinen;appelsiINS(n)INS(e)n;INS(n),INS(e);;N,DEF,NOM,SG
+appelsin;appelsinen;appelsiINS(ne)n;INS(ne);;N,DEF,NOM,SG
 lystre;lystredes;lystreINS(d)INS(es);INS(d),INS(es);;V,PASS,IND,PST
 kaution;kautioners;kautionINS(ers);INS(ers);;N,INDF,GEN,PL
 valg;valg;valg;;;N,INDF,NOM,PL

@@ -1,8 +1,8 @@
 String;Operation type;Occurrences
 s;INS;229
 d;INS;31
-e;INS;117
-n;INS;77
+e;INS;102
+n;INS;62
 t;INS;24
 ers;INS;49
 es;INS;29
@@ -18,6 +18,7 @@ ene;INS;36
 a;INS;2
 p;INS;3
 ';INS;7
+ne;INS;15
 m;INS;9
 f;INS;4
 b;INS;4

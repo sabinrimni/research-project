@@ -1,5 +1,5 @@
 import os
-from typing import Callable
+from typing import Callable, List, Tuple
 
 from functools import partial
 from context_matrix import create_and_save_context_matrix, load_context_matrix
@@ -75,7 +75,7 @@ def write_concepts():
         print(f"Starting work on {language}")
         context_matrix = load_context_matrix(
             f"{directory_name}/context_matrix/{filename}").transpose()
-        mem_lattice = l.MemorizingLattice(context_matrix, 5)
+        mem_lattice = l.MemorizingLattice(context_matrix, 1)
         mem_lattice.calculate_concepts()
         mem_lattice.calculate_superconcepts(0)
         mem_lattice.save_superconcepts(f"{directory_name}/concepts/{language}.xlsx")
@@ -121,24 +121,82 @@ def predict_words():
         print(f"Finished work on {language}")
 
 
-def write_baseline_cost():
+def reformat_sigmorphon_predictions():
+    directory_name = "data/baseline_res"
+    for filename in os.listdir(f"{directory_name}"):
+        language, type, _ = filename.split(r"-")
+        if type != "high":
+            continue
+        print(f"Starting work on {language}")
+        sig_file = f"{directory_name}/{filename}"
+        data_file = f"data/latin_alphabet/{language}-test"
+        out_file = f"data/processed/predictions/sigmorphon/{language}.csv"
+        baseline.format_and_save_sigmorphon_predictions(sig_file, data_file, out_file)
+        print(f"Finished work on {language}")
+
+
+def write_sigmorphon_baseline_cost():
+    _write_baseline_cost("sigmorphon", "sigmorphon_cost")
+
+
+def _write_baseline_cost(input_file_dir: str, output_file_dir: str):
     directory_name = "data/processed/predictions"
-    for filename in os.listdir(f"{directory_name}/base"):
+    for filename in os.listdir(f"{directory_name}/{input_file_dir}"):
         language = filename.split(r".")[0]
         print(f"Starting work on {language}")
-        word_and_prediction_file = f"{directory_name}/base/{filename}"
-        output_file = f"{directory_name}/base_cost/{filename}"
+        word_and_prediction_file = f"{directory_name}/{input_file_dir}/{filename}"
+        output_file = f"{directory_name}/{output_file_dir}/{filename}"
         baseline.calculate_and_save_cost_baseline(word_and_prediction_file, output_file)
         print(f"Finished work on {language}")
 
 
-def get_average_baseline_cost():
-    directory_name = "data/processed/predictions/base_cost"
+def write_baseline_cost():
+    _write_baseline_cost("base", "base_cost")
+
+
+def _get_mean_and_standard_devs_for_languages() -> List[Tuple[str, float, float]]:
+    directory_name = "data/latin_alphabet"
+    res = []
+    for filename in os.listdir(f"{directory_name}"):
+        sp = filename.split(r"-")
+        language = sp[0]
+        type = sp[1]
+        if type != "test":
+            continue
+        data_file = f"{directory_name}/{filename}"
+        mean, stdev = baseline.get_means_and_stdev_for_language(data_file)
+        res.append((language, mean, stdev))
+    return res
+
+
+def _get_average_baseline_cost(cost_dir: str) -> List[Tuple[str, float]]:
+    directory_name = f"data/processed/predictions/{cost_dir}"
+    language_cost = []
     for filename in os.listdir(f"{directory_name}"):
         language = filename.split(r".")[0]
-        print(f"Language: {language}")
         cost_file = f"{directory_name}/{filename}"
-        print(f"Cost: {baseline.calculate_average_cost(cost_file)}")
+        cost = baseline.calculate_average_cost(cost_file)
+        language_cost.append((language, cost))
+    return language_cost
+
+
+def get_average_baseline_cost():
+    _get_average_baseline_cost("base_cost")
+
+
+def get_average_sigmorphon_cost():
+    _get_average_baseline_cost("sigmorphon_cost")
+
+
+def compare_base_to_sigmorphon():
+    base = _get_average_baseline_cost("base_cost")
+    sig = _get_average_baseline_cost("sigmorphon_cost")
+    means_stdev = _get_mean_and_standard_devs_for_languages()
+    zipped = zip(base, sig, means_stdev)
+    for item in zipped:
+        print(f"Language: {item[0][0]}")
+        print(f"Base: {item[0][1]} - Sig: {item[1][1]} ")
+        print(f"Mean: {item[2][1]}, Stdev: {item[2][2]}")
 
 
 def _test_lattice():
@@ -192,6 +250,7 @@ def _test_revisor():
     second = rev._load_file("data/processed/second_step/test.csv")
     print(rev._revise_second_step(sub, second))
 
+
 # def _test_decision_tree():
 #     concept_matrices = l.read_data_frames_from_excel("data/processed/concepts/italian.xlsx")
 #     t = tree.OperationTree(concept_matrices)
@@ -215,4 +274,16 @@ def _test_revisor():
 # _test_decision_tree()
 # predict_words()
 # write_baseline_cost()
-get_average_baseline_cost()
+# predict_words()
+# write_baseline_cost()
+# reformat_sigmorphon_predictions()
+# write_sigmorphon_baseline_cost()
+# get_average_sigmorphon_cost()
+# compare_base_to_sigmorphon()
+write_steps(True, True, True, True, True)
+write_first_second_step_revision()
+write_context_matrices()
+write_concepts()
+predict_words()
+write_baseline_cost()
+compare_base_to_sigmorphon()

@@ -82,7 +82,7 @@ ziņkārs;ziņkāru;ziņkārDEL(s)INS(u);INS(u);DEL(s);ADJ,ACC,PL,MASC
 kāsis;kāsi;kāsiDEL(s);;DEL(s);N,VOC,SG
 tualetes papīrs;tualetes papīrs;tualetes papīrs;;;N,NOM,SG
 simbolistiskāks;simbolistiskākās;simbolistiskākINS(ā)s;INS(ā);;ADJ,INST,PL,FEM
-visblāvākais;visblāvākajam;visblāvākaDEL(is)INS(j)INS(am);INS(j),INS(am);DEL(is);ADJ,GEN,SG,MASC
+visblāvākais;visblāvākajam;visblāvākaDEL(is)INS(jam);INS(jam);DEL(is);ADJ,GEN,SG,MASC
 nenormālāks;nenormālāku;nenormālākDEL(s)INS(u);INS(u);DEL(s);ADJ,DAT,SG,FEM
 visūdeņainākais;visūdeņaināko;visūdeņainākDEL(ais)INS(o);INS(o);DEL(ais);ADJ,NOM,SG,MASC
 prostituēšanās;prostituēšanās;prostituēšanās;;;N,NOM,SG
@@ -115,16 +115,16 @@ miegaināks;miegainākiem;miegainākDEL(s)INS(iem);INS(iem);DEL(s);ADJ,GEN,PL,MA
 store;storu;storDEL(e)INS(u);INS(u);DEL(e);N,GEN,PL
 priekšstats;priekšstatu;priekšstatDEL(s)INS(u);INS(u);DEL(s);N,ACC,SG
 raudulīgākais;raudulīgāko;raudulīgākDEL(ais)INS(o);INS(o);DEL(ais);ADJ,DAT,SG,FEM
-simboliskāks;simboliskākai;simboliskākDEL(s)INS(a)INS(i);INS(a),INS(i);DEL(s);ADJ,GEN,SG,FEM
+simboliskāks;simboliskākai;simboliskākDEL(s)INS(ai);INS(ai);DEL(s);ADJ,GEN,SG,FEM
 ontoloģiskais;ontoloģisko;ontoloģiskDEL(ais)INS(o);INS(o);DEL(ais);ADJ,DAT,SG,MASC
-daiļāks;daiļākai;daiļākDEL(s)INS(a)INS(i);INS(a),INS(i);DEL(s);ADJ,GEN,SG,FEM
+daiļāks;daiļākai;daiļākDEL(s)INS(ai);INS(ai);DEL(s);ADJ,GEN,SG,FEM
 tapt;topam;tINS(o)INS(p)aDEL(p)DEL(t)INS(m);INS(o),INS(p),INS(m);DEL(p),DEL(t);V,1,PL,PRS,IND
 iecept;iecepu;iecepDEL(t)INS(u);INS(u);DEL(t);V,1,SG,PRS,IND
 mist;mītiet;mINS(ī)INS(t)iDEL(s)INS(e)t;INS(ī),INS(t),INS(e);DEL(s);V,2,PL,IMP
 nedot;nedevāt;nedDEL(o)INS(e)INS(v)INS(ā)t;INS(e),INS(v),INS(ā);DEL(o);V,2,PL,PST,IND
 piederēt;piederot;piederDEL(ē)INS(o)t;INS(o);DEL(ē);V,V.PTCP,PRS,LGSPEC5
 paart;paarts;paartINS(s);INS(s);;V,V.PTCP,PST,PASS
-vismīkstākais;vismīkstākajai;vismīkstākINS(a)INS(j)aiDEL(s);INS(a),INS(j);DEL(s);ADJ,GEN,SG,FEM
+vismīkstākais;vismīkstākajai;vismīkstākINS(aj)aiDEL(s);INS(aj);DEL(s);ADJ,GEN,SG,FEM
 visarktiskākais;visarktiskākie;visarktiskākDEL(a)iDEL(s)INS(e);INS(e);DEL(a),DEL(s);ADJ,LOC,PL,MASC
 lingvistiskais;lingvistiskā;lingvistiskDEL(ais)INS(ā);INS(ā);DEL(ais);ADJ,ACC,SG,MASC
 šķēde;šķēdēm;šķēdDEL(e)INS(ē)INS(m);INS(ē),INS(m);DEL(e);N,INST,PL
@@ -146,7 +146,7 @@ nestrādāšana;nestrādāšanas;nestrādāšanaINS(s);INS(s);;N,GEN,SG
 liet;lejat;lDEL(i)eINS(j)INS(a)t;INS(j),INS(a);DEL(i);V,2,PL,PRS,IND
 atvasara;atvasarām;atvasarDEL(a)INS(ām);INS(ām);DEL(a);N,INST,PL
 plašs;plašu;plašDEL(s)INS(u);INS(u);DEL(s);ADJ,DAT,SG,MASC
-slimais;slimajai;slimINS(a)INS(j)aiDEL(s);INS(a),INS(j);DEL(s);ADJ,GEN,SG,FEM
+slimais;slimajai;slimINS(aj)aiDEL(s);INS(aj);DEL(s);ADJ,GEN,SG,FEM
 eiropejiskākais;eiropejiskāko;eiropejiskākDEL(ais)INS(o);INS(o);DEL(ais);ADJ,ACC,PL,MASC
 zīdināt;esot jāzīdina;INS(e)INS(s)INS(o)INS(t)INS( )INS(j)INS(ā)zīdinDEL(ā)DEL(t)INS(a);INS(e),INS(s),INS(o),INS(t),INS( ),INS(j),INS(ā),INS(a);DEL(ā),DEL(t);V,LGSPEC2,LGSPEC7
 sausāks;sausākām;sausākDEL(s)INS(ām);INS(ām);DEL(s);ADJ,DAT,PL,FEM
@@ -154,7 +154,7 @@ septiņnieks;septiņnieku;septiņniekDEL(s)INS(u);INS(u);DEL(s);N,INST,SG
 spanis;spani;spaniDEL(s);;DEL(s);N,ACC,SG
 dāsnāks;dāsnākām;dāsnākDEL(s)INS(ām);INS(ām);DEL(s);ADJ,GEN,PL,FEM
 miesīgākais;miesīgāko;miesīgākDEL(ais)INS(o);INS(o);DEL(ais);ADJ,ACC,PL,FEM
-bulgāriskākais;bulgāriskākajam;bulgāriskākaDEL(is)INS(j)INS(am);INS(j),INS(am);DEL(is);ADJ,GEN,SG,MASC
+bulgāriskākais;bulgāriskākajam;bulgāriskākaDEL(is)INS(jam);INS(jam);DEL(is);ADJ,GEN,SG,MASC
 ejakulēt;ejakulējām;ejakulēDEL(t)INS(jām);INS(jām);DEL(t);V,1,PL,PST,IND
 jemenietis;jemeniešiem;jemenieDEL(t)DEL(is)INS(š)INS(iem);INS(š),INS(iem);DEL(t),DEL(is);N,DAT,PL
 klinšainākais;klinšainākie;klinšainākDEL(a)iDEL(s)INS(e);INS(e);DEL(a),DEL(s);ADJ,LOC,PL,MASC
@@ -177,7 +177,7 @@ abate;abates;abateINS(s);INS(s);;N,VOC,PL
 komēta;komētām;komētDEL(a)INS(ām);INS(ām);DEL(a);N,INST,PL
 nesaprašana;nesaprašanas;nesaprašanaINS(s);INS(s);;N,GEN,SG
 mēļākais;mēļākās;mēļākDEL(ai)INS(ā)s;INS(ā);DEL(ai);ADJ,LOC,PL,FEM
-cilvēciskāks;cilvēciskākai;cilvēciskākDEL(s)INS(a)INS(i);INS(a),INS(i);DEL(s);ADJ,GEN,SG,FEM
+cilvēciskāks;cilvēciskākai;cilvēciskākDEL(s)INS(ai);INS(ai);DEL(s);ADJ,GEN,SG,FEM
 nerast;neradīs;neraINS(d)INS(ī)sDEL(t);INS(d),INS(ī);DEL(t);V,3,PL,FUT,IND
 raksturīgums;raksturīguma;raksturīgumDEL(s)INS(a);INS(a);DEL(s);N,GEN,SG
 pacept;lai pacep;INS(l)INS(a)INS(i)INS( )pacepDEL(t);INS(l),INS(a),INS(i),INS( );DEL(t);V,3,PL,IMP
@@ -197,7 +197,7 @@ nestumt;nestumsim;nestuINS(m)INS(s)INS(i)mDEL(t);INS(m),INS(s),INS(i);DEL(t);V,1
 milzīgums;milzīgumam;milzīguINS(m)INS(a)mDEL(s);INS(m),INS(a);DEL(s);N,DAT,SG
 bāra bērns;bāra bērniem;bāra bērnDEL(s)INS(iem);INS(iem);DEL(s);N,DAT,PL
 filozofiskāks;filozofiskāku;filozofiskākDEL(s)INS(u);INS(u);DEL(s);ADJ,DAT,SG,MASC
-nemazgāt;nemazgāsim;nemazgāDEL(t)INS(s)INS(im);INS(s),INS(im);DEL(t);V,1,PL,FUT,IND
+nemazgāt;nemazgāsim;nemazgāDEL(t)INS(sim);INS(sim);DEL(t);V,1,PL,FUT,IND
 ķīsis;ķīsis;ķīsis;;;N,NOM,SG
 dzīvāks;dzīvāku;dzīvākDEL(s)INS(u);INS(u);DEL(s);ADJ,DAT,SG,FEM
 nesmaidīt;nesmaidīsi;nesmaidīDEL(t)INS(s)INS(i);INS(s),INS(i);DEL(t);V,2,SG,FUT,IND
@@ -209,7 +209,7 @@ iztulkošana;iztulkošanas;iztulkošanaINS(s);INS(s);;N,ACC,PL
 sila strazds;sila strazdos;sila strazdINS(o)s;INS(o);;N,LOC,PL
 debates;debatēs;debatDEL(e)INS(ē)s;INS(ē);DEL(e);N,LOC,PL
 ūsains;ūsainas;ūsainINS(a)s;INS(a);;ADJ,NOM,PL,FEM
-realizēt;realizējam;realizēDEL(t)INS(j)INS(am);INS(j),INS(am);DEL(t);V,1,PL,PRS,IND
+realizēt;realizējam;realizēDEL(t)INS(jam);INS(jam);DEL(t);V,1,PL,PRS,IND
 malārijods;malārijodu;malārijodDEL(s)INS(u);INS(u);DEL(s);N,GEN,PL
 nenazalizēt;nenazalizēsit;nenazalizēINS(s)INS(i)t;INS(s),INS(i);;V,2,PL,FUT,IND
 resns;resniem;resnDEL(s)INS(iem);INS(iem);DEL(s);ADJ,GEN,PL,MASC
@@ -231,13 +231,13 @@ slavenāks;slavenākiem;slavenākDEL(s)INS(iem);INS(iem);DEL(s);ADJ,GEN,PL,MASC
 mīlāks;mīlākām;mīlākDEL(s)INS(ām);INS(ām);DEL(s);ADJ,DAT,PL,FEM
 iestāde;iestādei;iestādeINS(i);INS(i);;N,DAT,SG
 visizraēliskākais;visizraēliskākajiem;visizraēliskākaINS(j)iDEL(s)INS(em);INS(j),INS(em);DEL(s);ADJ,DAT,PL,MASC
-staigs;staigai;staigDEL(s)INS(a)INS(i);INS(a),INS(i);DEL(s);ADJ,GEN,SG,FEM
+staigs;staigai;staigDEL(s)INS(ai);INS(ai);DEL(s);ADJ,GEN,SG,FEM
 kanādiskākais;kanādiskākajiem;kanādiskākaINS(j)iDEL(s)INS(em);INS(j),INS(em);DEL(s);ADJ,GEN,PL,MASC
 nekošana;nekošanu;nekošanDEL(a)INS(u);INS(u);DEL(a);N,INST,SG
 istaba;istabas;istabaINS(s);INS(s);;N,NOM,PL
 gatavais;gatavā;gatavDEL(ais)INS(ā);INS(ā);DEL(ais);ADJ,LOC,SG,FEM
 nekost;nekod;nekoDEL(s)DEL(t)INS(d);INS(d);DEL(s),DEL(t);V,2,SG,IMP
-nebloķēt;nebloķēsim;nebloķēDEL(t)INS(s)INS(im);INS(s),INS(im);DEL(t);V,1,PL,IMP
+nebloķēt;nebloķēsim;nebloķēDEL(t)INS(sim);INS(sim);DEL(t);V,1,PL,IMP
 neglābšana;neglābšanu;neglābšanDEL(a)INS(u);INS(u);DEL(a);N,ACC,SG
 sūkāt;sūkā;sūkāDEL(t);;DEL(t);V,3,PL,PRS,IND
 visslepenākais;visslepenākā;visslepenākDEL(ais)INS(ā);INS(ā);DEL(ais);ADJ,LOC,SG,FEM
@@ -248,7 +248,7 @@ tumšākais;tumšākais;tumšākais;;;ADJ,LOC,SG,MASC
 visrožainākais;visrožainākajos;visrožainākaDEL(i)INS(jo)s;INS(jo);DEL(i);ADJ,INST,PL,MASC
 nepārtulkot;nepārtulko;nepārtulkoDEL(t);;DEL(t);V,2,SG,PRS,IND
 auglīgais;auglīgo;auglīgDEL(ais)INS(o);INS(o);DEL(ais);ADJ,NOM,SG,FEM
-neapart;neaparsim;neaparDEL(t)INS(s)INS(im);INS(s),INS(im);DEL(t);V,1,PL,IMP
+neapart;neaparsim;neaparDEL(t)INS(sim);INS(sim);DEL(t);V,1,PL,IMP
 ticēt;ticēšu;ticēDEL(t)INS(š)INS(u);INS(š),INS(u);DEL(t);V,1,SG,FUT,IND
 kārtot;kārtosit;kārtoINS(s)INS(i)t;INS(s),INS(i);;V,2,PL,FUT,IND
 morāliste;morāliste;morāliste;;;N,NOM,SG
@@ -258,12 +258,12 @@ kardioloģiskais;kardioloģiskie;kardioloģiskDEL(a)iDEL(s)INS(e);INS(e);DEL(a),
 grūsnais;grūsnās;grūsnDEL(ai)INS(ā)s;INS(ā);DEL(ai);ADJ,LOC,PL,FEM
 dzīvojamā istaba;dzīvojamā istabām;dzīvojamā istabDEL(a)INS(ām);INS(ām);DEL(a);N,DAT,PL
 teika;teika;teika;;;N,VOC,SG
-neredzēt;neredzēsim;neredzēDEL(t)INS(s)INS(im);INS(s),INS(im);DEL(t);V,1,PL,IMP
+neredzēt;neredzēsim;neredzēDEL(t)INS(sim);INS(sim);DEL(t);V,1,PL,IMP
 raudais;raudos;raudDEL(ai)INS(o)s;INS(o);DEL(ai);ADJ,NOM,PL,MASC
 veiklais;veiklo;veiklDEL(ais)INS(o);INS(o);DEL(ais);ADJ,DAT,SG,FEM
 pakistānisks;pakistānisku;pakistāniskDEL(s)INS(u);INS(u);DEL(s);ADJ,NOM,SG,FEM
 visstaigņākais;visstaigņākā;visstaigņākDEL(ais)INS(ā);INS(ā);DEL(ais);ADJ,LOC,SG,FEM
-garlaicīgais;garlaicīgajai;garlaicīgINS(a)INS(j)aiDEL(s);INS(a),INS(j);DEL(s);ADJ,GEN,SG,FEM
+garlaicīgais;garlaicīgajai;garlaicīgINS(aj)aiDEL(s);INS(aj);DEL(s);ADJ,GEN,SG,FEM
 pētīt;pētām;pēDEL(t)DEL(ī)tINS(ām);INS(ām);DEL(t),DEL(ī);V,1,PL,PRS,IND
 izglītība;izglītības;izglītībaINS(s);INS(s);;N,GEN,SG
 kopt;lai kopj;INS(l)INS(a)INS(i)INS( )kopDEL(t)INS(j);INS(l),INS(a),INS(i),INS( ),INS(j);DEL(t);V,3,SG,IMP
@@ -275,7 +275,7 @@ vistumšākais;vistumšākā;vistumšākDEL(ais)INS(ā);INS(ā);DEL(ais);ADJ,LOC
 brūnais;brūnās;brūnDEL(ai)INS(ā)s;INS(ā);DEL(ai);ADJ,NOM,PL,FEM
 visspirgtākais;visspirgtākajiem;visspirgtākaINS(j)iDEL(s)INS(em);INS(j),INS(em);DEL(s);ADJ,DAT,PL,MASC
 brokastot;brokastos;brokastoDEL(t)INS(s);INS(s);DEL(t);V,3,SG,FUT,IND
-dzīvespriecīgākais;dzīvespriecīgākajam;dzīvespriecīgākaDEL(is)INS(j)INS(am);INS(j),INS(am);DEL(is);ADJ,GEN,SG,MASC
+dzīvespriecīgākais;dzīvespriecīgākajam;dzīvespriecīgākaDEL(is)INS(jam);INS(jam);DEL(is);ADJ,GEN,SG,MASC
 dusēt;dusēšot;dusēINS(š)INS(o)t;INS(š),INS(o);;V,LGSPEC1,FUT
 neprasīšana;neprasīšanu;neprasīšanDEL(a)INS(u);INS(u);DEL(a);N,ACC,SG
 visziemīgākais;visziemīgākajām;visziemīgākaDEL(is)INS(jām);INS(jām);DEL(is);ADJ,DAT,PL,FEM
@@ -300,13 +300,13 @@ kļūdaināks;kļūdainākās;kļūdainākINS(ā)s;INS(ā);;ADJ,INST,PL,FEM
 visdebilākais;visdebilākā;visdebilākDEL(ais)INS(ā);INS(ā);DEL(ais);ADJ,LOC,SG,FEM
 visziņkārākais;visziņkārākajās;visziņkārākaDEL(i)INS(jā)s;INS(jā);DEL(i);ADJ,INST,PL,FEM
 kustēšana;kustēšanu;kustēšanDEL(a)INS(u);INS(u);DEL(a);N,ACC,SG
-domāt;domājam;domāDEL(t)INS(j)INS(am);INS(j),INS(am);DEL(t);V,V.PTCP,PRS,LGSPEC6
+domāt;domājam;domāDEL(t)INS(jam);INS(jam);DEL(t);V,V.PTCP,PRS,LGSPEC6
 neaizstāvēt;neaizstāvēsi;neaizstāvēDEL(t)INS(s)INS(i);INS(s),INS(i);DEL(t);V,2,SG,FUT,IND
-gardais;gardajai;gardINS(a)INS(j)aiDEL(s);INS(a),INS(j);DEL(s);ADJ,GEN,SG,FEM
+gardais;gardajai;gardINS(aj)aiDEL(s);INS(aj);DEL(s);ADJ,GEN,SG,FEM
 irākiskais;irākiskajām;irākiskaDEL(is)INS(jām);INS(jām);DEL(is);ADJ,DAT,PL,FEM
 visgludākais;visgludākajā;visgludākaDEL(is)INS(jā);INS(jā);DEL(is);ADJ,INST,SG,MASC
 ministrs;ministri;ministrDEL(s)INS(i);INS(i);DEL(s);N,NOM,PL
-visanormālākais;visanormālākajai;visanormālākINS(a)INS(j)aiDEL(s);INS(a),INS(j);DEL(s);ADJ,GEN,SG,FEM
+visanormālākais;visanormālākajai;visanormālākINS(aj)aiDEL(s);INS(aj);DEL(s);ADJ,GEN,SG,FEM
 katarietis;katariešiem;katarieDEL(t)DEL(is)INS(š)INS(iem);INS(š),INS(iem);DEL(t),DEL(is);N,DAT,PL
 kanādiete;kanādiete;kanādiete;;;N,VOC,SG
 viskontinentālākais;viskontinentālākajiem;viskontinentālākaINS(j)iDEL(s)INS(em);INS(j),INS(em);DEL(s);ADJ,GEN,PL,MASC
@@ -317,7 +317,7 @@ lācēns;lācēns;lācēns;;;N,NOM,SG
 mezglainais;mezglainās;mezglainDEL(ai)INS(ā)s;INS(ā);DEL(ai);ADJ,LOC,PL,FEM
 labība;labībām;labībDEL(a)INS(ām);INS(ām);DEL(a);N,INST,PL
 zvaigzne;zvaigznes;zvaigzneINS(s);INS(s);;N,NOM,PL
-rasmīgais;rasmīgajai;rasmīgINS(a)INS(j)aiDEL(s);INS(a),INS(j);DEL(s);ADJ,GEN,SG,FEM
+rasmīgais;rasmīgajai;rasmīgINS(aj)aiDEL(s);INS(aj);DEL(s);ADJ,GEN,SG,FEM
 mikstais;miksto;mikstDEL(ais)INS(o);INS(o);DEL(ais);ADJ,NOM,SG,MASC
 vismetafiziskākais;vismetafiziskākajos;vismetafiziskākaDEL(i)INS(jo)s;INS(jo);DEL(i);ADJ,INST,PL,MASC
 ortogrāfisks;ortogrāfisku;ortogrāfiskDEL(s)INS(u);INS(u);DEL(s);ADJ,DAT,SG,FEM
@@ -337,7 +337,7 @@ dūre;dūres;dūreINS(s);INS(s);;N,ACC,PL
 klausīt;klausījis;klausīDEL(t)INS(j)INS(is);INS(j),INS(is);DEL(t);V,V.PTCP,PST,ACT
 patulkot;patulko;patulkoDEL(t);;DEL(t);V,3,SG,PRS,IND
 raižpilnākais;raižpilnākajām;raižpilnākaDEL(is)INS(jām);INS(jām);DEL(is);ADJ,DAT,PL,FEM
-īsināt;īsināsim;īsināDEL(t)INS(s)INS(im);INS(s),INS(im);DEL(t);V,1,PL,FUT,IND
+īsināt;īsināsim;īsināDEL(t)INS(sim);INS(sim);DEL(t);V,1,PL,FUT,IND
 strādīgāks;strādīgākos;strādīgākINS(o)s;INS(o);;ADJ,INST,PL,MASC
 slaidāks;slaidākas;slaidākINS(a)s;INS(a);;ADJ,ACC,SG,FEM
 jēdzieniskais;jēdzieniskā;jēdzieniskDEL(ais)INS(ā);INS(ā);DEL(ais);ADJ,ACC,SG,MASC
@@ -369,7 +369,7 @@ glīšākais;glīšākajos;glīšākaDEL(i)INS(jo)s;INS(jo);DEL(i);ADJ,INST,PL,M
 laimīgāks;laimīgāku;laimīgākDEL(s)INS(u);INS(u);DEL(s);ADJ,NOM,SG,MASC
 jēdzīgākais;jēdzīgākās;jēdzīgākDEL(ai)INS(ā)s;INS(ā);DEL(ai);ADJ,LOC,PL,FEM
 lauvene;lauvenēm;lauvenDEL(e)INS(ē)INS(m);INS(ē),INS(m);DEL(e);N,DAT,PL
-iepelēkais;iepelēkajam;iepelēkaDEL(is)INS(j)INS(am);INS(j),INS(am);DEL(is);ADJ,GEN,SG,MASC
+iepelēkais;iepelēkajam;iepelēkaDEL(is)INS(jam);INS(jam);DEL(is);ADJ,GEN,SG,MASC
 vismožākais;vismožāko;vismožākDEL(ais)INS(o);INS(o);DEL(ais);ADJ,DAT,SG,FEM
 riktīgais;riktīgajām;riktīgaDEL(is)INS(jām);INS(jām);DEL(is);ADJ,DAT,PL,FEM
 solīt;jāsolot;INS(jā)solDEL(ī)INS(o)t;INS(jā),INS(o);DEL(ī);V,LGSPEC2,LgSPEC8
@@ -387,7 +387,7 @@ fizikālākais;fizikālākajos;fizikālākaDEL(i)INS(jo)s;INS(jo);DEL(i);ADJ,INS
 sēklinieku maisiņš;sēklinieku maisiņos;sēklinieku maisiņDEL(š)INS(o)INS(s);INS(o),INS(s);DEL(š);N,LOC,PL
 redzamāks;redzamākiem;redzamākDEL(s)INS(iem);INS(iem);DEL(s);ADJ,GEN,PL,MASC
 imperiālistiskākais;imperiālistiskāko;imperiālistiskākDEL(ais)INS(o);INS(o);DEL(ais);ADJ,NOM,SG,MASC
-rieties;riesimies;rieDEL(t)INS(s)INS(im)ies;INS(s),INS(im);DEL(t);V,1,PL,IMP
+rieties;riesimies;rieDEL(t)INS(sim)ies;INS(sim);DEL(t);V,1,PL,IMP
 staigņākais;staigņākais;staigņākais;;;ADJ,LOC,SG,MASC
 arktiskākais;arktiskākās;arktiskākDEL(ai)INS(ā)s;INS(ā);DEL(ai);ADJ,LOC,PL,FEM
 rumāniskāks;rumāniskākas;rumāniskākINS(a)s;INS(a);;ADJ,ACC,SG,FEM
@@ -395,7 +395,7 @@ nedzimt;nedzimis;nedzimDEL(t)INS(i)INS(s);INS(i),INS(s);DEL(t);V,V.PTCP,PST,ACT
 kartons;kartonā;kartonDEL(s)INS(ā);INS(ā);DEL(s);N,LOC,SG
 demokrāte;demokrātēs;demokrātDEL(e)INS(ē)INS(s);INS(ē),INS(s);DEL(e);N,LOC,PL
 visbulgāriskākais;visbulgāriskāko;visbulgāriskākDEL(ais)INS(o);INS(o);DEL(ais);ADJ,DAT,SG,MASC
-visiesarkanākais;visiesarkanākajam;visiesarkanākaDEL(is)INS(j)INS(am);INS(j),INS(am);DEL(is);ADJ,GEN,SG,MASC
+visiesarkanākais;visiesarkanākajam;visiesarkanākaDEL(is)INS(jam);INS(jam);DEL(is);ADJ,GEN,SG,MASC
 zīdīšana;zīdīšana;zīdīšana;;;N,VOC,SG
 amerikāniete;amerikānietes;amerikānieteINS(s);INS(s);;N,GEN,SG
 kaste;kaste;kaste;;;N,NOM,SG
@@ -409,8 +409,8 @@ zviedziens;zviedzieniem;zviedzienDEL(s)INS(iem);INS(iem);DEL(s);N,DAT,PL
 iesarkans;iesarkanu;iesarkanDEL(s)INS(u);INS(u);DEL(s);ADJ,DAT,SG,FEM
 jēdzieniskākais;jēdzieniskāko;jēdzieniskākDEL(ais)INS(o);INS(o);DEL(ais);ADJ,ACC,PL,FEM
 ziepjainais;ziepjainās;ziepjainDEL(ai)INS(ā)s;INS(ā);DEL(ai);ADJ,NOM,PL,FEM
-svešais;svešajai;svešINS(a)INS(j)aiDEL(s);INS(a),INS(j);DEL(s);ADJ,GEN,SG,FEM
-neziepēt;neziepējam;neziepēDEL(t)INS(j)INS(am);INS(j),INS(am);DEL(t);V,V.PTCP,PRS,LGSPEC6
+svešais;svešajai;svešINS(aj)aiDEL(s);INS(aj);DEL(s);ADJ,GEN,SG,FEM
+neziepēt;neziepējam;neziepēDEL(t)INS(jam);INS(jam);DEL(t);V,V.PTCP,PRS,LGSPEC6
 neitralizēšana;neitralizēšana;neitralizēšana;;;N,NOM,SG
 baltais;baltajiem;baltaINS(j)iDEL(s)INS(em);INS(j),INS(em);DEL(s);ADJ,DAT,PL,MASC
 meitenīgais;meitenīgo;meitenīgDEL(ais)INS(o);INS(o);DEL(ais);ADJ,ACC,PL,MASC
@@ -419,7 +419,7 @@ veikals;veikaliem;veikalDEL(s)INS(iem);INS(iem);DEL(s);N,DAT,PL
 vasarīgāks;vasarīgākās;vasarīgākINS(ā)s;INS(ā);;ADJ,INST,PL,FEM
 indīgākais;indīgāko;indīgākDEL(ais)INS(o);INS(o);DEL(ais);ADJ,NOM,SG,FEM
 aizpērnējais;aizpērnējās;aizpērnējDEL(ai)INS(ā)s;INS(ā);DEL(ai);ADJ,ACC,SG,FEM
-sievišķīgākais;sievišķīgākajai;sievišķīgākINS(a)INS(j)aiDEL(s);INS(a),INS(j);DEL(s);ADJ,GEN,SG,FEM
+sievišķīgākais;sievišķīgākajai;sievišķīgākINS(aj)aiDEL(s);INS(aj);DEL(s);ADJ,GEN,SG,FEM
 pirmdiena;pirmdienas;pirmdienaINS(s);INS(s);;N,NOM,PL
 ungāriskākais;ungāriskāko;ungāriskākDEL(ais)INS(o);INS(o);DEL(ais);ADJ,NOM,SG,MASC
 piederīgs;piederīgu;piederīgDEL(s)INS(u);INS(u);DEL(s);ADJ,ACC,PL,FEM
@@ -469,7 +469,7 @@ drēgnums;drēgnumā;drēgnumDEL(s)INS(ā);INS(ā);DEL(s);N,LOC,SG
 smagāks;smagākām;smagākDEL(s)INS(ām);INS(ām);DEL(s);ADJ,DAT,PL,FEM
 rezultāts;rezultāt;rezultātDEL(s);;DEL(s);N,VOC,SG
 klausīties;klausījies;klausīDEL(t)INS(j)ies;INS(j);DEL(t);V,2,SG,PST,IND
-neapart;neaparsim;neaparDEL(t)INS(s)INS(im);INS(s),INS(im);DEL(t);V,1,PL,FUT,IND
+neapart;neaparsim;neaparDEL(t)INS(sim);INS(sim);DEL(t);V,1,PL,FUT,IND
 lejas tece;lejas teci;lejas tecDEL(e)INS(i);INS(i);DEL(e);N,ACC,SG
 zīdināt;zīdināšu;zīdināDEL(t)INS(š)INS(u);INS(š),INS(u);DEL(t);V,1,SG,FUT,IND
 viesu istaba;viesu istabu;viesu istabDEL(a)INS(u);INS(u);DEL(a);N,INST,SG
@@ -481,7 +481,7 @@ nabadze;nabadzes;nabadzeINS(s);INS(s);;N,VOC,PL
 dzemdēt;lai dzemdē;INS(l)INS(a)INS(i)INS( )dzemdēDEL(t);INS(l),INS(a),INS(i),INS( );DEL(t);V,3,PL,IMP
 dziedājums;dziedājumos;dziedājumINS(o)s;INS(o);;N,LOC,PL
 vēceklis;vēcekli;vēcekliDEL(s);;DEL(s);N,INST,SG
-reliģiskākais;reliģiskākajam;reliģiskākaDEL(is)INS(j)INS(am);INS(j),INS(am);DEL(is);ADJ,GEN,SG,MASC
+reliģiskākais;reliģiskākajam;reliģiskākaDEL(is)INS(jam);INS(jam);DEL(is);ADJ,GEN,SG,MASC
 saldenākais;saldenākā;saldenākDEL(ais)INS(ā);INS(ā);DEL(ais);ADJ,ACC,SG,MASC
 atmiņa;atmiņu;atmiņDEL(a)INS(u);INS(u);DEL(a);N,INST,SG
 nedemokratizēt;nedemokratizēsit;nedemokratizēINS(s)INS(i)t;INS(s),INS(i);;V,2,PL,FUT,IND
@@ -489,14 +489,14 @@ politiskais;politisko;politiskDEL(ais)INS(o);INS(o);DEL(ais);ADJ,NOM,SG,MASC
 apspriešana;apspriešana;apspriešana;;;N,VOC,SG
 turpināt;turpinājāt;turpinINS(ā)INS(j)āt;INS(ā),INS(j);;V,2,PL,PST,IND
 fotogrāfiskāks;fotogrāfiskākus;fotogrāfiskākINS(u)s;INS(u);;ADJ,NOM,PL,MASC
-etimoloģisks;etimoloģiskai;etimoloģiskDEL(s)INS(a)INS(i);INS(a),INS(i);DEL(s);ADJ,GEN,SG,FEM
+etimoloģisks;etimoloģiskai;etimoloģiskDEL(s)INS(ai);INS(ai);DEL(s);ADJ,GEN,SG,FEM
 astoņnieks;astoņnieks;astoņnieks;;;N,NOM,SG
 Japānas redīss;Japānas redīsos;Japānas redīsINS(o)s;INS(o);;N,LOC,PL
 vismoldāviskākais;vismoldāviskāko;vismoldāviskākDEL(ais)INS(o);INS(o);DEL(ais);ADJ,DAT,SG,FEM
 patiesība;patiesībā;patiesībDEL(a)INS(ā);INS(ā);DEL(a);N,LOC,SG
 ābols;ābolus;ābolINS(u)s;INS(u);;N,ACC,PL
 atvasarīgāks;atvasarīgāku;atvasarīgākDEL(s)INS(u);INS(u);DEL(s);ADJ,NOM,SG,MASC
-nozīmēt;nozīmēsim;nozīmēDEL(t)INS(s)INS(im);INS(s),INS(im);DEL(t);V,1,PL,IMP
+nozīmēt;nozīmēsim;nozīmēDEL(t)INS(sim);INS(sim);DEL(t);V,1,PL,IMP
 slimais;slimajā;slimaDEL(is)INS(jā);INS(jā);DEL(is);ADJ,INST,SG,MASC
 stādīt;stādošs;stādDEL(ī)DEL(t)INS(o)INS(š)INS(s);INS(o),INS(š),INS(s);DEL(ī),DEL(t);V,V.PTCP,PRS,LGSPEC3
 visbēdīgākais;visbēdīgākos;visbēdīgākDEL(ai)INS(o)s;INS(o);DEL(ai);ADJ,NOM,PL,MASC
@@ -507,7 +507,7 @@ ekonomiskais;ekonomiskā;ekonomiskDEL(ais)INS(ā);INS(ā);DEL(ais);ADJ,LOC,SG,FE
 visčehiskākais;visčehiskākā;visčehiskākDEL(ais)INS(ā);INS(ā);DEL(ais);ADJ,ACC,SG,MASC
 kļūdainais;kļūdaino;kļūdainDEL(ais)INS(o);INS(o);DEL(ais);ADJ,NOM,SG,FEM
 etnisks;etniskām;etniskDEL(s)INS(ām);INS(ām);DEL(s);ADJ,DAT,PL,FEM
-precīzais;precīzajai;precīzINS(a)INS(j)aiDEL(s);INS(a),INS(j);DEL(s);ADJ,GEN,SG,FEM
+precīzais;precīzajai;precīzINS(aj)aiDEL(s);INS(aj);DEL(s);ADJ,GEN,SG,FEM
 pliks;plikās;plikINS(ā)s;INS(ā);;ADJ,INST,PL,FEM
 ķermens;ķermeniem;ķermenDEL(s)INS(iem);INS(iem);DEL(s);N,DAT,PL
 taurs;tauru;taurDEL(s)INS(u);INS(u);DEL(s);N,GEN,PL
@@ -527,7 +527,7 @@ slavenais;slavenajām;slavenaDEL(is)INS(jām);INS(jām);DEL(is);ADJ,GEN,PL,FEM
 asiņainais;asiņaino;asiņainDEL(ais)INS(o);INS(o);DEL(ais);ADJ,ACC,PL,FEM
 jūnijs;jūnija;jūnijDEL(s)INS(a);INS(a);DEL(s);N,GEN,SG
 mitrākais;mitrākos;mitrākDEL(ai)INS(o)s;INS(o);DEL(ai);ADJ,NOM,PL,MASC
-glābt;glābsim;glābDEL(t)INS(s)INS(im);INS(s),INS(im);DEL(t);V,1,PL,FUT,IND
+glābt;glābsim;glābDEL(t)INS(sim);INS(sim);DEL(t);V,1,PL,FUT,IND
 zaļāks;zaļākas;zaļākINS(a)s;INS(a);;ADJ,ACC,SG,FEM
 badmintons;badminton;badmintonDEL(s);;DEL(s);N,VOC,SG
 aizstāvība;aizstāvībā;aizstāvībDEL(a)INS(ā);INS(ā);DEL(a);N,LOC,SG
@@ -555,8 +555,8 @@ visziņkārākais;visziņkārāko;visziņkārākDEL(ais)INS(o);INS(o);DEL(ais);A
 muklaināks;muklainākam;muklainākDEL(s)INS(a)INS(m);INS(a),INS(m);DEL(s);ADJ,GEN,SG,MASC
 mobilais;mobilos;mobilDEL(ai)INS(o)s;INS(o);DEL(ai);ADJ,NOM,PL,MASC
 duļķes;duļķēm;duļķDEL(e)DEL(s)INS(ē)INS(m);INS(ē),INS(m);DEL(e),DEL(s);N,INST,PL
-reliģiozāks;reliģiozākai;reliģiozākDEL(s)INS(a)INS(i);INS(a),INS(i);DEL(s);ADJ,GEN,SG,FEM
-caurredzamāks;caurredzamākai;caurredzamākDEL(s)INS(a)INS(i);INS(a),INS(i);DEL(s);ADJ,GEN,SG,FEM
+reliģiozāks;reliģiozākai;reliģiozākDEL(s)INS(ai);INS(ai);DEL(s);ADJ,GEN,SG,FEM
+caurredzamāks;caurredzamākai;caurredzamākDEL(s)INS(ai);INS(ai);DEL(s);ADJ,GEN,SG,FEM
 jemenietis;jemenietim;jemenietiDEL(s)INS(m);INS(m);DEL(s);N,DAT,SG
 mežmale;mežmale;mežmale;;;N,NOM,SG
 visspirgtākais;visspirgtākajā;visspirgtākaDEL(is)INS(jā);INS(jā);DEL(is);ADJ,INST,SG,FEM
@@ -586,7 +586,7 @@ princis;princim;princiDEL(s)INS(m);INS(m);DEL(s);N,DAT,SG
 bahreiniete;bahreinietēm;bahreinietDEL(e)INS(ē)INS(m);INS(ē),INS(m);DEL(e);N,INST,PL
 nemirst;nemirsi;nemirsDEL(t)INS(i);INS(i);DEL(t);V,2,SG,PST,IND
 turkmēniskais;turkmēniskajās;turkmēniskaDEL(i)INS(jā)s;INS(jā);DEL(i);ADJ,INST,PL,FEM
-portugāliskais;portugāliskajai;portugāliskINS(a)INS(j)aiDEL(s);INS(a),INS(j);DEL(s);ADJ,GEN,SG,FEM
+portugāliskais;portugāliskajai;portugāliskINS(aj)aiDEL(s);INS(aj);DEL(s);ADJ,GEN,SG,FEM
 blāvākais;blāvākie;blāvākDEL(a)iDEL(s)INS(e);INS(e);DEL(a),DEL(s);ADJ,LOC,PL,MASC
 sudabrs;sudabr;sudabrDEL(s);;DEL(s);N,VOC,SG
 visdailākais;visdailākā;visdailākDEL(ais)INS(ā);INS(ā);DEL(ais);ADJ,ACC,SG,MASC
@@ -595,7 +595,7 @@ neaudzināt;neaudzināt;neaudzināt;;;V,2,PL,PRS,IND
 krieviskais;krieviskās;krieviskDEL(ai)INS(ā)s;INS(ā);DEL(ai);ADJ,NOM,PL,FEM
 necentrēt;necentrējams;necentrēDEL(t)INS(j)INS(a)INS(m)INS(s);INS(j),INS(a),INS(m),INS(s);DEL(t);V,V.PTCP,PRS,PASS
 lēca;lēcās;lēcDEL(a)INS(ā)INS(s);INS(ā),INS(s);DEL(a);N,LOC,PL
-visbiklākais;visbiklākajai;visbiklākINS(a)INS(j)aiDEL(s);INS(a),INS(j);DEL(s);ADJ,GEN,SG,FEM
+visbiklākais;visbiklākajai;visbiklākINS(aj)aiDEL(s);INS(aj);DEL(s);ADJ,GEN,SG,FEM
 vismatainākais;vismatainākajām;vismatainākaDEL(is)INS(jām);INS(jām);DEL(is);ADJ,DAT,PL,FEM
 mantīgais;mantīgo;mantīgDEL(ais)INS(o);INS(o);DEL(ais);ADJ,DAT,SG,FEM
 neaizmirst;lai neaizmirst;INS(l)INS(a)INS(i)INS( )neaizmirst;INS(l),INS(a),INS(i),INS( );;V,3,PL,IMP
@@ -615,7 +615,7 @@ vissmilšainākais;vissmilšainākie;vissmilšainākDEL(a)iDEL(s)INS(e);INS(e);D
 necentralizēt;necentralizētu;necentralizētINS(u);INS(u);;V,COND,PRS
 vismundrākais;vismundrākās;vismundrākDEL(ai)INS(ā)s;INS(ā);DEL(ai);ADJ,ACC,SG,FEM
 neprostituēt;nebūtu prostituējis;neINS(b)INS(ū)INS(t)INS(u)INS( )prostituēDEL(t)INS(j)INS(is);INS(b),INS(ū),INS(t),INS(u),INS( ),INS(j),INS(is);DEL(t);V,COND,PST
-visūdeņainākais;visūdeņainākajam;visūdeņainākaDEL(is)INS(j)INS(am);INS(j),INS(am);DEL(is);ADJ,GEN,SG,MASC
+visūdeņainākais;visūdeņainākajam;visūdeņainākaDEL(is)INS(jam);INS(jam);DEL(is);ADJ,GEN,SG,MASC
 redzoklis;redzokļa;redzokDEL(l)DEL(is)INS(ļ)INS(a);INS(ļ),INS(a);DEL(l),DEL(is);N,GEN,SG
 pelēkums;pelēkumu;pelēkumDEL(s)INS(u);INS(u);DEL(s);N,INST,SG
 rasmīgākais;rasmīgākajiem;rasmīgākaINS(j)iDEL(s)INS(em);INS(j),INS(em);DEL(s);ADJ,DAT,PL,MASC
@@ -631,8 +631,8 @@ cukurs;cukuriem;cukurDEL(s)INS(iem);INS(iem);DEL(s);N,INST,PL
 strazdiene;strazdienes;strazdieneINS(s);INS(s);;N,ACC,PL
 katalāniskāks;katalāniskākos;katalāniskākINS(o)s;INS(o);;ADJ,INST,PL,MASC
 antropoloģiskais;antropoloģisko;antropoloģiskDEL(ais)INS(o);INS(o);DEL(ais);ADJ,NOM,SG,MASC
-neubagot;neubagojam;neubagoDEL(t)INS(j)INS(am);INS(j),INS(am);DEL(t);V,1,PL,PRS,IND
-stīvs;stīvai;stīvDEL(s)INS(a)INS(i);INS(a),INS(i);DEL(s);ADJ,GEN,SG,FEM
+neubagot;neubagojam;neubagoDEL(t)INS(jam);INS(jam);DEL(t);V,1,PL,PRS,IND
+stīvs;stīvai;stīvDEL(s)INS(ai);INS(ai);DEL(s);ADJ,GEN,SG,FEM
 lūsis;lūsī;lūDEL(s)DEL(i)sINS(ī);INS(ī);DEL(s),DEL(i);N,LOC,SG
 beļģiskāks;beļģiskāku;beļģiskākDEL(s)INS(u);INS(u);DEL(s);ADJ,NOM,SG,MASC
 humoristiskākais;humoristiskākajā;humoristiskākaDEL(is)INS(jā);INS(jā);DEL(is);ADJ,INST,SG,MASC
@@ -647,14 +647,14 @@ tipoloģija;tipoloģijas;tipoloģijaINS(s);INS(s);;N,ACC,PL
 toksīns;toksīni;toksīnDEL(s)INS(i);INS(i);DEL(s);N,VOC,PL
 pisējiņa;pisējiņām;pisējiņDEL(a)INS(ām);INS(ām);DEL(a);N,INST,PL
 ziepjainākais;ziepjainākās;ziepjainākDEL(ai)INS(ā)s;INS(ā);DEL(ai);ADJ,NOM,PL,FEM
-nedomāt;nedomāsim;nedomāDEL(t)INS(s)INS(im);INS(s),INS(im);DEL(t);V,1,PL,IMP
+nedomāt;nedomāsim;nedomāDEL(t)INS(sim);INS(sim);DEL(t);V,1,PL,IMP
 slaikākais;slaikākajās;slaikākaDEL(i)INS(jā)s;INS(jā);DEL(i);ADJ,INST,PL,FEM
 politisks;politiska;politiskDEL(s)INS(a);INS(a);DEL(s);ADJ,ACC,SG,MASC
 alksnis;alkšņos;alkDEL(s)DEL(n)DEL(i)INS(š)INS(ņ)INS(o)s;INS(š),INS(ņ),INS(o);DEL(s),DEL(n),DEL(i);N,LOC,PL
 labības mēnesis;labības mēnešiem;labības mēneDEL(s)DEL(is)INS(š)INS(iem);INS(š),INS(iem);DEL(s),DEL(is);N,DAT,PL
 skaidrāks;skaidrāka;skaidrākDEL(s)INS(a);INS(a);DEL(s);ADJ,ACC,SG,MASC
 neražot;lai neražojot;INS(l)INS(a)INS(i)INS( )neražINS(o)INS(j)ot;INS(l),INS(a),INS(i),INS( ),INS(o),INS(j);;V,LGSPEC1,IMP
-nīderlandisks;nīderlandiskai;nīderlandiskDEL(s)INS(a)INS(i);INS(a),INS(i);DEL(s);ADJ,GEN,SG,FEM
+nīderlandisks;nīderlandiskai;nīderlandiskDEL(s)INS(ai);INS(ai);DEL(s);ADJ,GEN,SG,FEM
 kaulene;kauleņu;kaulDEL(e)DEL(n)eINS(ņ)INS(u);INS(ņ),INS(u);DEL(e),DEL(n);N,GEN,PL
 visjaukākais;visjaukākajiem;visjaukākaINS(j)iDEL(s)INS(em);INS(j),INS(em);DEL(s);ADJ,DAT,PL,MASC
 visapātiskākais;visapātiskākā;visapātiskākDEL(ais)INS(ā);INS(ā);DEL(ais);ADJ,LOC,SG,FEM
@@ -704,14 +704,14 @@ zeltnesis;zeltnesi;zeltnesiDEL(s);;DEL(s);N,VOC,SG
 sidrabaināks;sidrabaināku;sidrabainākDEL(s)INS(u);INS(u);DEL(s);ADJ,NOM,SG,FEM
 nepļaut;lai nepļauj;INS(l)INS(a)INS(i)INS( )nepļauDEL(t)INS(j);INS(l),INS(a),INS(i),INS( ),INS(j);DEL(t);V,3,SG,IMP
 debates;debates;debates;;;N,ACC,PL
-vājredzīgs;vājredzīgai;vājredzīgDEL(s)INS(a)INS(i);INS(a),INS(i);DEL(s);ADJ,GEN,SG,FEM
+vājredzīgs;vājredzīgai;vājredzīgDEL(s)INS(ai);INS(ai);DEL(s);ADJ,GEN,SG,FEM
 visbezjēdzīgākais;visbezjēdzīgākās;visbezjēdzīgākDEL(ai)INS(ā)s;INS(ā);DEL(ai);ADJ,NOM,PL,FEM
 rumānisks;rumāniskām;rumāniskDEL(s)INS(ām);INS(ām);DEL(s);ADJ,GEN,PL,FEM
 ciešākais;ciešākajā;ciešākaDEL(is)INS(jā);INS(jā);DEL(is);ADJ,INST,SG,FEM
 telefonēt;jātelefonējot;INS(jā)telefonēINS(jo)t;INS(jā),INS(jo);;V,LGSPEC2,LgSPEC8
 matemātiskākais;matemātiskāko;matemātiskākDEL(ais)INS(o);INS(o);DEL(ais);ADJ,ACC,PL,MASC
 melnkalnietis;melnkalnieši;melnkalnieDEL(t)INS(š)iDEL(s);INS(š);DEL(t),DEL(s);N,NOM,PL
-vismīļākais;vismīļākajam;vismīļākaDEL(is)INS(j)INS(am);INS(j),INS(am);DEL(is);ADJ,GEN,SG,MASC
+vismīļākais;vismīļākajam;vismīļākaDEL(is)INS(jam);INS(jam);DEL(is);ADJ,GEN,SG,MASC
 ticēšana;ticēšanā;ticēšanDEL(a)INS(ā);INS(ā);DEL(a);N,LOC,SG
 saule;sauļu;saINS(u)INS(ļ)uDEL(l)DEL(e);INS(u),INS(ļ);DEL(l),DEL(e);N,GEN,PL
 nacionālāks;nacionālākas;nacionālākINS(a)s;INS(a);;ADJ,NOM,PL,FEM
@@ -723,7 +723,7 @@ atstāstīt;atstāstot;atstāstDEL(ī)INS(o)t;INS(o);DEL(ī);V,V.PTCP,PRS,LGSPEC
 zobens;zoben;zobenDEL(s);;DEL(s);N,VOC,SG
 sidrabainais;sidrabainais;sidrabainais;;;ADJ,LOC,SG,MASC
 taijiskākais;taijiskākā;taijiskākDEL(ais)INS(ā);INS(ā);DEL(ais);ADJ,LOC,SG,FEM
-visvalgākais;visvalgākajai;visvalgākINS(a)INS(j)aiDEL(s);INS(a),INS(j);DEL(s);ADJ,GEN,SG,FEM
+visvalgākais;visvalgākajai;visvalgākINS(aj)aiDEL(s);INS(aj);DEL(s);ADJ,GEN,SG,FEM
 trulāks;trulākiem;trulākDEL(s)INS(iem);INS(iem);DEL(s);ADJ,DAT,PL,MASC
 behemots;behemotam;behemotDEL(s)INS(a)INS(m);INS(a),INS(m);DEL(s);N,DAT,SG
 runība;runība;runība;;;N,NOM,SG
@@ -792,7 +792,7 @@ art;esot jāar;INS(e)INS(s)INS(o)INS(t)INS( )INS(j)INS(ā)arDEL(t);INS(e),INS(s)
 gigantiskāks;gigantiskākām;gigantiskākDEL(s)INS(ām);INS(ām);DEL(s);ADJ,GEN,PL,FEM
 nepacepties;nepacepas;nepacepDEL(t)DEL(i)DEL(e)INS(a)s;INS(a);DEL(t),DEL(i),DEL(e);V,3,SG,PRS,IND
 lūsis;lūšiem;lūDEL(s)DEL(is)INS(š)INS(iem);INS(š),INS(iem);DEL(s),DEL(is);N,DAT,PL
-visskaļākais;visskaļākajai;visskaļākINS(a)INS(j)aiDEL(s);INS(a),INS(j);DEL(s);ADJ,GEN,SG,FEM
+visskaļākais;visskaļākajai;visskaļākINS(aj)aiDEL(s);INS(aj);DEL(s);ADJ,GEN,SG,FEM
 sabulis;sabulim;sabuliDEL(s)INS(m);INS(m);DEL(s);N,DAT,SG
 necelt;neceļat;neceDEL(l)INS(ļ)INS(a)t;INS(ļ),INS(a);DEL(l);V,2,PL,PRS,IND
 visšaurākais;visšaurākajos;visšaurākaDEL(i)INS(jo)s;INS(jo);DEL(i);ADJ,INST,PL,MASC
@@ -837,7 +837,7 @@ kārpa;kārpām;kārpDEL(a)INS(ām);INS(ām);DEL(a);N,INST,PL
 ģeofiziķe;ģeofiziķei;ģeofiziķeINS(i);INS(i);;N,DAT,SG
 kosmiskāks;kosmiskākos;kosmiskākINS(o)s;INS(o);;ADJ,INST,PL,MASC
 zvīna;zvīnu;zvīnDEL(a)INS(u);INS(u);DEL(a);N,ACC,SG
-žvankstēt;žvankstēsim;žvankstēDEL(t)INS(s)INS(im);INS(s),INS(im);DEL(t);V,1,PL,FUT,IND
+žvankstēt;žvankstēsim;žvankstēDEL(t)INS(sim);INS(sim);DEL(t);V,1,PL,FUT,IND
 neintonēt;neintonēja;neintonēDEL(t)INS(j)INS(a);INS(j),INS(a);DEL(t);V,3,SG,PST,IND
 volejbols;volejbol;volejbolDEL(s);;DEL(s);N,VOC,SG
 lesbiete;lesbieti;lesbietDEL(e)INS(i);INS(i);DEL(e);N,INST,SG
@@ -921,14 +921,14 @@ nemezglot;nemezglots;nemezglotINS(s);INS(s);;V,V.PTCP,PST,PASS
 šlipse;šlipsēm;šlipsDEL(e)INS(ē)INS(m);INS(ē),INS(m);DEL(e);N,INST,PL
 pisējiņa;pisējiņas;pisējiņaINS(s);INS(s);;N,GEN,SG
 lielība;lielībā;lielībDEL(a)INS(ā);INS(ā);DEL(a);N,LOC,SG
-visaziātiskākais;visaziātiskākajai;visaziātiskākINS(a)INS(j)aiDEL(s);INS(a),INS(j);DEL(s);ADJ,GEN,SG,FEM
+visaziātiskākais;visaziātiskākajai;visaziātiskākINS(aj)aiDEL(s);INS(aj);DEL(s);ADJ,GEN,SG,FEM
 rudens mēnesis;rudens mēneša;rudens mēneDEL(s)DEL(is)INS(š)INS(a);INS(š),INS(a);DEL(s),DEL(is);N,GEN,SG
 vājredzīgāks;vājredzīgāku;vājredzīgākDEL(s)INS(u);INS(u);DEL(s);ADJ,NOM,SG,FEM
 čaklums;čaklumu;čaklumDEL(s)INS(u);INS(u);DEL(s);N,ACC,SG
 visvalganākais;visvalganākās;visvalganākDEL(ai)INS(ā)s;INS(ā);DEL(ai);ADJ,NOM,PL,FEM
 visblāvākais;visblāvākajā;visblāvākaDEL(is)INS(jā);INS(jā);DEL(is);ADJ,INST,SG,MASC
 visslaidākais;visslaidākās;visslaidākDEL(ai)INS(ā)s;INS(ā);DEL(ai);ADJ,NOM,PL,FEM
-imperiālistiskākais;imperiālistiskākajam;imperiālistiskākaDEL(is)INS(j)INS(am);INS(j),INS(am);DEL(is);ADJ,GEN,SG,MASC
+imperiālistiskākais;imperiālistiskākajam;imperiālistiskākaDEL(is)INS(jam);INS(jam);DEL(is);ADJ,GEN,SG,MASC
 ķets;ķetu;ķetDEL(s)INS(u);INS(u);DEL(s);N,ACC,SG
 ķīnisks;ķīniskā;ķīniskDEL(s)INS(ā);INS(ā);DEL(s);ADJ,INST,SG,FEM
 cīpslene;cīpslene;cīpslene;;;N,NOM,SG
@@ -951,10 +951,10 @@ mēļākais;mēļākajiem;mēļākaINS(j)iDEL(s)INS(em);INS(j),INS(em);DEL(s);AD
 vispoliskākais;vispoliskāko;vispoliskākDEL(ais)INS(o);INS(o);DEL(ais);ADJ,NOM,SG,FEM
 nekurt;nekur;nekurDEL(t);;DEL(t);V,3,SG,PRS,IND
 bailes;bailes;bailes;;;N,NOM,PL
-laizīt;laizīsim;laizīDEL(t)INS(s)INS(im);INS(s),INS(im);DEL(t);V,1,PL,IMP
+laizīt;laizīsim;laizīDEL(t)INS(sim);INS(sim);DEL(t);V,1,PL,IMP
 sacīt;sakot;saDEL(c)DEL(ī)INS(k)INS(o)t;INS(k),INS(o);DEL(c),DEL(ī);V,V.PTCP,PRS,LGSPEC5
 svarīgs;svarīgu;svarīgDEL(s)INS(u);INS(u);DEL(s);ADJ,NOM,SG,FEM
-angliskāks;angliskākai;angliskākDEL(s)INS(a)INS(i);INS(a),INS(i);DEL(s);ADJ,GEN,SG,FEM
+angliskāks;angliskākai;angliskākDEL(s)INS(ai);INS(ai);DEL(s);ADJ,GEN,SG,FEM
 foršākais;foršākajā;foršākaDEL(is)INS(jā);INS(jā);DEL(is);ADJ,INST,SG,FEM
 rudenīgs;rudenīgu;rudenīgDEL(s)INS(u);INS(u);DEL(s);ADJ,ACC,PL,FEM
 turpināt;turpiniet;turpinDEL(ā)INS(i)INS(e)t;INS(i),INS(e);DEL(ā);V,2,PL,IMP
@@ -989,8 +989,8 @@ trulais;trulajās;trulaDEL(i)INS(jā)s;INS(jā);DEL(i);ADJ,INST,PL,FEM
 kartogrāfija;kartogrāfija;kartogrāfija;;;N,NOM,SG
 igauniskais;igauniskajos;igauniskaDEL(i)INS(jo)s;INS(jo);DEL(i);ADJ,INST,PL,MASC
 nogurt;noguršot;nogurINS(š)INS(o)t;INS(š),INS(o);;V,LGSPEC1,FUT
-velnišķais;velnišķajam;velnišķaDEL(is)INS(j)INS(am);INS(j),INS(am);DEL(is);ADJ,GEN,SG,MASC
-strādāt;strādāsim;strādāDEL(t)INS(s)INS(im);INS(s),INS(im);DEL(t);V,1,PL,IMP
+velnišķais;velnišķajam;velnišķaDEL(is)INS(jam);INS(jam);DEL(is);ADJ,GEN,SG,MASC
+strādāt;strādāsim;strādāDEL(t)INS(sim);INS(sim);DEL(t);V,1,PL,IMP
 dejot;dejos;dejoDEL(t)INS(s);INS(s);DEL(t);V,3,SG,FUT,IND
 spirgts;spirgtus;spirgtINS(u)s;INS(u);;ADJ,NOM,PL,MASC
 argāns;argānu;argānDEL(s)INS(u);INS(u);DEL(s);N,INST,SG
