@@ -4,7 +4,7 @@ from typing import Callable
 from functools import partial
 from context_matrix import create_and_save_context_matrix, load_context_matrix
 import lattice as l
-from main import process_data_file, write_alphabet
+from data_pre_processing import process_data_file, write_alphabet
 import pandas as pd
 import operation_revisor as rev
 import search_tree as tree
@@ -33,11 +33,18 @@ def _write_alphabet_for_file(directory_name: str, filename: str):
     print(f"Finished alphabet for {language}")
 
 
+# Generated the language alphabet
 def write_alphabets():
     dir_name = "data/processed/first_step"
     _iterate_directory(dir_name, _write_alphabet_for_file)
 
 
+# Branch method used for generating the various data pre-processing steps:
+# Step 1 - Finding INS and DEL operation required for transforming Lemmas into Inflections
+# Step 2 - Counting how many the INS and DEL operations appear
+# Step 3 - Separate INS and DEL operation in different files per language
+# Step 4 - Apply subword_mnt on the previously separated operations
+# Step 5 -
 def write_steps(generate_step_1=False, generate_step_2=False, generate_step_3=False,
                 generate_step_4=False, generate_step_5=False):
     directory_name = "data/latin_alphabet"

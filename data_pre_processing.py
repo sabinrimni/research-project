@@ -41,7 +41,7 @@ def find_gap_positions_and_matching_characters(gap_string: str, character_string
     return operations
 
 
-# Unused code
+#
 # def transform_index_to_directional_index(index: int, string: str):
 #     if index > len(string) / 2:
 #         return index - len(string)
@@ -53,10 +53,12 @@ def group_consecutive_indexes(indexes: List[int]) -> List[List[int]]:
     return [list(group) for group in mit.consecutive_groups(indexes)]
 
 
+# Extracts operations from a List of Transformations
 def get_operations(transformations: List[Transformation]) -> List[Operations]:
     return [find_operations(transformation) for transformation in transformations]
 
 
+# Finds the INS and DEL operations required to transform a Lemma into the Inflection
 def find_operations(transformation: Transformation) -> Operations:
     # Large penalty to make sure no mismatching characters appear
     penalty = -1000000
@@ -69,36 +71,42 @@ def find_operations(transformation: Transformation) -> Operations:
     return Operations(transformation, inserts, deletes)
 
 
-def group_inserts(operations: List[Operations]):
-    inserts = [insert for operation in operations for insert in operation.inserts]
-    return group_operations(inserts)
+#
+# def group_inserts(operations: List[Operations]):
+#     inserts = [insert for operation in operations for insert in operation.inserts]
+#     return group_operations(inserts)
 
 
+# Returns number of unique INS operations and the list of them as a Counter object
 def group_inserts_by_characters_only(operations: List[Operations]):
     inserts = [insert for operation in operations for insert in operation.inserts]
     return group_operation_characters(inserts)
 
 
+# Returns number of unique DEL operations and the list of them as a Counter object
 def group_deletes_by_characters_only(operations: List[Operations]):
     deletes = [delete for operation in operations for delete in operation.deletes]
     return group_operation_characters(deletes)
 
 
-def group_deletes(operations: List[Operations]):
-    deletes = [delete for operation in operations for delete in operation.deletes]
-    return group_operations(deletes)
+# def group_deletes(operations: List[Operations]):
+#     deletes = [delete for operation in operations for delete in operation.deletes]
+#     return group_operations(deletes)
 
 
-def group_operations(operations: List[Operation]):
-    counter = collections.Counter(operations)
-    return counter
+#
+# def group_operations(operations: List[Operation]):
+#     counter = collections.Counter(operations)
+#     return counter
 
 
+# Create Counter object out of a List of operations
 def group_operation_characters(operations: List[Operation]):
     counter = collections.Counter([op.letters for op in operations])
     return counter
 
 
+# Finding INS and DEL operation required for transforming Lemmas into Inflections
 def write_first_step(file, operations: List[Operations]):
     writer = csv.writer(file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
     writer.writerow(["Source", "Target", "Combined", "Inserts", "Deletes", "Grammar"])
@@ -113,6 +121,7 @@ def write_first_step(file, operations: List[Operations]):
         writer.writerow([lemma, inflection, combined, ins_steps, del_steps, grammar])
 
 
+# Counting how many the INS and DEL operations appear
 def write_second_step(file, operations: List[Operations]):
     counted_inserts = group_inserts_by_characters_only(operations)
     counted_deletes = group_deletes_by_characters_only(operations)
@@ -124,6 +133,7 @@ def write_second_step(file, operations: List[Operations]):
         writer.writerow([characters, "DEL", counted_deletes[characters]])
 
 
+# Extract language alphabet
 def extract_alphabet(words: List[str]):
     alphabet = set()
     for word in words:
@@ -134,6 +144,7 @@ def extract_alphabet(words: List[str]):
     return alphabet
 
 
+# Write language alphabet to file
 def write_alphabet(output_file: str, first_step_file_name: str):
     first_step = pd.read_csv(first_step_file_name, delimiter=";", quotechar='"')
     words = first_step["Source"] + first_step["Target"]
